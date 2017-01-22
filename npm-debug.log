@@ -1,0 +1,3666 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.2.2/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   'mongoose',
+1 verbose cli   'crypto',
+1 verbose cli   'socket.io',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData express@^4.14.0
+8 silly fetchPackageMetaData mongoose
+9 silly fetchPackageMetaData crypto@^0.0.3
+10 silly fetchPackageMetaData socket.io
+11 silly fetchNamedPackageData express
+12 silly mapToRegistry name express
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'express',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'express',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/express
+17 silly fetchNamedPackageData crypto
+18 silly mapToRegistry name crypto
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'crypto',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'crypto',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/crypto
+23 silly fetchNamedPackageData mongoose
+24 silly mapToRegistry name mongoose
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'mongoose',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'mongoose',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+29 silly fetchNamedPackageData socket.io
+30 silly mapToRegistry name socket.io
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry data Result {
+33 silly mapToRegistry   raw: 'socket.io',
+33 silly mapToRegistry   scope: null,
+33 silly mapToRegistry   name: 'socket.io',
+33 silly mapToRegistry   rawSpec: '',
+33 silly mapToRegistry   spec: 'latest',
+33 silly mapToRegistry   type: 'tag' }
+34 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+35 verbose request uri https://registry.npmjs.org/crypto
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 15:45:59
+38 verbose request id 9af80836921977b0
+39 verbose etag W/"5861cd02-d76"
+40 verbose lastModified Tue, 27 Dec 2016 02:08:02 GMT
+41 http request GET https://registry.npmjs.org/crypto
+42 verbose request uri https://registry.npmjs.org/socket.io
+43 verbose request no auth needed
+44 info attempt registry request try #1 at 15:45:59
+45 verbose etag W/"588185b5-242b2"
+46 verbose lastModified Fri, 20 Jan 2017 03:36:21 GMT
+47 http request GET https://registry.npmjs.org/socket.io
+48 verbose request uri https://registry.npmjs.org/express
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 15:45:59
+51 verbose etag W/"587cf673-856ea"
+52 verbose lastModified Mon, 16 Jan 2017 16:36:03 GMT
+53 http request GET https://registry.npmjs.org/express
+54 verbose request uri https://registry.npmjs.org/mongoose
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 15:45:59
+57 verbose etag W/"58824dc3-8645a"
+58 verbose lastModified Fri, 20 Jan 2017 17:49:55 GMT
+59 http request GET https://registry.npmjs.org/mongoose
+60 http 200 https://registry.npmjs.org/crypto
+61 verbose headers { server: 'nginx/1.10.1',
+61 verbose headers   'content-type': 'application/json',
+61 verbose headers   'last-modified': 'Fri, 20 Jan 2017 15:22:45 GMT',
+61 verbose headers   etag: 'W/"58822b45-d9b"',
+61 verbose headers   'content-encoding': 'gzip',
+61 verbose headers   'cache-control': 'max-age=300',
+61 verbose headers   'content-length': '1210',
+61 verbose headers   'accept-ranges': 'bytes',
+61 verbose headers   date: 'Sat, 21 Jan 2017 07:45:59 GMT',
+61 verbose headers   via: '1.1 varnish',
+61 verbose headers   age: '0',
+61 verbose headers   connection: 'keep-alive',
+61 verbose headers   'x-served-by': 'cache-sjc3123-SJC',
+61 verbose headers   'x-cache': 'HIT',
+61 verbose headers   'x-cache-hits': '1',
+61 verbose headers   'x-timer': 'S1484984759.976440,VS0,VE19',
+61 verbose headers   vary: 'Accept-Encoding' }
+62 silly get cb [ 200,
+62 silly get   { server: 'nginx/1.10.1',
+62 silly get     'content-type': 'application/json',
+62 silly get     'last-modified': 'Fri, 20 Jan 2017 15:22:45 GMT',
+62 silly get     etag: 'W/"58822b45-d9b"',
+62 silly get     'content-encoding': 'gzip',
+62 silly get     'cache-control': 'max-age=300',
+62 silly get     'content-length': '1210',
+62 silly get     'accept-ranges': 'bytes',
+62 silly get     date: 'Sat, 21 Jan 2017 07:45:59 GMT',
+62 silly get     via: '1.1 varnish',
+62 silly get     age: '0',
+62 silly get     connection: 'keep-alive',
+62 silly get     'x-served-by': 'cache-sjc3123-SJC',
+62 silly get     'x-cache': 'HIT',
+62 silly get     'x-cache-hits': '1',
+62 silly get     'x-timer': 'S1484984759.976440,VS0,VE19',
+62 silly get     vary: 'Accept-Encoding' } ]
+63 verbose get saving crypto to /Users/fareise/.npm/registry.npmjs.org/crypto/.cache.json
+64 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+65 http 304 https://registry.npmjs.org/mongoose
+66 verbose headers { date: 'Sat, 21 Jan 2017 07:46:00 GMT',
+66 verbose headers   via: '1.1 varnish',
+66 verbose headers   'cache-control': 'max-age=300',
+66 verbose headers   etag: 'W/"58824dc3-8645a"',
+66 verbose headers   age: '74',
+66 verbose headers   connection: 'keep-alive',
+66 verbose headers   'x-served-by': 'cache-sjc3643-SJC',
+66 verbose headers   'x-cache': 'HIT',
+66 verbose headers   'x-cache-hits': '1',
+66 verbose headers   'x-timer': 'S1484984760.677869,VS0,VE0',
+66 verbose headers   vary: 'Accept-Encoding' }
+67 silly get cb [ 304,
+67 silly get   { date: 'Sat, 21 Jan 2017 07:46:00 GMT',
+67 silly get     via: '1.1 varnish',
+67 silly get     'cache-control': 'max-age=300',
+67 silly get     etag: 'W/"58824dc3-8645a"',
+67 silly get     age: '74',
+67 silly get     connection: 'keep-alive',
+67 silly get     'x-served-by': 'cache-sjc3643-SJC',
+67 silly get     'x-cache': 'HIT',
+67 silly get     'x-cache-hits': '1',
+67 silly get     'x-timer': 'S1484984760.677869,VS0,VE0',
+67 silly get     vary: 'Accept-Encoding' } ]
+68 verbose etag https://registry.npmjs.org/mongoose from cache
+69 verbose get saving mongoose to /Users/fareise/.npm/registry.npmjs.org/mongoose/.cache.json
+70 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+71 http 200 https://registry.npmjs.org/express
+72 verbose headers { server: 'nginx/1.10.1',
+72 verbose headers   'content-type': 'application/json',
+72 verbose headers   'last-modified': 'Sat, 21 Jan 2017 06:47:51 GMT',
+72 verbose headers   etag: 'W/"58830417-85799"',
+72 verbose headers   'content-encoding': 'gzip',
+72 verbose headers   'cache-control': 'max-age=300',
+72 verbose headers   'content-length': '41125',
+72 verbose headers   'accept-ranges': 'bytes',
+72 verbose headers   date: 'Sat, 21 Jan 2017 07:45:59 GMT',
+72 verbose headers   via: '1.1 varnish',
+72 verbose headers   age: '132',
+72 verbose headers   connection: 'keep-alive',
+72 verbose headers   'x-served-by': 'cache-sjc3630-SJC',
+72 verbose headers   'x-cache': 'HIT',
+72 verbose headers   'x-cache-hits': '1',
+72 verbose headers   'x-timer': 'S1484984759.960974,VS0,VE0',
+72 verbose headers   vary: 'Accept-Encoding' }
+73 silly get cb [ 200,
+73 silly get   { server: 'nginx/1.10.1',
+73 silly get     'content-type': 'application/json',
+73 silly get     'last-modified': 'Sat, 21 Jan 2017 06:47:51 GMT',
+73 silly get     etag: 'W/"58830417-85799"',
+73 silly get     'content-encoding': 'gzip',
+73 silly get     'cache-control': 'max-age=300',
+73 silly get     'content-length': '41125',
+73 silly get     'accept-ranges': 'bytes',
+73 silly get     date: 'Sat, 21 Jan 2017 07:45:59 GMT',
+73 silly get     via: '1.1 varnish',
+73 silly get     age: '132',
+73 silly get     connection: 'keep-alive',
+73 silly get     'x-served-by': 'cache-sjc3630-SJC',
+73 silly get     'x-cache': 'HIT',
+73 silly get     'x-cache-hits': '1',
+73 silly get     'x-timer': 'S1484984759.960974,VS0,VE0',
+73 silly get     vary: 'Accept-Encoding' } ]
+74 verbose get saving express to /Users/fareise/.npm/registry.npmjs.org/express/.cache.json
+75 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+76 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.40.162:443
+77 info attempt registry request try #2 at 15:47:24
+78 verbose etag W/"588185b5-242b2"
+79 verbose lastModified Fri, 20 Jan 2017 03:36:21 GMT
+80 http request GET https://registry.npmjs.org/socket.io
+81 http 304 https://registry.npmjs.org/socket.io
+82 verbose headers { date: 'Sat, 21 Jan 2017 07:47:24 GMT',
+82 verbose headers   via: '1.1 varnish',
+82 verbose headers   'cache-control': 'max-age=300',
+82 verbose headers   etag: 'W/"588185b5-242b2"',
+82 verbose headers   age: '185',
+82 verbose headers   connection: 'keep-alive',
+82 verbose headers   'x-served-by': 'cache-sjc3123-SJC',
+82 verbose headers   'x-cache': 'HIT',
+82 verbose headers   'x-cache-hits': '1',
+82 verbose headers   'x-timer': 'S1484984844.616682,VS0,VE0',
+82 verbose headers   vary: 'Accept-Encoding' }
+83 silly get cb [ 304,
+83 silly get   { date: 'Sat, 21 Jan 2017 07:47:24 GMT',
+83 silly get     via: '1.1 varnish',
+83 silly get     'cache-control': 'max-age=300',
+83 silly get     etag: 'W/"588185b5-242b2"',
+83 silly get     age: '185',
+83 silly get     connection: 'keep-alive',
+83 silly get     'x-served-by': 'cache-sjc3123-SJC',
+83 silly get     'x-cache': 'HIT',
+83 silly get     'x-cache-hits': '1',
+83 silly get     'x-timer': 'S1484984844.616682,VS0,VE0',
+83 silly get     vary: 'Accept-Encoding' } ]
+84 verbose etag https://registry.npmjs.org/socket.io from cache
+85 verbose get saving socket.io to /Users/fareise/.npm/registry.npmjs.org/socket.io/.cache.json
+86 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+87 silly install normalizeTree
+88 silly loadCurrentTree Finishing
+89 silly loadIdealTree Starting
+90 silly install loadIdealTree
+91 silly cloneCurrentTree Starting
+92 silly install cloneCurrentTreeToIdealTree
+93 silly cloneCurrentTree Finishing
+94 silly loadShrinkwrap Starting
+95 silly install loadShrinkwrap
+96 silly loadShrinkwrap Finishing
+97 silly loadAllDepsIntoIdealTree Starting
+98 silly install loadAllDepsIntoIdealTree
+99 silly resolveWithNewModule crypto@0.0.3 checking installable status
+100 silly cache add args [ 'crypto@^0.0.3', null ]
+101 verbose cache add spec crypto@^0.0.3
+102 silly resolveWithNewModule mongoose@4.7.7 checking installable status
+103 silly cache add args [ 'mongoose', null ]
+104 verbose cache add spec mongoose
+105 silly resolveWithNewModule express@4.14.0 checking installable status
+106 silly cache add args [ 'express@^4.14.0', null ]
+107 verbose cache add spec express@^4.14.0
+108 silly resolveWithNewModule socket.io@1.7.2 checking installable status
+109 silly cache add args [ 'socket.io', null ]
+110 verbose cache add spec socket.io
+111 silly cache add parsed spec Result {
+111 silly cache add   raw: 'crypto@^0.0.3',
+111 silly cache add   scope: null,
+111 silly cache add   name: 'crypto',
+111 silly cache add   rawSpec: '^0.0.3',
+111 silly cache add   spec: '>=0.0.3 <0.0.4',
+111 silly cache add   type: 'range' }
+112 silly addNamed crypto@>=0.0.3 <0.0.4
+113 verbose addNamed ">=0.0.3 <0.0.4" is a valid semver range for crypto
+114 silly addNameRange { name: 'crypto', range: '>=0.0.3 <0.0.4', hasData: false }
+115 silly mapToRegistry name crypto
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry data Result {
+118 silly mapToRegistry   raw: 'crypto',
+118 silly mapToRegistry   scope: null,
+118 silly mapToRegistry   name: 'crypto',
+118 silly mapToRegistry   rawSpec: '',
+118 silly mapToRegistry   spec: 'latest',
+118 silly mapToRegistry   type: 'tag' }
+119 silly mapToRegistry uri https://registry.npmjs.org/crypto
+120 verbose addNameRange registry:https://registry.npmjs.org/crypto not in flight; fetching
+121 silly cache add parsed spec Result {
+121 silly cache add   raw: 'express@^4.14.0',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'express',
+121 silly cache add   rawSpec: '^4.14.0',
+121 silly cache add   spec: '>=4.14.0 <5.0.0',
+121 silly cache add   type: 'range' }
+122 silly addNamed express@>=4.14.0 <5.0.0
+123 verbose addNamed ">=4.14.0 <5.0.0" is a valid semver range for express
+124 silly addNameRange { name: 'express', range: '>=4.14.0 <5.0.0', hasData: false }
+125 silly mapToRegistry name express
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry data Result {
+128 silly mapToRegistry   raw: 'express',
+128 silly mapToRegistry   scope: null,
+128 silly mapToRegistry   name: 'express',
+128 silly mapToRegistry   rawSpec: '',
+128 silly mapToRegistry   spec: 'latest',
+128 silly mapToRegistry   type: 'tag' }
+129 silly mapToRegistry uri https://registry.npmjs.org/express
+130 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+131 silly cache add parsed spec Result {
+131 silly cache add   raw: 'mongoose',
+131 silly cache add   scope: null,
+131 silly cache add   name: 'mongoose',
+131 silly cache add   rawSpec: '',
+131 silly cache add   spec: 'latest',
+131 silly cache add   type: 'tag' }
+132 silly addNamed mongoose@latest
+133 verbose addNamed "latest" is being treated as a dist-tag for mongoose
+134 info addNameTag [ 'mongoose', 'latest' ]
+135 silly mapToRegistry name mongoose
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry data Result {
+138 silly mapToRegistry   raw: 'mongoose',
+138 silly mapToRegistry   scope: null,
+138 silly mapToRegistry   name: 'mongoose',
+138 silly mapToRegistry   rawSpec: '',
+138 silly mapToRegistry   spec: 'latest',
+138 silly mapToRegistry   type: 'tag' }
+139 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+140 verbose addNameTag registry:https://registry.npmjs.org/mongoose not in flight; fetching
+141 silly cache add parsed spec Result {
+141 silly cache add   raw: 'socket.io',
+141 silly cache add   scope: null,
+141 silly cache add   name: 'socket.io',
+141 silly cache add   rawSpec: '',
+141 silly cache add   spec: 'latest',
+141 silly cache add   type: 'tag' }
+142 silly addNamed socket.io@latest
+143 verbose addNamed "latest" is being treated as a dist-tag for socket.io
+144 info addNameTag [ 'socket.io', 'latest' ]
+145 silly mapToRegistry name socket.io
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry data Result {
+148 silly mapToRegistry   raw: 'socket.io',
+148 silly mapToRegistry   scope: null,
+148 silly mapToRegistry   name: 'socket.io',
+148 silly mapToRegistry   rawSpec: '',
+148 silly mapToRegistry   spec: 'latest',
+148 silly mapToRegistry   type: 'tag' }
+149 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+150 verbose addNameTag registry:https://registry.npmjs.org/socket.io not in flight; fetching
+151 verbose request uri https://registry.npmjs.org/crypto
+152 verbose request no auth needed
+153 info attempt registry request try #1 at 15:47:24
+154 verbose etag W/"58822b45-d9b"
+155 verbose lastModified Fri, 20 Jan 2017 15:22:45 GMT
+156 http request GET https://registry.npmjs.org/crypto
+157 verbose get https://registry.npmjs.org/socket.io not expired, no request
+158 silly addNameTag next cb for socket.io with tag latest
+159 silly addNamed socket.io@1.7.2
+160 verbose addNamed "1.7.2" is a plain semver version for socket.io
+161 verbose request uri https://registry.npmjs.org/mongoose
+162 verbose request no auth needed
+163 info attempt registry request try #1 at 15:47:24
+164 verbose etag W/"58824dc3-8645a"
+165 verbose lastModified Fri, 20 Jan 2017 17:49:55 GMT
+166 http request GET https://registry.npmjs.org/mongoose
+167 verbose request uri https://registry.npmjs.org/express
+168 verbose request no auth needed
+169 info attempt registry request try #1 at 15:47:24
+170 verbose etag W/"58830417-85799"
+171 verbose lastModified Sat, 21 Jan 2017 06:47:51 GMT
+172 http request GET https://registry.npmjs.org/express
+173 silly cache afterAdd socket.io@1.7.2
+174 verbose afterAdd /Users/fareise/.npm/socket.io/1.7.2/package/package.json not in flight; writing
+175 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+176 verbose afterAdd /Users/fareise/.npm/socket.io/1.7.2/package/package.json written
+177 http 304 https://registry.npmjs.org/crypto
+178 verbose headers { date: 'Sat, 21 Jan 2017 07:47:25 GMT',
+178 verbose headers   via: '1.1 varnish',
+178 verbose headers   'cache-control': 'max-age=300',
+178 verbose headers   etag: 'W/"58822b45-d9b"',
+178 verbose headers   age: '85',
+178 verbose headers   connection: 'keep-alive',
+178 verbose headers   'x-served-by': 'cache-sjc3643-SJC',
+178 verbose headers   'x-cache': 'HIT',
+178 verbose headers   'x-cache-hits': '1',
+178 verbose headers   'x-timer': 'S1484984845.047912,VS0,VE0',
+178 verbose headers   vary: 'Accept-Encoding' }
+179 silly get cb [ 304,
+179 silly get   { date: 'Sat, 21 Jan 2017 07:47:25 GMT',
+179 silly get     via: '1.1 varnish',
+179 silly get     'cache-control': 'max-age=300',
+179 silly get     etag: 'W/"58822b45-d9b"',
+179 silly get     age: '85',
+179 silly get     connection: 'keep-alive',
+179 silly get     'x-served-by': 'cache-sjc3643-SJC',
+179 silly get     'x-cache': 'HIT',
+179 silly get     'x-cache-hits': '1',
+179 silly get     'x-timer': 'S1484984845.047912,VS0,VE0',
+179 silly get     vary: 'Accept-Encoding' } ]
+180 verbose etag https://registry.npmjs.org/crypto from cache
+181 verbose get saving crypto to /Users/fareise/.npm/registry.npmjs.org/crypto/.cache.json
+182 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+183 silly addNameRange number 2 { name: 'crypto', range: '>=0.0.3 <0.0.4', hasData: true }
+184 silly addNameRange versions [ 'crypto', [ '0.0.1', '0.0.3' ] ]
+185 silly addNamed crypto@0.0.3
+186 verbose addNamed "0.0.3" is a plain semver version for crypto
+187 silly cache afterAdd crypto@0.0.3
+188 verbose afterAdd /Users/fareise/.npm/crypto/0.0.3/package/package.json not in flight; writing
+189 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+190 verbose afterAdd /Users/fareise/.npm/crypto/0.0.3/package/package.json written
+191 http 304 https://registry.npmjs.org/mongoose
+192 verbose headers { date: 'Sat, 21 Jan 2017 07:47:25 GMT',
+192 verbose headers   via: '1.1 varnish',
+192 verbose headers   'cache-control': 'max-age=300',
+192 verbose headers   etag: 'W/"58824dc3-8645a"',
+192 verbose headers   age: '158',
+192 verbose headers   connection: 'keep-alive',
+192 verbose headers   'x-served-by': 'cache-sjc3630-SJC',
+192 verbose headers   'x-cache': 'HIT',
+192 verbose headers   'x-cache-hits': '1',
+192 verbose headers   'x-timer': 'S1484984845.073217,VS0,VE0',
+192 verbose headers   vary: 'Accept-Encoding' }
+193 silly get cb [ 304,
+193 silly get   { date: 'Sat, 21 Jan 2017 07:47:25 GMT',
+193 silly get     via: '1.1 varnish',
+193 silly get     'cache-control': 'max-age=300',
+193 silly get     etag: 'W/"58824dc3-8645a"',
+193 silly get     age: '158',
+193 silly get     connection: 'keep-alive',
+193 silly get     'x-served-by': 'cache-sjc3630-SJC',
+193 silly get     'x-cache': 'HIT',
+193 silly get     'x-cache-hits': '1',
+193 silly get     'x-timer': 'S1484984845.073217,VS0,VE0',
+193 silly get     vary: 'Accept-Encoding' } ]
+194 verbose etag https://registry.npmjs.org/mongoose from cache
+195 verbose get saving mongoose to /Users/fareise/.npm/registry.npmjs.org/mongoose/.cache.json
+196 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+197 silly addNameTag next cb for mongoose with tag latest
+198 silly addNamed mongoose@4.7.7
+199 verbose addNamed "4.7.7" is a plain semver version for mongoose
+200 silly cache afterAdd mongoose@4.7.7
+201 verbose afterAdd /Users/fareise/.npm/mongoose/4.7.7/package/package.json not in flight; writing
+202 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+203 verbose afterAdd /Users/fareise/.npm/mongoose/4.7.7/package/package.json written
+204 http 304 https://registry.npmjs.org/express
+205 verbose headers { date: 'Sat, 21 Jan 2017 07:47:25 GMT',
+205 verbose headers   via: '1.1 varnish',
+205 verbose headers   'cache-control': 'max-age=300',
+205 verbose headers   etag: 'W/"58830417-85799"',
+205 verbose headers   age: '217',
+205 verbose headers   connection: 'keep-alive',
+205 verbose headers   'x-served-by': 'cache-sjc3123-SJC',
+205 verbose headers   'x-cache': 'HIT',
+205 verbose headers   'x-cache-hits': '2',
+205 verbose headers   'x-timer': 'S1484984845.077493,VS0,VE0',
+205 verbose headers   vary: 'Accept-Encoding' }
+206 silly get cb [ 304,
+206 silly get   { date: 'Sat, 21 Jan 2017 07:47:25 GMT',
+206 silly get     via: '1.1 varnish',
+206 silly get     'cache-control': 'max-age=300',
+206 silly get     etag: 'W/"58830417-85799"',
+206 silly get     age: '217',
+206 silly get     connection: 'keep-alive',
+206 silly get     'x-served-by': 'cache-sjc3123-SJC',
+206 silly get     'x-cache': 'HIT',
+206 silly get     'x-cache-hits': '2',
+206 silly get     'x-timer': 'S1484984845.077493,VS0,VE0',
+206 silly get     vary: 'Accept-Encoding' } ]
+207 verbose etag https://registry.npmjs.org/express from cache
+208 verbose get saving express to /Users/fareise/.npm/registry.npmjs.org/express/.cache.json
+209 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+210 silly addNameRange number 2 { name: 'express', range: '>=4.14.0 <5.0.0', hasData: true }
+211 silly addNameRange versions [ 'express',
+211 silly addNameRange   [ '0.14.0',
+211 silly addNameRange     '0.14.1',
+211 silly addNameRange     '1.0.0',
+211 silly addNameRange     '1.0.1',
+211 silly addNameRange     '1.0.2',
+211 silly addNameRange     '1.0.3',
+211 silly addNameRange     '1.0.4',
+211 silly addNameRange     '1.0.5',
+211 silly addNameRange     '1.0.6',
+211 silly addNameRange     '1.0.7',
+211 silly addNameRange     '1.0.8',
+211 silly addNameRange     '2.0.0',
+211 silly addNameRange     '2.1.0',
+211 silly addNameRange     '2.1.1',
+211 silly addNameRange     '2.2.0',
+211 silly addNameRange     '2.2.1',
+211 silly addNameRange     '2.2.2',
+211 silly addNameRange     '2.3.0',
+211 silly addNameRange     '2.3.1',
+211 silly addNameRange     '2.3.2',
+211 silly addNameRange     '2.3.3',
+211 silly addNameRange     '2.3.4',
+211 silly addNameRange     '2.3.5',
+211 silly addNameRange     '2.3.6',
+211 silly addNameRange     '2.3.7',
+211 silly addNameRange     '2.3.8',
+211 silly addNameRange     '2.3.9',
+211 silly addNameRange     '2.3.10',
+211 silly addNameRange     '2.3.11',
+211 silly addNameRange     '2.3.12',
+211 silly addNameRange     '2.4.0',
+211 silly addNameRange     '2.4.1',
+211 silly addNameRange     '2.4.2',
+211 silly addNameRange     '2.4.3',
+211 silly addNameRange     '2.4.4',
+211 silly addNameRange     '2.4.5',
+211 silly addNameRange     '2.4.6',
+211 silly addNameRange     '2.4.7',
+211 silly addNameRange     '2.5.0',
+211 silly addNameRange     '2.5.1',
+211 silly addNameRange     '2.5.2',
+211 silly addNameRange     '2.5.3',
+211 silly addNameRange     '2.5.4',
+211 silly addNameRange     '2.5.5',
+211 silly addNameRange     '2.5.6',
+211 silly addNameRange     '2.5.7',
+211 silly addNameRange     '2.5.8',
+211 silly addNameRange     '2.5.9',
+211 silly addNameRange     '2.5.10',
+211 silly addNameRange     '2.5.11',
+211 silly addNameRange     '3.0.0',
+211 silly addNameRange     '3.0.1',
+211 silly addNameRange     '3.0.2',
+211 silly addNameRange     '3.0.3',
+211 silly addNameRange     '3.0.4',
+211 silly addNameRange     '3.0.5',
+211 silly addNameRange     '3.0.6',
+211 silly addNameRange     '3.1.0',
+211 silly addNameRange     '3.1.1',
+211 silly addNameRange     '3.1.2',
+211 silly addNameRange     '3.2.0',
+211 silly addNameRange     '3.2.1',
+211 silly addNameRange     '3.2.2',
+211 silly addNameRange     '3.2.3',
+211 silly addNameRange     '3.2.4',
+211 silly addNameRange     '3.2.5',
+211 silly addNameRange     '3.2.6',
+211 silly addNameRange     '3.3.0',
+211 silly addNameRange     '3.3.1',
+211 silly addNameRange     '3.3.2',
+211 silly addNameRange     '3.3.3',
+211 silly addNameRange     '3.3.4',
+211 silly addNameRange     '3.3.5',
+211 silly addNameRange     '3.3.6',
+211 silly addNameRange     '1.0.0-beta',
+211 silly addNameRange     '1.0.0-beta2',
+211 silly addNameRange     '1.0.0-rc',
+211 silly addNameRange     '1.0.0-rc2',
+211 silly addNameRange     '1.0.0-rc3',
+211 silly addNameRange     '1.0.0-rc4',
+211 silly addNameRange     '2.0.0-beta',
+211 silly addNameRange     '2.0.0-beta2',
+211 silly addNameRange     '2.0.0-beta3',
+211 silly addNameRange     '2.0.0-rc',
+211 silly addNameRange     '2.0.0-rc2',
+211 silly addNameRange     '2.0.0-rc3',
+211 silly addNameRange     '3.0.0-alpha1',
+211 silly addNameRange     '3.0.0-alpha2',
+211 silly addNameRange     '3.0.0-alpha3',
+211 silly addNameRange     '3.0.0-alpha4',
+211 silly addNameRange     '3.0.0-alpha5',
+211 silly addNameRange     '3.0.0-beta1',
+211 silly addNameRange     '3.0.0-beta2',
+211 silly addNameRange     '3.0.0-beta3',
+211 silly addNameRange     '3.0.0-beta4',
+211 silly addNameRange     '3.0.0-beta6',
+211 silly addNameRange     '3.0.0-beta7',
+211 silly addNameRange     '3.0.0-rc1',
+211 silly addNameRange     '3.0.0-rc2',
+211 silly addNameRange     '3.0.0-rc3',
+211 silly addNameRange     ... 144 more items ] ]
+212 silly addNamed express@4.14.0
+213 verbose addNamed "4.14.0" is a plain semver version for express
+214 silly cache afterAdd express@4.14.0
+215 verbose afterAdd /Users/fareise/.npm/express/4.14.0/package/package.json not in flight; writing
+216 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+217 verbose afterAdd /Users/fareise/.npm/express/4.14.0/package/package.json written
+218 silly fetchNamedPackageData array-flatten
+219 silly mapToRegistry name array-flatten
+220 silly mapToRegistry using default registry
+221 silly mapToRegistry registry https://registry.npmjs.org/
+222 silly mapToRegistry data Result {
+222 silly mapToRegistry   raw: 'array-flatten',
+222 silly mapToRegistry   scope: null,
+222 silly mapToRegistry   name: 'array-flatten',
+222 silly mapToRegistry   rawSpec: '',
+222 silly mapToRegistry   spec: 'latest',
+222 silly mapToRegistry   type: 'tag' }
+223 silly mapToRegistry uri https://registry.npmjs.org/array-flatten
+224 silly fetchNamedPackageData content-disposition
+225 silly mapToRegistry name content-disposition
+226 silly mapToRegistry using default registry
+227 silly mapToRegistry registry https://registry.npmjs.org/
+228 silly mapToRegistry data Result {
+228 silly mapToRegistry   raw: 'content-disposition',
+228 silly mapToRegistry   scope: null,
+228 silly mapToRegistry   name: 'content-disposition',
+228 silly mapToRegistry   rawSpec: '',
+228 silly mapToRegistry   spec: 'latest',
+228 silly mapToRegistry   type: 'tag' }
+229 silly mapToRegistry uri https://registry.npmjs.org/content-disposition
+230 silly fetchNamedPackageData encodeurl
+231 silly mapToRegistry name encodeurl
+232 silly mapToRegistry using default registry
+233 silly mapToRegistry registry https://registry.npmjs.org/
+234 silly mapToRegistry data Result {
+234 silly mapToRegistry   raw: 'encodeurl',
+234 silly mapToRegistry   scope: null,
+234 silly mapToRegistry   name: 'encodeurl',
+234 silly mapToRegistry   rawSpec: '',
+234 silly mapToRegistry   spec: 'latest',
+234 silly mapToRegistry   type: 'tag' }
+235 silly mapToRegistry uri https://registry.npmjs.org/encodeurl
+236 silly fetchNamedPackageData etag
+237 silly mapToRegistry name etag
+238 silly mapToRegistry using default registry
+239 silly mapToRegistry registry https://registry.npmjs.org/
+240 silly mapToRegistry data Result {
+240 silly mapToRegistry   raw: 'etag',
+240 silly mapToRegistry   scope: null,
+240 silly mapToRegistry   name: 'etag',
+240 silly mapToRegistry   rawSpec: '',
+240 silly mapToRegistry   spec: 'latest',
+240 silly mapToRegistry   type: 'tag' }
+241 silly mapToRegistry uri https://registry.npmjs.org/etag
+242 silly fetchNamedPackageData finalhandler
+243 silly mapToRegistry name finalhandler
+244 silly mapToRegistry using default registry
+245 silly mapToRegistry registry https://registry.npmjs.org/
+246 silly mapToRegistry data Result {
+246 silly mapToRegistry   raw: 'finalhandler',
+246 silly mapToRegistry   scope: null,
+246 silly mapToRegistry   name: 'finalhandler',
+246 silly mapToRegistry   rawSpec: '',
+246 silly mapToRegistry   spec: 'latest',
+246 silly mapToRegistry   type: 'tag' }
+247 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+248 silly fetchNamedPackageData fresh
+249 silly mapToRegistry name fresh
+250 silly mapToRegistry using default registry
+251 silly mapToRegistry registry https://registry.npmjs.org/
+252 silly mapToRegistry data Result {
+252 silly mapToRegistry   raw: 'fresh',
+252 silly mapToRegistry   scope: null,
+252 silly mapToRegistry   name: 'fresh',
+252 silly mapToRegistry   rawSpec: '',
+252 silly mapToRegistry   spec: 'latest',
+252 silly mapToRegistry   type: 'tag' }
+253 silly mapToRegistry uri https://registry.npmjs.org/fresh
+254 silly fetchNamedPackageData merge-descriptors
+255 silly mapToRegistry name merge-descriptors
+256 silly mapToRegistry using default registry
+257 silly mapToRegistry registry https://registry.npmjs.org/
+258 silly mapToRegistry data Result {
+258 silly mapToRegistry   raw: 'merge-descriptors',
+258 silly mapToRegistry   scope: null,
+258 silly mapToRegistry   name: 'merge-descriptors',
+258 silly mapToRegistry   rawSpec: '',
+258 silly mapToRegistry   spec: 'latest',
+258 silly mapToRegistry   type: 'tag' }
+259 silly mapToRegistry uri https://registry.npmjs.org/merge-descriptors
+260 silly fetchNamedPackageData path-to-regexp
+261 silly mapToRegistry name path-to-regexp
+262 silly mapToRegistry using default registry
+263 silly mapToRegistry registry https://registry.npmjs.org/
+264 silly mapToRegistry data Result {
+264 silly mapToRegistry   raw: 'path-to-regexp',
+264 silly mapToRegistry   scope: null,
+264 silly mapToRegistry   name: 'path-to-regexp',
+264 silly mapToRegistry   rawSpec: '',
+264 silly mapToRegistry   spec: 'latest',
+264 silly mapToRegistry   type: 'tag' }
+265 silly mapToRegistry uri https://registry.npmjs.org/path-to-regexp
+266 silly fetchNamedPackageData proxy-addr
+267 silly mapToRegistry name proxy-addr
+268 silly mapToRegistry using default registry
+269 silly mapToRegistry registry https://registry.npmjs.org/
+270 silly mapToRegistry data Result {
+270 silly mapToRegistry   raw: 'proxy-addr',
+270 silly mapToRegistry   scope: null,
+270 silly mapToRegistry   name: 'proxy-addr',
+270 silly mapToRegistry   rawSpec: '',
+270 silly mapToRegistry   spec: 'latest',
+270 silly mapToRegistry   type: 'tag' }
+271 silly mapToRegistry uri https://registry.npmjs.org/proxy-addr
+272 silly fetchNamedPackageData range-parser
+273 silly mapToRegistry name range-parser
+274 silly mapToRegistry using default registry
+275 silly mapToRegistry registry https://registry.npmjs.org/
+276 silly mapToRegistry data Result {
+276 silly mapToRegistry   raw: 'range-parser',
+276 silly mapToRegistry   scope: null,
+276 silly mapToRegistry   name: 'range-parser',
+276 silly mapToRegistry   rawSpec: '',
+276 silly mapToRegistry   spec: 'latest',
+276 silly mapToRegistry   type: 'tag' }
+277 silly mapToRegistry uri https://registry.npmjs.org/range-parser
+278 silly fetchNamedPackageData send
+279 silly mapToRegistry name send
+280 silly mapToRegistry using default registry
+281 silly mapToRegistry registry https://registry.npmjs.org/
+282 silly mapToRegistry data Result {
+282 silly mapToRegistry   raw: 'send',
+282 silly mapToRegistry   scope: null,
+282 silly mapToRegistry   name: 'send',
+282 silly mapToRegistry   rawSpec: '',
+282 silly mapToRegistry   spec: 'latest',
+282 silly mapToRegistry   type: 'tag' }
+283 silly mapToRegistry uri https://registry.npmjs.org/send
+284 silly fetchNamedPackageData serve-static
+285 silly mapToRegistry name serve-static
+286 silly mapToRegistry using default registry
+287 silly mapToRegistry registry https://registry.npmjs.org/
+288 silly mapToRegistry data Result {
+288 silly mapToRegistry   raw: 'serve-static',
+288 silly mapToRegistry   scope: null,
+288 silly mapToRegistry   name: 'serve-static',
+288 silly mapToRegistry   rawSpec: '',
+288 silly mapToRegistry   spec: 'latest',
+288 silly mapToRegistry   type: 'tag' }
+289 silly mapToRegistry uri https://registry.npmjs.org/serve-static
+290 silly fetchNamedPackageData utils-merge
+291 silly mapToRegistry name utils-merge
+292 silly mapToRegistry using default registry
+293 silly mapToRegistry registry https://registry.npmjs.org/
+294 silly mapToRegistry data Result {
+294 silly mapToRegistry   raw: 'utils-merge',
+294 silly mapToRegistry   scope: null,
+294 silly mapToRegistry   name: 'utils-merge',
+294 silly mapToRegistry   rawSpec: '',
+294 silly mapToRegistry   spec: 'latest',
+294 silly mapToRegistry   type: 'tag' }
+295 silly mapToRegistry uri https://registry.npmjs.org/utils-merge
+296 verbose request uri https://registry.npmjs.org/encodeurl
+297 verbose request no auth needed
+298 info attempt registry request try #1 at 15:47:25
+299 verbose etag W/"5818cea5-1eec"
+300 verbose lastModified Tue, 01 Nov 2016 17:19:33 GMT
+301 http request GET https://registry.npmjs.org/encodeurl
+302 verbose request uri https://registry.npmjs.org/content-disposition
+303 verbose request no auth needed
+304 info attempt registry request try #1 at 15:47:25
+305 verbose etag W/"584a0611-51b1"
+306 verbose lastModified Fri, 09 Dec 2016 01:17:05 GMT
+307 http request GET https://registry.npmjs.org/content-disposition
+308 verbose request uri https://registry.npmjs.org/finalhandler
+309 verbose request no auth needed
+310 info attempt registry request try #1 at 15:47:25
+311 verbose etag W/"586ca634-7d3a"
+312 verbose lastModified Wed, 04 Jan 2017 07:37:24 GMT
+313 http request GET https://registry.npmjs.org/finalhandler
+314 verbose request uri https://registry.npmjs.org/etag
+315 verbose request no auth needed
+316 info attempt registry request try #1 at 15:47:25
+317 verbose etag W/"587758c5-5571"
+318 verbose lastModified Thu, 12 Jan 2017 10:21:57 GMT
+319 http request GET https://registry.npmjs.org/etag
+320 verbose request uri https://registry.npmjs.org/merge-descriptors
+321 verbose request no auth needed
+322 info attempt registry request try #1 at 15:47:25
+323 verbose etag W/"5873670f-25b9"
+324 verbose lastModified Mon, 09 Jan 2017 10:33:51 GMT
+325 http request GET https://registry.npmjs.org/merge-descriptors
+326 verbose request uri https://registry.npmjs.org/range-parser
+327 verbose request no auth needed
+328 info attempt registry request try #1 at 15:47:25
+329 verbose etag W/"5818d8e1-3d2f"
+330 verbose lastModified Tue, 01 Nov 2016 18:03:13 GMT
+331 http request GET https://registry.npmjs.org/range-parser
+332 verbose request uri https://registry.npmjs.org/fresh
+333 verbose request no auth needed
+334 info attempt registry request try #1 at 15:47:25
+335 verbose etag W/"5818cff4-2bee"
+336 verbose lastModified Tue, 01 Nov 2016 17:25:08 GMT
+337 http request GET https://registry.npmjs.org/fresh
+338 verbose request uri https://registry.npmjs.org/array-flatten
+339 verbose request no auth needed
+340 info attempt registry request try #1 at 15:47:25
+341 verbose etag W/"58797a52-3a3e"
+342 verbose lastModified Sat, 14 Jan 2017 01:09:38 GMT
+343 http request GET https://registry.npmjs.org/array-flatten
+344 verbose request uri https://registry.npmjs.org/proxy-addr
+345 verbose request no auth needed
+346 info attempt registry request try #1 at 15:47:25
+347 verbose etag W/"587b101e-7e2c"
+348 verbose lastModified Sun, 15 Jan 2017 06:01:02 GMT
+349 http request GET https://registry.npmjs.org/proxy-addr
+350 verbose request uri https://registry.npmjs.org/utils-merge
+351 verbose request no auth needed
+352 info attempt registry request try #1 at 15:47:25
+353 verbose etag W/"58406620-9cd"
+354 verbose lastModified Thu, 01 Dec 2016 18:04:16 GMT
+355 http request GET https://registry.npmjs.org/utils-merge
+356 verbose request uri https://registry.npmjs.org/send
+357 verbose request no auth needed
+358 info attempt registry request try #1 at 15:47:25
+359 verbose etag W/"586edb80-11dfb"
+360 verbose lastModified Thu, 05 Jan 2017 23:49:20 GMT
+361 http request GET https://registry.npmjs.org/send
+362 verbose request uri https://registry.npmjs.org/path-to-regexp
+363 verbose request no auth needed
+364 info attempt registry request try #1 at 15:47:25
+365 verbose etag W/"58717ef7-179a3"
+366 verbose lastModified Sat, 07 Jan 2017 23:51:19 GMT
+367 http request GET https://registry.npmjs.org/path-to-regexp
+368 verbose request uri https://registry.npmjs.org/serve-static
+369 verbose request no auth needed
+370 info attempt registry request try #1 at 15:47:25
+371 verbose etag W/"584eb0c4-13384"
+372 verbose lastModified Mon, 12 Dec 2016 14:14:28 GMT
+373 http request GET https://registry.npmjs.org/serve-static
+374 http 304 https://registry.npmjs.org/encodeurl
+375 verbose headers { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+375 verbose headers   via: '1.1 varnish',
+375 verbose headers   'cache-control': 'max-age=300',
+375 verbose headers   etag: 'W/"5818cea5-1eec"',
+375 verbose headers   age: '33',
+375 verbose headers   connection: 'keep-alive',
+375 verbose headers   'x-served-by': 'cache-sjc3643-SJC',
+375 verbose headers   'x-cache': 'HIT',
+375 verbose headers   'x-cache-hits': '1',
+375 verbose headers   'x-timer': 'S1484984846.001195,VS0,VE0',
+375 verbose headers   vary: 'Accept-Encoding' }
+376 silly get cb [ 304,
+376 silly get   { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+376 silly get     via: '1.1 varnish',
+376 silly get     'cache-control': 'max-age=300',
+376 silly get     etag: 'W/"5818cea5-1eec"',
+376 silly get     age: '33',
+376 silly get     connection: 'keep-alive',
+376 silly get     'x-served-by': 'cache-sjc3643-SJC',
+376 silly get     'x-cache': 'HIT',
+376 silly get     'x-cache-hits': '1',
+376 silly get     'x-timer': 'S1484984846.001195,VS0,VE0',
+376 silly get     vary: 'Accept-Encoding' } ]
+377 verbose etag https://registry.npmjs.org/encodeurl from cache
+378 verbose get saving encodeurl to /Users/fareise/.npm/registry.npmjs.org/encodeurl/.cache.json
+379 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+380 http 304 https://registry.npmjs.org/content-disposition
+381 verbose headers { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+381 verbose headers   via: '1.1 varnish',
+381 verbose headers   'cache-control': 'max-age=300',
+381 verbose headers   etag: 'W/"584a0611-51b1"',
+381 verbose headers   age: '81',
+381 verbose headers   connection: 'keep-alive',
+381 verbose headers   'x-served-by': 'cache-sjc3630-SJC',
+381 verbose headers   'x-cache': 'HIT',
+381 verbose headers   'x-cache-hits': '1',
+381 verbose headers   'x-timer': 'S1484984846.003034,VS0,VE0',
+381 verbose headers   vary: 'Accept-Encoding' }
+382 silly get cb [ 304,
+382 silly get   { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+382 silly get     via: '1.1 varnish',
+382 silly get     'cache-control': 'max-age=300',
+382 silly get     etag: 'W/"584a0611-51b1"',
+382 silly get     age: '81',
+382 silly get     connection: 'keep-alive',
+382 silly get     'x-served-by': 'cache-sjc3630-SJC',
+382 silly get     'x-cache': 'HIT',
+382 silly get     'x-cache-hits': '1',
+382 silly get     'x-timer': 'S1484984846.003034,VS0,VE0',
+382 silly get     vary: 'Accept-Encoding' } ]
+383 verbose etag https://registry.npmjs.org/content-disposition from cache
+384 verbose get saving content-disposition to /Users/fareise/.npm/registry.npmjs.org/content-disposition/.cache.json
+385 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+386 silly resolveWithNewModule encodeurl@1.0.1 checking installable status
+387 silly cache add args [ 'encodeurl@~1.0.1', null ]
+388 verbose cache add spec encodeurl@~1.0.1
+389 silly cache add parsed spec Result {
+389 silly cache add   raw: 'encodeurl@~1.0.1',
+389 silly cache add   scope: null,
+389 silly cache add   name: 'encodeurl',
+389 silly cache add   rawSpec: '~1.0.1',
+389 silly cache add   spec: '>=1.0.1 <1.1.0',
+389 silly cache add   type: 'range' }
+390 silly addNamed encodeurl@>=1.0.1 <1.1.0
+391 verbose addNamed ">=1.0.1 <1.1.0" is a valid semver range for encodeurl
+392 silly addNameRange { name: 'encodeurl', range: '>=1.0.1 <1.1.0', hasData: false }
+393 silly mapToRegistry name encodeurl
+394 silly mapToRegistry using default registry
+395 silly mapToRegistry registry https://registry.npmjs.org/
+396 silly mapToRegistry data Result {
+396 silly mapToRegistry   raw: 'encodeurl',
+396 silly mapToRegistry   scope: null,
+396 silly mapToRegistry   name: 'encodeurl',
+396 silly mapToRegistry   rawSpec: '',
+396 silly mapToRegistry   spec: 'latest',
+396 silly mapToRegistry   type: 'tag' }
+397 silly mapToRegistry uri https://registry.npmjs.org/encodeurl
+398 verbose addNameRange registry:https://registry.npmjs.org/encodeurl not in flight; fetching
+399 http 304 https://registry.npmjs.org/finalhandler
+400 verbose headers { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+400 verbose headers   via: '1.1 varnish',
+400 verbose headers   'cache-control': 'max-age=300',
+400 verbose headers   etag: 'W/"586ca634-7d3a"',
+400 verbose headers   age: '106',
+400 verbose headers   connection: 'keep-alive',
+400 verbose headers   'x-served-by': 'cache-sjc3123-SJC',
+400 verbose headers   'x-cache': 'HIT',
+400 verbose headers   'x-cache-hits': '2',
+400 verbose headers   'x-timer': 'S1484984846.008003,VS0,VE0',
+400 verbose headers   vary: 'Accept-Encoding' }
+401 silly get cb [ 304,
+401 silly get   { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+401 silly get     via: '1.1 varnish',
+401 silly get     'cache-control': 'max-age=300',
+401 silly get     etag: 'W/"586ca634-7d3a"',
+401 silly get     age: '106',
+401 silly get     connection: 'keep-alive',
+401 silly get     'x-served-by': 'cache-sjc3123-SJC',
+401 silly get     'x-cache': 'HIT',
+401 silly get     'x-cache-hits': '2',
+401 silly get     'x-timer': 'S1484984846.008003,VS0,VE0',
+401 silly get     vary: 'Accept-Encoding' } ]
+402 verbose etag https://registry.npmjs.org/finalhandler from cache
+403 verbose get saving finalhandler to /Users/fareise/.npm/registry.npmjs.org/finalhandler/.cache.json
+404 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+405 silly resolveWithNewModule content-disposition@0.5.1 checking installable status
+406 silly cache add args [ 'content-disposition@0.5.1', null ]
+407 verbose cache add spec content-disposition@0.5.1
+408 silly cache add parsed spec Result {
+408 silly cache add   raw: 'content-disposition@0.5.1',
+408 silly cache add   scope: null,
+408 silly cache add   name: 'content-disposition',
+408 silly cache add   rawSpec: '0.5.1',
+408 silly cache add   spec: '0.5.1',
+408 silly cache add   type: 'version' }
+409 silly addNamed content-disposition@0.5.1
+410 verbose addNamed "0.5.1" is a plain semver version for content-disposition
+411 silly mapToRegistry name content-disposition
+412 silly mapToRegistry using default registry
+413 silly mapToRegistry registry https://registry.npmjs.org/
+414 silly mapToRegistry data Result {
+414 silly mapToRegistry   raw: 'content-disposition',
+414 silly mapToRegistry   scope: null,
+414 silly mapToRegistry   name: 'content-disposition',
+414 silly mapToRegistry   rawSpec: '',
+414 silly mapToRegistry   spec: 'latest',
+414 silly mapToRegistry   type: 'tag' }
+415 silly mapToRegistry uri https://registry.npmjs.org/content-disposition
+416 verbose addNameVersion registry:https://registry.npmjs.org/content-disposition not in flight; fetching
+417 verbose get https://registry.npmjs.org/encodeurl not expired, no request
+418 silly addNameRange number 2 { name: 'encodeurl', range: '>=1.0.1 <1.1.0', hasData: true }
+419 silly addNameRange versions [ 'encodeurl', [ '1.0.0', '1.0.1' ] ]
+420 silly addNamed encodeurl@1.0.1
+421 verbose addNamed "1.0.1" is a plain semver version for encodeurl
+422 verbose get https://registry.npmjs.org/content-disposition not expired, no request
+423 silly resolveWithNewModule finalhandler@0.5.0 checking installable status
+424 silly cache add args [ 'finalhandler@0.5.0', null ]
+425 verbose cache add spec finalhandler@0.5.0
+426 silly cache add parsed spec Result {
+426 silly cache add   raw: 'finalhandler@0.5.0',
+426 silly cache add   scope: null,
+426 silly cache add   name: 'finalhandler',
+426 silly cache add   rawSpec: '0.5.0',
+426 silly cache add   spec: '0.5.0',
+426 silly cache add   type: 'version' }
+427 silly addNamed finalhandler@0.5.0
+428 verbose addNamed "0.5.0" is a plain semver version for finalhandler
+429 silly mapToRegistry name finalhandler
+430 silly mapToRegistry using default registry
+431 silly mapToRegistry registry https://registry.npmjs.org/
+432 silly mapToRegistry data Result {
+432 silly mapToRegistry   raw: 'finalhandler',
+432 silly mapToRegistry   scope: null,
+432 silly mapToRegistry   name: 'finalhandler',
+432 silly mapToRegistry   rawSpec: '',
+432 silly mapToRegistry   spec: 'latest',
+432 silly mapToRegistry   type: 'tag' }
+433 silly mapToRegistry uri https://registry.npmjs.org/finalhandler
+434 verbose addNameVersion registry:https://registry.npmjs.org/finalhandler not in flight; fetching
+435 silly cache afterAdd encodeurl@1.0.1
+436 verbose afterAdd /Users/fareise/.npm/encodeurl/1.0.1/package/package.json not in flight; writing
+437 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+438 silly cache afterAdd content-disposition@0.5.1
+439 verbose afterAdd /Users/fareise/.npm/content-disposition/0.5.1/package/package.json not in flight; writing
+440 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+441 verbose get https://registry.npmjs.org/finalhandler not expired, no request
+442 verbose afterAdd /Users/fareise/.npm/content-disposition/0.5.1/package/package.json written
+443 verbose afterAdd /Users/fareise/.npm/encodeurl/1.0.1/package/package.json written
+444 silly cache afterAdd finalhandler@0.5.0
+445 verbose afterAdd /Users/fareise/.npm/finalhandler/0.5.0/package/package.json not in flight; writing
+446 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+447 verbose afterAdd /Users/fareise/.npm/finalhandler/0.5.0/package/package.json written
+448 http 304 https://registry.npmjs.org/serve-static
+449 verbose headers { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+449 verbose headers   via: '1.1 varnish',
+449 verbose headers   'cache-control': 'max-age=300',
+449 verbose headers   etag: 'W/"584eb0c4-13384"',
+449 verbose headers   age: '208',
+449 verbose headers   connection: 'keep-alive',
+449 verbose headers   'x-served-by': 'cache-sjc3146-SJC',
+449 verbose headers   'x-cache': 'HIT',
+449 verbose headers   'x-cache-hits': '2',
+449 verbose headers   'x-timer': 'S1484984846.974597,VS0,VE0',
+449 verbose headers   vary: 'Accept-Encoding' }
+450 silly get cb [ 304,
+450 silly get   { date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+450 silly get     via: '1.1 varnish',
+450 silly get     'cache-control': 'max-age=300',
+450 silly get     etag: 'W/"584eb0c4-13384"',
+450 silly get     age: '208',
+450 silly get     connection: 'keep-alive',
+450 silly get     'x-served-by': 'cache-sjc3146-SJC',
+450 silly get     'x-cache': 'HIT',
+450 silly get     'x-cache-hits': '2',
+450 silly get     'x-timer': 'S1484984846.974597,VS0,VE0',
+450 silly get     vary: 'Accept-Encoding' } ]
+451 verbose etag https://registry.npmjs.org/serve-static from cache
+452 verbose get saving serve-static to /Users/fareise/.npm/registry.npmjs.org/serve-static/.cache.json
+453 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+454 silly resolveWithNewModule serve-static@1.11.1 checking installable status
+455 silly cache add args [ 'serve-static@~1.11.1', null ]
+456 verbose cache add spec serve-static@~1.11.1
+457 silly cache add parsed spec Result {
+457 silly cache add   raw: 'serve-static@~1.11.1',
+457 silly cache add   scope: null,
+457 silly cache add   name: 'serve-static',
+457 silly cache add   rawSpec: '~1.11.1',
+457 silly cache add   spec: '>=1.11.1 <1.12.0',
+457 silly cache add   type: 'range' }
+458 silly addNamed serve-static@>=1.11.1 <1.12.0
+459 verbose addNamed ">=1.11.1 <1.12.0" is a valid semver range for serve-static
+460 silly addNameRange { name: 'serve-static',
+460 silly addNameRange   range: '>=1.11.1 <1.12.0',
+460 silly addNameRange   hasData: false }
+461 silly mapToRegistry name serve-static
+462 silly mapToRegistry using default registry
+463 silly mapToRegistry registry https://registry.npmjs.org/
+464 silly mapToRegistry data Result {
+464 silly mapToRegistry   raw: 'serve-static',
+464 silly mapToRegistry   scope: null,
+464 silly mapToRegistry   name: 'serve-static',
+464 silly mapToRegistry   rawSpec: '',
+464 silly mapToRegistry   spec: 'latest',
+464 silly mapToRegistry   type: 'tag' }
+465 silly mapToRegistry uri https://registry.npmjs.org/serve-static
+466 verbose addNameRange registry:https://registry.npmjs.org/serve-static not in flight; fetching
+467 verbose get https://registry.npmjs.org/serve-static not expired, no request
+468 silly addNameRange number 2 { name: 'serve-static',
+468 silly addNameRange   range: '>=1.11.1 <1.12.0',
+468 silly addNameRange   hasData: true }
+469 silly addNameRange versions [ 'serve-static',
+469 silly addNameRange   [ '1.0.0',
+469 silly addNameRange     '1.0.1',
+469 silly addNameRange     '1.0.2',
+469 silly addNameRange     '1.0.3',
+469 silly addNameRange     '1.0.4',
+469 silly addNameRange     '1.1.0',
+469 silly addNameRange     '1.2.0',
+469 silly addNameRange     '1.2.1',
+469 silly addNameRange     '1.2.2',
+469 silly addNameRange     '1.2.3',
+469 silly addNameRange     '1.3.0',
+469 silly addNameRange     '1.3.1',
+469 silly addNameRange     '1.3.2',
+469 silly addNameRange     '1.4.0',
+469 silly addNameRange     '1.4.1',
+469 silly addNameRange     '1.4.2',
+469 silly addNameRange     '1.4.3',
+469 silly addNameRange     '1.4.4',
+469 silly addNameRange     '1.5.0',
+469 silly addNameRange     '1.5.1',
+469 silly addNameRange     '1.5.2',
+469 silly addNameRange     '1.5.3',
+469 silly addNameRange     '1.5.4',
+469 silly addNameRange     '1.6.0',
+469 silly addNameRange     '1.6.1',
+469 silly addNameRange     '1.6.2',
+469 silly addNameRange     '1.6.3',
+469 silly addNameRange     '1.6.4',
+469 silly addNameRange     '1.7.0',
+469 silly addNameRange     '1.7.1',
+469 silly addNameRange     '1.7.2',
+469 silly addNameRange     '1.8.0',
+469 silly addNameRange     '1.8.1',
+469 silly addNameRange     '1.6.5',
+469 silly addNameRange     '1.9.0',
+469 silly addNameRange     '1.9.1',
+469 silly addNameRange     '1.9.2',
+469 silly addNameRange     '1.9.3',
+469 silly addNameRange     '1.10.0',
+469 silly addNameRange     '1.10.1',
+469 silly addNameRange     '1.10.2',
+469 silly addNameRange     '1.10.3',
+469 silly addNameRange     '1.11.0',
+469 silly addNameRange     '1.11.1' ] ]
+470 silly addNamed serve-static@1.11.1
+471 verbose addNamed "1.11.1" is a plain semver version for serve-static
+472 silly cache afterAdd serve-static@1.11.1
+473 verbose afterAdd /Users/fareise/.npm/serve-static/1.11.1/package/package.json not in flight; writing
+474 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+475 verbose afterAdd /Users/fareise/.npm/serve-static/1.11.1/package/package.json written
+476 http 200 https://registry.npmjs.org/etag
+477 verbose headers { server: 'nginx/1.10.1',
+477 verbose headers   'content-type': 'application/json',
+477 verbose headers   'last-modified': 'Thu, 19 Jan 2017 15:35:40 GMT',
+477 verbose headers   etag: 'W/"5880dccc-5591"',
+477 verbose headers   'content-encoding': 'gzip',
+477 verbose headers   'cache-control': 'max-age=300',
+477 verbose headers   'content-length': '3548',
+477 verbose headers   'accept-ranges': 'bytes',
+477 verbose headers   date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+477 verbose headers   via: '1.1 varnish',
+477 verbose headers   age: '155',
+477 verbose headers   connection: 'keep-alive',
+477 verbose headers   'x-served-by': 'cache-sjc3620-SJC',
+477 verbose headers   'x-cache': 'HIT',
+477 verbose headers   'x-cache-hits': '3',
+477 verbose headers   'x-timer': 'S1484984846.985047,VS0,VE0',
+477 verbose headers   vary: 'Accept-Encoding' }
+478 silly get cb [ 200,
+478 silly get   { server: 'nginx/1.10.1',
+478 silly get     'content-type': 'application/json',
+478 silly get     'last-modified': 'Thu, 19 Jan 2017 15:35:40 GMT',
+478 silly get     etag: 'W/"5880dccc-5591"',
+478 silly get     'content-encoding': 'gzip',
+478 silly get     'cache-control': 'max-age=300',
+478 silly get     'content-length': '3548',
+478 silly get     'accept-ranges': 'bytes',
+478 silly get     date: 'Sat, 21 Jan 2017 07:47:26 GMT',
+478 silly get     via: '1.1 varnish',
+478 silly get     age: '155',
+478 silly get     connection: 'keep-alive',
+478 silly get     'x-served-by': 'cache-sjc3620-SJC',
+478 silly get     'x-cache': 'HIT',
+478 silly get     'x-cache-hits': '3',
+478 silly get     'x-timer': 'S1484984846.985047,VS0,VE0',
+478 silly get     vary: 'Accept-Encoding' } ]
+479 verbose get saving etag to /Users/fareise/.npm/registry.npmjs.org/etag/.cache.json
+480 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+481 silly resolveWithNewModule etag@1.7.0 checking installable status
+482 silly cache add args [ 'etag@~1.7.0', null ]
+483 verbose cache add spec etag@~1.7.0
+484 silly cache add parsed spec Result {
+484 silly cache add   raw: 'etag@~1.7.0',
+484 silly cache add   scope: null,
+484 silly cache add   name: 'etag',
+484 silly cache add   rawSpec: '~1.7.0',
+484 silly cache add   spec: '>=1.7.0 <1.8.0',
+484 silly cache add   type: 'range' }
+485 silly addNamed etag@>=1.7.0 <1.8.0
+486 verbose addNamed ">=1.7.0 <1.8.0" is a valid semver range for etag
+487 silly addNameRange { name: 'etag', range: '>=1.7.0 <1.8.0', hasData: false }
+488 silly mapToRegistry name etag
+489 silly mapToRegistry using default registry
+490 silly mapToRegistry registry https://registry.npmjs.org/
+491 silly mapToRegistry data Result {
+491 silly mapToRegistry   raw: 'etag',
+491 silly mapToRegistry   scope: null,
+491 silly mapToRegistry   name: 'etag',
+491 silly mapToRegistry   rawSpec: '',
+491 silly mapToRegistry   spec: 'latest',
+491 silly mapToRegistry   type: 'tag' }
+492 silly mapToRegistry uri https://registry.npmjs.org/etag
+493 verbose addNameRange registry:https://registry.npmjs.org/etag not in flight; fetching
+494 verbose get https://registry.npmjs.org/etag not expired, no request
+495 silly addNameRange number 2 { name: 'etag', range: '>=1.7.0 <1.8.0', hasData: true }
+496 silly addNameRange versions [ 'etag',
+496 silly addNameRange   [ '1.0.0',
+496 silly addNameRange     '1.0.1',
+496 silly addNameRange     '1.1.0',
+496 silly addNameRange     '1.2.0',
+496 silly addNameRange     '1.2.1',
+496 silly addNameRange     '1.3.0',
+496 silly addNameRange     '1.3.1',
+496 silly addNameRange     '1.4.0',
+496 silly addNameRange     '1.5.0',
+496 silly addNameRange     '1.5.1',
+496 silly addNameRange     '1.6.0',
+496 silly addNameRange     '1.7.0' ] ]
+497 silly addNamed etag@1.7.0
+498 verbose addNamed "1.7.0" is a plain semver version for etag
+499 silly cache afterAdd etag@1.7.0
+500 verbose afterAdd /Users/fareise/.npm/etag/1.7.0/package/package.json not in flight; writing
+501 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+502 verbose afterAdd /Users/fareise/.npm/etag/1.7.0/package/package.json written
+503 http 304 https://registry.npmjs.org/path-to-regexp
+504 verbose headers { date: 'Sat, 21 Jan 2017 07:47:27 GMT',
+504 verbose headers   via: '1.1 varnish',
+504 verbose headers   'cache-control': 'max-age=300',
+504 verbose headers   etag: 'W/"58717ef7-179a3"',
+504 verbose headers   age: '17',
+504 verbose headers   connection: 'keep-alive',
+504 verbose headers   'x-served-by': 'cache-sjc3137-SJC',
+504 verbose headers   'x-cache': 'HIT',
+504 verbose headers   'x-cache-hits': '1',
+504 verbose headers   'x-timer': 'S1484984847.342210,VS0,VE0',
+504 verbose headers   vary: 'Accept-Encoding' }
+505 silly get cb [ 304,
+505 silly get   { date: 'Sat, 21 Jan 2017 07:47:27 GMT',
+505 silly get     via: '1.1 varnish',
+505 silly get     'cache-control': 'max-age=300',
+505 silly get     etag: 'W/"58717ef7-179a3"',
+505 silly get     age: '17',
+505 silly get     connection: 'keep-alive',
+505 silly get     'x-served-by': 'cache-sjc3137-SJC',
+505 silly get     'x-cache': 'HIT',
+505 silly get     'x-cache-hits': '1',
+505 silly get     'x-timer': 'S1484984847.342210,VS0,VE0',
+505 silly get     vary: 'Accept-Encoding' } ]
+506 verbose etag https://registry.npmjs.org/path-to-regexp from cache
+507 verbose get saving path-to-regexp to /Users/fareise/.npm/registry.npmjs.org/path-to-regexp/.cache.json
+508 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+509 silly resolveWithNewModule path-to-regexp@0.1.7 checking installable status
+510 silly cache add args [ 'path-to-regexp@0.1.7', null ]
+511 verbose cache add spec path-to-regexp@0.1.7
+512 silly cache add parsed spec Result {
+512 silly cache add   raw: 'path-to-regexp@0.1.7',
+512 silly cache add   scope: null,
+512 silly cache add   name: 'path-to-regexp',
+512 silly cache add   rawSpec: '0.1.7',
+512 silly cache add   spec: '0.1.7',
+512 silly cache add   type: 'version' }
+513 silly addNamed path-to-regexp@0.1.7
+514 verbose addNamed "0.1.7" is a plain semver version for path-to-regexp
+515 silly mapToRegistry name path-to-regexp
+516 silly mapToRegistry using default registry
+517 silly mapToRegistry registry https://registry.npmjs.org/
+518 silly mapToRegistry data Result {
+518 silly mapToRegistry   raw: 'path-to-regexp',
+518 silly mapToRegistry   scope: null,
+518 silly mapToRegistry   name: 'path-to-regexp',
+518 silly mapToRegistry   rawSpec: '',
+518 silly mapToRegistry   spec: 'latest',
+518 silly mapToRegistry   type: 'tag' }
+519 silly mapToRegistry uri https://registry.npmjs.org/path-to-regexp
+520 verbose addNameVersion registry:https://registry.npmjs.org/path-to-regexp not in flight; fetching
+521 verbose get https://registry.npmjs.org/path-to-regexp not expired, no request
+522 silly cache afterAdd path-to-regexp@0.1.7
+523 verbose afterAdd /Users/fareise/.npm/path-to-regexp/0.1.7/package/package.json not in flight; writing
+524 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+525 verbose afterAdd /Users/fareise/.npm/path-to-regexp/0.1.7/package/package.json written
+526 http 304 https://registry.npmjs.org/merge-descriptors
+527 verbose headers { date: 'Sat, 21 Jan 2017 07:47:27 GMT',
+527 verbose headers   via: '1.1 varnish',
+527 verbose headers   'cache-control': 'max-age=300',
+527 verbose headers   etag: 'W/"5873670f-25b9"',
+527 verbose headers   age: '83',
+527 verbose headers   connection: 'keep-alive',
+527 verbose headers   'x-served-by': 'cache-sjc3137-SJC',
+527 verbose headers   'x-cache': 'HIT',
+527 verbose headers   'x-cache-hits': '2',
+527 verbose headers   'x-timer': 'S1484984847.342944,VS0,VE0',
+527 verbose headers   vary: 'Accept-Encoding' }
+528 silly get cb [ 304,
+528 silly get   { date: 'Sat, 21 Jan 2017 07:47:27 GMT',
+528 silly get     via: '1.1 varnish',
+528 silly get     'cache-control': 'max-age=300',
+528 silly get     etag: 'W/"5873670f-25b9"',
+528 silly get     age: '83',
+528 silly get     connection: 'keep-alive',
+528 silly get     'x-served-by': 'cache-sjc3137-SJC',
+528 silly get     'x-cache': 'HIT',
+528 silly get     'x-cache-hits': '2',
+528 silly get     'x-timer': 'S1484984847.342944,VS0,VE0',
+528 silly get     vary: 'Accept-Encoding' } ]
+529 verbose etag https://registry.npmjs.org/merge-descriptors from cache
+530 verbose get saving merge-descriptors to /Users/fareise/.npm/registry.npmjs.org/merge-descriptors/.cache.json
+531 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+532 silly resolveWithNewModule merge-descriptors@1.0.1 checking installable status
+533 silly cache add args [ 'merge-descriptors@1.0.1', null ]
+534 verbose cache add spec merge-descriptors@1.0.1
+535 silly cache add parsed spec Result {
+535 silly cache add   raw: 'merge-descriptors@1.0.1',
+535 silly cache add   scope: null,
+535 silly cache add   name: 'merge-descriptors',
+535 silly cache add   rawSpec: '1.0.1',
+535 silly cache add   spec: '1.0.1',
+535 silly cache add   type: 'version' }
+536 silly addNamed merge-descriptors@1.0.1
+537 verbose addNamed "1.0.1" is a plain semver version for merge-descriptors
+538 silly mapToRegistry name merge-descriptors
+539 silly mapToRegistry using default registry
+540 silly mapToRegistry registry https://registry.npmjs.org/
+541 silly mapToRegistry data Result {
+541 silly mapToRegistry   raw: 'merge-descriptors',
+541 silly mapToRegistry   scope: null,
+541 silly mapToRegistry   name: 'merge-descriptors',
+541 silly mapToRegistry   rawSpec: '',
+541 silly mapToRegistry   spec: 'latest',
+541 silly mapToRegistry   type: 'tag' }
+542 silly mapToRegistry uri https://registry.npmjs.org/merge-descriptors
+543 verbose addNameVersion registry:https://registry.npmjs.org/merge-descriptors not in flight; fetching
+544 verbose get https://registry.npmjs.org/merge-descriptors not expired, no request
+545 silly cache afterAdd merge-descriptors@1.0.1
+546 verbose afterAdd /Users/fareise/.npm/merge-descriptors/1.0.1/package/package.json not in flight; writing
+547 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+548 verbose afterAdd /Users/fareise/.npm/merge-descriptors/1.0.1/package/package.json written
+549 http 304 https://registry.npmjs.org/proxy-addr
+550 verbose headers { date: 'Sat, 21 Jan 2017 07:47:28 GMT',
+550 verbose headers   via: '1.1 varnish',
+550 verbose headers   'cache-control': 'max-age=300',
+550 verbose headers   etag: 'W/"587b101e-7e2c"',
+550 verbose headers   age: '288',
+550 verbose headers   connection: 'keep-alive',
+550 verbose headers   'x-served-by': 'cache-sjc3637-SJC',
+550 verbose headers   'x-cache': 'HIT',
+550 verbose headers   'x-cache-hits': '2',
+550 verbose headers   'x-timer': 'S1484984848.723281,VS0,VE0',
+550 verbose headers   vary: 'Accept-Encoding' }
+551 silly get cb [ 304,
+551 silly get   { date: 'Sat, 21 Jan 2017 07:47:28 GMT',
+551 silly get     via: '1.1 varnish',
+551 silly get     'cache-control': 'max-age=300',
+551 silly get     etag: 'W/"587b101e-7e2c"',
+551 silly get     age: '288',
+551 silly get     connection: 'keep-alive',
+551 silly get     'x-served-by': 'cache-sjc3637-SJC',
+551 silly get     'x-cache': 'HIT',
+551 silly get     'x-cache-hits': '2',
+551 silly get     'x-timer': 'S1484984848.723281,VS0,VE0',
+551 silly get     vary: 'Accept-Encoding' } ]
+552 verbose etag https://registry.npmjs.org/proxy-addr from cache
+553 verbose get saving proxy-addr to /Users/fareise/.npm/registry.npmjs.org/proxy-addr/.cache.json
+554 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+555 silly resolveWithNewModule proxy-addr@1.1.3 checking installable status
+556 silly cache add args [ 'proxy-addr@~1.1.2', null ]
+557 verbose cache add spec proxy-addr@~1.1.2
+558 silly cache add parsed spec Result {
+558 silly cache add   raw: 'proxy-addr@~1.1.2',
+558 silly cache add   scope: null,
+558 silly cache add   name: 'proxy-addr',
+558 silly cache add   rawSpec: '~1.1.2',
+558 silly cache add   spec: '>=1.1.2 <1.2.0',
+558 silly cache add   type: 'range' }
+559 silly addNamed proxy-addr@>=1.1.2 <1.2.0
+560 verbose addNamed ">=1.1.2 <1.2.0" is a valid semver range for proxy-addr
+561 silly addNameRange { name: 'proxy-addr', range: '>=1.1.2 <1.2.0', hasData: false }
+562 silly mapToRegistry name proxy-addr
+563 silly mapToRegistry using default registry
+564 silly mapToRegistry registry https://registry.npmjs.org/
+565 silly mapToRegistry data Result {
+565 silly mapToRegistry   raw: 'proxy-addr',
+565 silly mapToRegistry   scope: null,
+565 silly mapToRegistry   name: 'proxy-addr',
+565 silly mapToRegistry   rawSpec: '',
+565 silly mapToRegistry   spec: 'latest',
+565 silly mapToRegistry   type: 'tag' }
+566 silly mapToRegistry uri https://registry.npmjs.org/proxy-addr
+567 verbose addNameRange registry:https://registry.npmjs.org/proxy-addr not in flight; fetching
+568 verbose get https://registry.npmjs.org/proxy-addr not expired, no request
+569 silly addNameRange number 2 { name: 'proxy-addr', range: '>=1.1.2 <1.2.0', hasData: true }
+570 silly addNameRange versions [ 'proxy-addr',
+570 silly addNameRange   [ '0.0.0',
+570 silly addNameRange     '0.0.1',
+570 silly addNameRange     '1.0.0',
+570 silly addNameRange     '1.0.1',
+570 silly addNameRange     '1.0.2',
+570 silly addNameRange     '1.0.3',
+570 silly addNameRange     '1.0.4',
+570 silly addNameRange     '1.0.5',
+570 silly addNameRange     '1.0.6',
+570 silly addNameRange     '1.0.7',
+570 silly addNameRange     '1.0.8',
+570 silly addNameRange     '1.0.9',
+570 silly addNameRange     '1.0.10',
+570 silly addNameRange     '1.1.0',
+570 silly addNameRange     '1.1.1',
+570 silly addNameRange     '1.1.2',
+570 silly addNameRange     '1.1.3' ] ]
+571 silly addNamed proxy-addr@1.1.3
+572 verbose addNamed "1.1.3" is a plain semver version for proxy-addr
+573 silly cache afterAdd proxy-addr@1.1.3
+574 verbose afterAdd /Users/fareise/.npm/proxy-addr/1.1.3/package/package.json not in flight; writing
+575 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+576 verbose afterAdd /Users/fareise/.npm/proxy-addr/1.1.3/package/package.json written
+577 http 304 https://registry.npmjs.org/range-parser
+578 verbose headers { date: 'Sat, 21 Jan 2017 07:47:31 GMT',
+578 verbose headers   via: '1.1 varnish',
+578 verbose headers   'cache-control': 'max-age=300',
+578 verbose headers   etag: 'W/"5818d8e1-3d2f"',
+578 verbose headers   age: '111',
+578 verbose headers   connection: 'keep-alive',
+578 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+578 verbose headers   'x-cache': 'HIT',
+578 verbose headers   'x-cache-hits': '2',
+578 verbose headers   'x-timer': 'S1484984851.708602,VS0,VE0',
+578 verbose headers   vary: 'Accept-Encoding' }
+579 silly get cb [ 304,
+579 silly get   { date: 'Sat, 21 Jan 2017 07:47:31 GMT',
+579 silly get     via: '1.1 varnish',
+579 silly get     'cache-control': 'max-age=300',
+579 silly get     etag: 'W/"5818d8e1-3d2f"',
+579 silly get     age: '111',
+579 silly get     connection: 'keep-alive',
+579 silly get     'x-served-by': 'cache-sjc3131-SJC',
+579 silly get     'x-cache': 'HIT',
+579 silly get     'x-cache-hits': '2',
+579 silly get     'x-timer': 'S1484984851.708602,VS0,VE0',
+579 silly get     vary: 'Accept-Encoding' } ]
+580 verbose etag https://registry.npmjs.org/range-parser from cache
+581 verbose get saving range-parser to /Users/fareise/.npm/registry.npmjs.org/range-parser/.cache.json
+582 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+583 silly resolveWithNewModule range-parser@1.2.0 checking installable status
+584 silly cache add args [ 'range-parser@~1.2.0', null ]
+585 verbose cache add spec range-parser@~1.2.0
+586 silly cache add parsed spec Result {
+586 silly cache add   raw: 'range-parser@~1.2.0',
+586 silly cache add   scope: null,
+586 silly cache add   name: 'range-parser',
+586 silly cache add   rawSpec: '~1.2.0',
+586 silly cache add   spec: '>=1.2.0 <1.3.0',
+586 silly cache add   type: 'range' }
+587 silly addNamed range-parser@>=1.2.0 <1.3.0
+588 verbose addNamed ">=1.2.0 <1.3.0" is a valid semver range for range-parser
+589 silly addNameRange { name: 'range-parser', range: '>=1.2.0 <1.3.0', hasData: false }
+590 silly mapToRegistry name range-parser
+591 silly mapToRegistry using default registry
+592 silly mapToRegistry registry https://registry.npmjs.org/
+593 silly mapToRegistry data Result {
+593 silly mapToRegistry   raw: 'range-parser',
+593 silly mapToRegistry   scope: null,
+593 silly mapToRegistry   name: 'range-parser',
+593 silly mapToRegistry   rawSpec: '',
+593 silly mapToRegistry   spec: 'latest',
+593 silly mapToRegistry   type: 'tag' }
+594 silly mapToRegistry uri https://registry.npmjs.org/range-parser
+595 verbose addNameRange registry:https://registry.npmjs.org/range-parser not in flight; fetching
+596 verbose get https://registry.npmjs.org/range-parser not expired, no request
+597 silly addNameRange number 2 { name: 'range-parser', range: '>=1.2.0 <1.3.0', hasData: true }
+598 silly addNameRange versions [ 'range-parser',
+598 silly addNameRange   [ '0.0.1',
+598 silly addNameRange     '0.0.2',
+598 silly addNameRange     '0.0.3',
+598 silly addNameRange     '0.0.4',
+598 silly addNameRange     '1.0.0',
+598 silly addNameRange     '1.0.1',
+598 silly addNameRange     '1.0.2',
+598 silly addNameRange     '1.0.3',
+598 silly addNameRange     '1.1.0',
+598 silly addNameRange     '1.2.0' ] ]
+599 silly addNamed range-parser@1.2.0
+600 verbose addNamed "1.2.0" is a plain semver version for range-parser
+601 silly cache afterAdd range-parser@1.2.0
+602 verbose afterAdd /Users/fareise/.npm/range-parser/1.2.0/package/package.json not in flight; writing
+603 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+604 verbose afterAdd /Users/fareise/.npm/range-parser/1.2.0/package/package.json written
+605 http 304 https://registry.npmjs.org/send
+606 verbose headers { date: 'Sat, 21 Jan 2017 07:47:33 GMT',
+606 verbose headers   via: '1.1 varnish',
+606 verbose headers   'cache-control': 'max-age=300',
+606 verbose headers   etag: 'W/"586edb80-11dfb"',
+606 verbose headers   age: '185',
+606 verbose headers   connection: 'keep-alive',
+606 verbose headers   'x-served-by': 'cache-sjc3637-SJC',
+606 verbose headers   'x-cache': 'HIT',
+606 verbose headers   'x-cache-hits': '1',
+606 verbose headers   'x-timer': 'S1484984853.874291,VS0,VE0',
+606 verbose headers   vary: 'Accept-Encoding' }
+607 silly get cb [ 304,
+607 silly get   { date: 'Sat, 21 Jan 2017 07:47:33 GMT',
+607 silly get     via: '1.1 varnish',
+607 silly get     'cache-control': 'max-age=300',
+607 silly get     etag: 'W/"586edb80-11dfb"',
+607 silly get     age: '185',
+607 silly get     connection: 'keep-alive',
+607 silly get     'x-served-by': 'cache-sjc3637-SJC',
+607 silly get     'x-cache': 'HIT',
+607 silly get     'x-cache-hits': '1',
+607 silly get     'x-timer': 'S1484984853.874291,VS0,VE0',
+607 silly get     vary: 'Accept-Encoding' } ]
+608 verbose etag https://registry.npmjs.org/send from cache
+609 verbose get saving send to /Users/fareise/.npm/registry.npmjs.org/send/.cache.json
+610 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+611 silly resolveWithNewModule send@0.14.1 checking installable status
+612 silly cache add args [ 'send@0.14.1', null ]
+613 verbose cache add spec send@0.14.1
+614 silly cache add parsed spec Result {
+614 silly cache add   raw: 'send@0.14.1',
+614 silly cache add   scope: null,
+614 silly cache add   name: 'send',
+614 silly cache add   rawSpec: '0.14.1',
+614 silly cache add   spec: '0.14.1',
+614 silly cache add   type: 'version' }
+615 silly addNamed send@0.14.1
+616 verbose addNamed "0.14.1" is a plain semver version for send
+617 silly mapToRegistry name send
+618 silly mapToRegistry using default registry
+619 silly mapToRegistry registry https://registry.npmjs.org/
+620 silly mapToRegistry data Result {
+620 silly mapToRegistry   raw: 'send',
+620 silly mapToRegistry   scope: null,
+620 silly mapToRegistry   name: 'send',
+620 silly mapToRegistry   rawSpec: '',
+620 silly mapToRegistry   spec: 'latest',
+620 silly mapToRegistry   type: 'tag' }
+621 silly mapToRegistry uri https://registry.npmjs.org/send
+622 verbose addNameVersion registry:https://registry.npmjs.org/send not in flight; fetching
+623 verbose get https://registry.npmjs.org/send not expired, no request
+624 silly cache afterAdd send@0.14.1
+625 verbose afterAdd /Users/fareise/.npm/send/0.14.1/package/package.json not in flight; writing
+626 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+627 verbose afterAdd /Users/fareise/.npm/send/0.14.1/package/package.json written
+628 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.40.162:443
+629 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.40.162:443
+630 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.40.162:443
+631 info attempt registry request try #2 at 15:48:51
+632 verbose etag W/"5818cff4-2bee"
+633 verbose lastModified Tue, 01 Nov 2016 17:25:08 GMT
+634 http request GET https://registry.npmjs.org/fresh
+635 info attempt registry request try #2 at 15:48:51
+636 verbose etag W/"58406620-9cd"
+637 verbose lastModified Thu, 01 Dec 2016 18:04:16 GMT
+638 http request GET https://registry.npmjs.org/utils-merge
+639 info attempt registry request try #2 at 15:48:51
+640 verbose etag W/"58797a52-3a3e"
+641 verbose lastModified Sat, 14 Jan 2017 01:09:38 GMT
+642 http request GET https://registry.npmjs.org/array-flatten
+643 http 304 https://registry.npmjs.org/fresh
+644 verbose headers { date: 'Sat, 21 Jan 2017 07:48:51 GMT',
+644 verbose headers   via: '1.1 varnish',
+644 verbose headers   'cache-control': 'max-age=300',
+644 verbose headers   etag: 'W/"5818cff4-2bee"',
+644 verbose headers   age: '293',
+644 verbose headers   connection: 'keep-alive',
+644 verbose headers   'x-served-by': 'cache-sjc3643-SJC',
+644 verbose headers   'x-cache': 'HIT',
+644 verbose headers   'x-cache-hits': '4',
+644 verbose headers   'x-timer': 'S1484984931.303481,VS0,VE0',
+644 verbose headers   vary: 'Accept-Encoding' }
+645 silly get cb [ 304,
+645 silly get   { date: 'Sat, 21 Jan 2017 07:48:51 GMT',
+645 silly get     via: '1.1 varnish',
+645 silly get     'cache-control': 'max-age=300',
+645 silly get     etag: 'W/"5818cff4-2bee"',
+645 silly get     age: '293',
+645 silly get     connection: 'keep-alive',
+645 silly get     'x-served-by': 'cache-sjc3643-SJC',
+645 silly get     'x-cache': 'HIT',
+645 silly get     'x-cache-hits': '4',
+645 silly get     'x-timer': 'S1484984931.303481,VS0,VE0',
+645 silly get     vary: 'Accept-Encoding' } ]
+646 verbose etag https://registry.npmjs.org/fresh from cache
+647 verbose get saving fresh to /Users/fareise/.npm/registry.npmjs.org/fresh/.cache.json
+648 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+649 silly resolveWithNewModule fresh@0.3.0 checking installable status
+650 silly cache add args [ 'fresh@0.3.0', null ]
+651 verbose cache add spec fresh@0.3.0
+652 silly cache add parsed spec Result {
+652 silly cache add   raw: 'fresh@0.3.0',
+652 silly cache add   scope: null,
+652 silly cache add   name: 'fresh',
+652 silly cache add   rawSpec: '0.3.0',
+652 silly cache add   spec: '0.3.0',
+652 silly cache add   type: 'version' }
+653 silly addNamed fresh@0.3.0
+654 verbose addNamed "0.3.0" is a plain semver version for fresh
+655 silly mapToRegistry name fresh
+656 silly mapToRegistry using default registry
+657 silly mapToRegistry registry https://registry.npmjs.org/
+658 silly mapToRegistry data Result {
+658 silly mapToRegistry   raw: 'fresh',
+658 silly mapToRegistry   scope: null,
+658 silly mapToRegistry   name: 'fresh',
+658 silly mapToRegistry   rawSpec: '',
+658 silly mapToRegistry   spec: 'latest',
+658 silly mapToRegistry   type: 'tag' }
+659 silly mapToRegistry uri https://registry.npmjs.org/fresh
+660 verbose addNameVersion registry:https://registry.npmjs.org/fresh not in flight; fetching
+661 verbose get https://registry.npmjs.org/fresh not expired, no request
+662 silly cache afterAdd fresh@0.3.0
+663 verbose afterAdd /Users/fareise/.npm/fresh/0.3.0/package/package.json not in flight; writing
+664 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+665 verbose afterAdd /Users/fareise/.npm/fresh/0.3.0/package/package.json written
+666 http 304 https://registry.npmjs.org/utils-merge
+667 verbose headers { date: 'Sat, 21 Jan 2017 07:48:51 GMT',
+667 verbose headers   via: '1.1 varnish',
+667 verbose headers   'cache-control': 'max-age=300',
+667 verbose headers   etag: 'W/"58406620-9cd"',
+667 verbose headers   age: '127',
+667 verbose headers   connection: 'keep-alive',
+667 verbose headers   'x-served-by': 'cache-sjc3630-SJC',
+667 verbose headers   'x-cache': 'HIT',
+667 verbose headers   'x-cache-hits': '2',
+667 verbose headers   'x-timer': 'S1484984931.287719,VS0,VE0',
+667 verbose headers   vary: 'Accept-Encoding' }
+668 silly get cb [ 304,
+668 silly get   { date: 'Sat, 21 Jan 2017 07:48:51 GMT',
+668 silly get     via: '1.1 varnish',
+668 silly get     'cache-control': 'max-age=300',
+668 silly get     etag: 'W/"58406620-9cd"',
+668 silly get     age: '127',
+668 silly get     connection: 'keep-alive',
+668 silly get     'x-served-by': 'cache-sjc3630-SJC',
+668 silly get     'x-cache': 'HIT',
+668 silly get     'x-cache-hits': '2',
+668 silly get     'x-timer': 'S1484984931.287719,VS0,VE0',
+668 silly get     vary: 'Accept-Encoding' } ]
+669 verbose etag https://registry.npmjs.org/utils-merge from cache
+670 verbose get saving utils-merge to /Users/fareise/.npm/registry.npmjs.org/utils-merge/.cache.json
+671 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+672 silly resolveWithNewModule utils-merge@1.0.0 checking installable status
+673 silly cache add args [ 'utils-merge@1.0.0', null ]
+674 verbose cache add spec utils-merge@1.0.0
+675 silly cache add parsed spec Result {
+675 silly cache add   raw: 'utils-merge@1.0.0',
+675 silly cache add   scope: null,
+675 silly cache add   name: 'utils-merge',
+675 silly cache add   rawSpec: '1.0.0',
+675 silly cache add   spec: '1.0.0',
+675 silly cache add   type: 'version' }
+676 silly addNamed utils-merge@1.0.0
+677 verbose addNamed "1.0.0" is a plain semver version for utils-merge
+678 silly mapToRegistry name utils-merge
+679 silly mapToRegistry using default registry
+680 silly mapToRegistry registry https://registry.npmjs.org/
+681 silly mapToRegistry data Result {
+681 silly mapToRegistry   raw: 'utils-merge',
+681 silly mapToRegistry   scope: null,
+681 silly mapToRegistry   name: 'utils-merge',
+681 silly mapToRegistry   rawSpec: '',
+681 silly mapToRegistry   spec: 'latest',
+681 silly mapToRegistry   type: 'tag' }
+682 silly mapToRegistry uri https://registry.npmjs.org/utils-merge
+683 verbose addNameVersion registry:https://registry.npmjs.org/utils-merge not in flight; fetching
+684 verbose get https://registry.npmjs.org/utils-merge not expired, no request
+685 silly cache afterAdd utils-merge@1.0.0
+686 verbose afterAdd /Users/fareise/.npm/utils-merge/1.0.0/package/package.json not in flight; writing
+687 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+688 verbose afterAdd /Users/fareise/.npm/utils-merge/1.0.0/package/package.json written
+689 http 304 https://registry.npmjs.org/array-flatten
+690 verbose headers { date: 'Sat, 21 Jan 2017 07:48:51 GMT',
+690 verbose headers   via: '1.1 varnish',
+690 verbose headers   'cache-control': 'max-age=300',
+690 verbose headers   etag: 'W/"58797a52-3a3e"',
+690 verbose headers   age: '67',
+690 verbose headers   connection: 'keep-alive',
+690 verbose headers   'x-served-by': 'cache-sjc3123-SJC',
+690 verbose headers   'x-cache': 'HIT',
+690 verbose headers   'x-cache-hits': '1',
+690 verbose headers   'x-timer': 'S1484984931.296042,VS0,VE0',
+690 verbose headers   vary: 'Accept-Encoding' }
+691 silly get cb [ 304,
+691 silly get   { date: 'Sat, 21 Jan 2017 07:48:51 GMT',
+691 silly get     via: '1.1 varnish',
+691 silly get     'cache-control': 'max-age=300',
+691 silly get     etag: 'W/"58797a52-3a3e"',
+691 silly get     age: '67',
+691 silly get     connection: 'keep-alive',
+691 silly get     'x-served-by': 'cache-sjc3123-SJC',
+691 silly get     'x-cache': 'HIT',
+691 silly get     'x-cache-hits': '1',
+691 silly get     'x-timer': 'S1484984931.296042,VS0,VE0',
+691 silly get     vary: 'Accept-Encoding' } ]
+692 verbose etag https://registry.npmjs.org/array-flatten from cache
+693 verbose get saving array-flatten to /Users/fareise/.npm/registry.npmjs.org/array-flatten/.cache.json
+694 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+695 silly resolveWithNewModule array-flatten@1.1.1 checking installable status
+696 silly cache add args [ 'array-flatten@1.1.1', null ]
+697 verbose cache add spec array-flatten@1.1.1
+698 silly cache add parsed spec Result {
+698 silly cache add   raw: 'array-flatten@1.1.1',
+698 silly cache add   scope: null,
+698 silly cache add   name: 'array-flatten',
+698 silly cache add   rawSpec: '1.1.1',
+698 silly cache add   spec: '1.1.1',
+698 silly cache add   type: 'version' }
+699 silly addNamed array-flatten@1.1.1
+700 verbose addNamed "1.1.1" is a plain semver version for array-flatten
+701 silly mapToRegistry name array-flatten
+702 silly mapToRegistry using default registry
+703 silly mapToRegistry registry https://registry.npmjs.org/
+704 silly mapToRegistry data Result {
+704 silly mapToRegistry   raw: 'array-flatten',
+704 silly mapToRegistry   scope: null,
+704 silly mapToRegistry   name: 'array-flatten',
+704 silly mapToRegistry   rawSpec: '',
+704 silly mapToRegistry   spec: 'latest',
+704 silly mapToRegistry   type: 'tag' }
+705 silly mapToRegistry uri https://registry.npmjs.org/array-flatten
+706 verbose addNameVersion registry:https://registry.npmjs.org/array-flatten not in flight; fetching
+707 verbose get https://registry.npmjs.org/array-flatten not expired, no request
+708 silly cache afterAdd array-flatten@1.1.1
+709 verbose afterAdd /Users/fareise/.npm/array-flatten/1.1.1/package/package.json not in flight; writing
+710 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+711 verbose afterAdd /Users/fareise/.npm/array-flatten/1.1.1/package/package.json written
+712 silly fetchNamedPackageData forwarded
+713 silly mapToRegistry name forwarded
+714 silly mapToRegistry using default registry
+715 silly mapToRegistry registry https://registry.npmjs.org/
+716 silly mapToRegistry data Result {
+716 silly mapToRegistry   raw: 'forwarded',
+716 silly mapToRegistry   scope: null,
+716 silly mapToRegistry   name: 'forwarded',
+716 silly mapToRegistry   rawSpec: '',
+716 silly mapToRegistry   spec: 'latest',
+716 silly mapToRegistry   type: 'tag' }
+717 silly mapToRegistry uri https://registry.npmjs.org/forwarded
+718 silly fetchNamedPackageData ipaddr.js
+719 silly mapToRegistry name ipaddr.js
+720 silly mapToRegistry using default registry
+721 silly mapToRegistry registry https://registry.npmjs.org/
+722 silly mapToRegistry data Result {
+722 silly mapToRegistry   raw: 'ipaddr.js',
+722 silly mapToRegistry   scope: null,
+722 silly mapToRegistry   name: 'ipaddr.js',
+722 silly mapToRegistry   rawSpec: '',
+722 silly mapToRegistry   spec: 'latest',
+722 silly mapToRegistry   type: 'tag' }
+723 silly mapToRegistry uri https://registry.npmjs.org/ipaddr.js
+724 verbose request uri https://registry.npmjs.org/forwarded
+725 verbose request no auth needed
+726 info attempt registry request try #1 at 15:48:52
+727 verbose etag W/"5818cfec-e13"
+728 verbose lastModified Tue, 01 Nov 2016 17:25:00 GMT
+729 http request GET https://registry.npmjs.org/forwarded
+730 verbose request uri https://registry.npmjs.org/ipaddr.js
+731 verbose request no auth needed
+732 info attempt registry request try #1 at 15:48:52
+733 verbose etag W/"585b092d-6c58"
+734 verbose lastModified Wed, 21 Dec 2016 22:58:53 GMT
+735 http request GET https://registry.npmjs.org/ipaddr.js
+736 http 304 https://registry.npmjs.org/ipaddr.js
+737 verbose headers { date: 'Sat, 21 Jan 2017 07:48:52 GMT',
+737 verbose headers   via: '1.1 varnish',
+737 verbose headers   'cache-control': 'max-age=300',
+737 verbose headers   etag: 'W/"585b092d-6c58"',
+737 verbose headers   age: '101',
+737 verbose headers   connection: 'keep-alive',
+737 verbose headers   'x-served-by': 'cache-sjc3620-SJC',
+737 verbose headers   'x-cache': 'HIT',
+737 verbose headers   'x-cache-hits': '2',
+737 verbose headers   'x-timer': 'S1484984932.692246,VS0,VE0',
+737 verbose headers   vary: 'Accept-Encoding' }
+738 silly get cb [ 304,
+738 silly get   { date: 'Sat, 21 Jan 2017 07:48:52 GMT',
+738 silly get     via: '1.1 varnish',
+738 silly get     'cache-control': 'max-age=300',
+738 silly get     etag: 'W/"585b092d-6c58"',
+738 silly get     age: '101',
+738 silly get     connection: 'keep-alive',
+738 silly get     'x-served-by': 'cache-sjc3620-SJC',
+738 silly get     'x-cache': 'HIT',
+738 silly get     'x-cache-hits': '2',
+738 silly get     'x-timer': 'S1484984932.692246,VS0,VE0',
+738 silly get     vary: 'Accept-Encoding' } ]
+739 verbose etag https://registry.npmjs.org/ipaddr.js from cache
+740 verbose get saving ipaddr.js to /Users/fareise/.npm/registry.npmjs.org/ipaddr.js/.cache.json
+741 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+742 silly resolveWithNewModule ipaddr.js@1.2.0 checking installable status
+743 silly cache add args [ 'ipaddr.js@1.2.0', null ]
+744 verbose cache add spec ipaddr.js@1.2.0
+745 silly cache add parsed spec Result {
+745 silly cache add   raw: 'ipaddr.js@1.2.0',
+745 silly cache add   scope: null,
+745 silly cache add   name: 'ipaddr.js',
+745 silly cache add   rawSpec: '1.2.0',
+745 silly cache add   spec: '1.2.0',
+745 silly cache add   type: 'version' }
+746 silly addNamed ipaddr.js@1.2.0
+747 verbose addNamed "1.2.0" is a plain semver version for ipaddr.js
+748 silly mapToRegistry name ipaddr.js
+749 silly mapToRegistry using default registry
+750 silly mapToRegistry registry https://registry.npmjs.org/
+751 silly mapToRegistry data Result {
+751 silly mapToRegistry   raw: 'ipaddr.js',
+751 silly mapToRegistry   scope: null,
+751 silly mapToRegistry   name: 'ipaddr.js',
+751 silly mapToRegistry   rawSpec: '',
+751 silly mapToRegistry   spec: 'latest',
+751 silly mapToRegistry   type: 'tag' }
+752 silly mapToRegistry uri https://registry.npmjs.org/ipaddr.js
+753 verbose addNameVersion registry:https://registry.npmjs.org/ipaddr.js not in flight; fetching
+754 verbose get https://registry.npmjs.org/ipaddr.js not expired, no request
+755 silly cache afterAdd ipaddr.js@1.2.0
+756 verbose afterAdd /Users/fareise/.npm/ipaddr.js/1.2.0/package/package.json not in flight; writing
+757 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+758 verbose afterAdd /Users/fareise/.npm/ipaddr.js/1.2.0/package/package.json written
+759 http 304 https://registry.npmjs.org/forwarded
+760 verbose headers { date: 'Sat, 21 Jan 2017 07:48:52 GMT',
+760 verbose headers   via: '1.1 varnish',
+760 verbose headers   'cache-control': 'max-age=300',
+760 verbose headers   etag: 'W/"5818cfec-e13"',
+760 verbose headers   age: '244',
+760 verbose headers   connection: 'keep-alive',
+760 verbose headers   'x-served-by': 'cache-sjc3146-SJC',
+760 verbose headers   'x-cache': 'HIT',
+760 verbose headers   'x-cache-hits': '2',
+760 verbose headers   'x-timer': 'S1484984932.684805,VS0,VE0',
+760 verbose headers   vary: 'Accept-Encoding' }
+761 silly get cb [ 304,
+761 silly get   { date: 'Sat, 21 Jan 2017 07:48:52 GMT',
+761 silly get     via: '1.1 varnish',
+761 silly get     'cache-control': 'max-age=300',
+761 silly get     etag: 'W/"5818cfec-e13"',
+761 silly get     age: '244',
+761 silly get     connection: 'keep-alive',
+761 silly get     'x-served-by': 'cache-sjc3146-SJC',
+761 silly get     'x-cache': 'HIT',
+761 silly get     'x-cache-hits': '2',
+761 silly get     'x-timer': 'S1484984932.684805,VS0,VE0',
+761 silly get     vary: 'Accept-Encoding' } ]
+762 verbose etag https://registry.npmjs.org/forwarded from cache
+763 verbose get saving forwarded to /Users/fareise/.npm/registry.npmjs.org/forwarded/.cache.json
+764 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+765 silly resolveWithNewModule forwarded@0.1.0 checking installable status
+766 silly cache add args [ 'forwarded@~0.1.0', null ]
+767 verbose cache add spec forwarded@~0.1.0
+768 silly cache add parsed spec Result {
+768 silly cache add   raw: 'forwarded@~0.1.0',
+768 silly cache add   scope: null,
+768 silly cache add   name: 'forwarded',
+768 silly cache add   rawSpec: '~0.1.0',
+768 silly cache add   spec: '>=0.1.0 <0.2.0',
+768 silly cache add   type: 'range' }
+769 silly addNamed forwarded@>=0.1.0 <0.2.0
+770 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for forwarded
+771 silly addNameRange { name: 'forwarded', range: '>=0.1.0 <0.2.0', hasData: false }
+772 silly mapToRegistry name forwarded
+773 silly mapToRegistry using default registry
+774 silly mapToRegistry registry https://registry.npmjs.org/
+775 silly mapToRegistry data Result {
+775 silly mapToRegistry   raw: 'forwarded',
+775 silly mapToRegistry   scope: null,
+775 silly mapToRegistry   name: 'forwarded',
+775 silly mapToRegistry   rawSpec: '',
+775 silly mapToRegistry   spec: 'latest',
+775 silly mapToRegistry   type: 'tag' }
+776 silly mapToRegistry uri https://registry.npmjs.org/forwarded
+777 verbose addNameRange registry:https://registry.npmjs.org/forwarded not in flight; fetching
+778 verbose get https://registry.npmjs.org/forwarded not expired, no request
+779 silly addNameRange number 2 { name: 'forwarded', range: '>=0.1.0 <0.2.0', hasData: true }
+780 silly addNameRange versions [ 'forwarded', [ '0.1.0' ] ]
+781 silly addNamed forwarded@0.1.0
+782 verbose addNamed "0.1.0" is a plain semver version for forwarded
+783 silly cache afterAdd forwarded@0.1.0
+784 verbose afterAdd /Users/fareise/.npm/forwarded/0.1.0/package/package.json not in flight; writing
+785 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+786 verbose afterAdd /Users/fareise/.npm/forwarded/0.1.0/package/package.json written
+787 silly fetchNamedPackageData destroy
+788 silly mapToRegistry name destroy
+789 silly mapToRegistry using default registry
+790 silly mapToRegistry registry https://registry.npmjs.org/
+791 silly mapToRegistry data Result {
+791 silly mapToRegistry   raw: 'destroy',
+791 silly mapToRegistry   scope: null,
+791 silly mapToRegistry   name: 'destroy',
+791 silly mapToRegistry   rawSpec: '',
+791 silly mapToRegistry   spec: 'latest',
+791 silly mapToRegistry   type: 'tag' }
+792 silly mapToRegistry uri https://registry.npmjs.org/destroy
+793 silly fetchNamedPackageData mime
+794 silly mapToRegistry name mime
+795 silly mapToRegistry using default registry
+796 silly mapToRegistry registry https://registry.npmjs.org/
+797 silly mapToRegistry data Result {
+797 silly mapToRegistry   raw: 'mime',
+797 silly mapToRegistry   scope: null,
+797 silly mapToRegistry   name: 'mime',
+797 silly mapToRegistry   rawSpec: '',
+797 silly mapToRegistry   spec: 'latest',
+797 silly mapToRegistry   type: 'tag' }
+798 silly mapToRegistry uri https://registry.npmjs.org/mime
+799 verbose request uri https://registry.npmjs.org/destroy
+800 verbose request no auth needed
+801 info attempt registry request try #1 at 15:48:53
+802 verbose etag W/"5818cd39-173f"
+803 verbose lastModified Tue, 01 Nov 2016 17:13:29 GMT
+804 http request GET https://registry.npmjs.org/destroy
+805 verbose request uri https://registry.npmjs.org/mime
+806 verbose request no auth needed
+807 info attempt registry request try #1 at 15:48:53
+808 verbose etag W/"58633706-50be"
+809 verbose lastModified Wed, 28 Dec 2016 03:52:38 GMT
+810 http request GET https://registry.npmjs.org/mime
+811 http 304 https://registry.npmjs.org/destroy
+812 verbose headers { date: 'Sat, 21 Jan 2017 07:48:53 GMT',
+812 verbose headers   via: '1.1 varnish',
+812 verbose headers   'cache-control': 'max-age=300',
+812 verbose headers   etag: 'W/"5818cd39-173f"',
+812 verbose headers   age: '68',
+812 verbose headers   connection: 'keep-alive',
+812 verbose headers   'x-served-by': 'cache-sjc3137-SJC',
+812 verbose headers   'x-cache': 'HIT',
+812 verbose headers   'x-cache-hits': '2',
+812 verbose headers   'x-timer': 'S1484984933.589552,VS0,VE0',
+812 verbose headers   vary: 'Accept-Encoding' }
+813 silly get cb [ 304,
+813 silly get   { date: 'Sat, 21 Jan 2017 07:48:53 GMT',
+813 silly get     via: '1.1 varnish',
+813 silly get     'cache-control': 'max-age=300',
+813 silly get     etag: 'W/"5818cd39-173f"',
+813 silly get     age: '68',
+813 silly get     connection: 'keep-alive',
+813 silly get     'x-served-by': 'cache-sjc3137-SJC',
+813 silly get     'x-cache': 'HIT',
+813 silly get     'x-cache-hits': '2',
+813 silly get     'x-timer': 'S1484984933.589552,VS0,VE0',
+813 silly get     vary: 'Accept-Encoding' } ]
+814 verbose etag https://registry.npmjs.org/destroy from cache
+815 verbose get saving destroy to /Users/fareise/.npm/registry.npmjs.org/destroy/.cache.json
+816 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+817 silly resolveWithNewModule destroy@1.0.4 checking installable status
+818 silly cache add args [ 'destroy@~1.0.4', null ]
+819 verbose cache add spec destroy@~1.0.4
+820 silly cache add parsed spec Result {
+820 silly cache add   raw: 'destroy@~1.0.4',
+820 silly cache add   scope: null,
+820 silly cache add   name: 'destroy',
+820 silly cache add   rawSpec: '~1.0.4',
+820 silly cache add   spec: '>=1.0.4 <1.1.0',
+820 silly cache add   type: 'range' }
+821 silly addNamed destroy@>=1.0.4 <1.1.0
+822 verbose addNamed ">=1.0.4 <1.1.0" is a valid semver range for destroy
+823 silly addNameRange { name: 'destroy', range: '>=1.0.4 <1.1.0', hasData: false }
+824 silly mapToRegistry name destroy
+825 silly mapToRegistry using default registry
+826 silly mapToRegistry registry https://registry.npmjs.org/
+827 silly mapToRegistry data Result {
+827 silly mapToRegistry   raw: 'destroy',
+827 silly mapToRegistry   scope: null,
+827 silly mapToRegistry   name: 'destroy',
+827 silly mapToRegistry   rawSpec: '',
+827 silly mapToRegistry   spec: 'latest',
+827 silly mapToRegistry   type: 'tag' }
+828 silly mapToRegistry uri https://registry.npmjs.org/destroy
+829 verbose addNameRange registry:https://registry.npmjs.org/destroy not in flight; fetching
+830 verbose get https://registry.npmjs.org/destroy not expired, no request
+831 silly addNameRange number 2 { name: 'destroy', range: '>=1.0.4 <1.1.0', hasData: true }
+832 silly addNameRange versions [ 'destroy', [ '1.0.3', '1.0.4' ] ]
+833 silly addNamed destroy@1.0.4
+834 verbose addNamed "1.0.4" is a plain semver version for destroy
+835 silly cache afterAdd destroy@1.0.4
+836 verbose afterAdd /Users/fareise/.npm/destroy/1.0.4/package/package.json not in flight; writing
+837 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+838 verbose afterAdd /Users/fareise/.npm/destroy/1.0.4/package/package.json written
+839 http 200 https://registry.npmjs.org/mime
+840 verbose headers { server: 'nginx/1.10.1',
+840 verbose headers   'content-type': 'application/json',
+840 verbose headers   'last-modified': 'Tue, 17 Jan 2017 18:03:50 GMT',
+840 verbose headers   etag: 'W/"587e5c86-50d1"',
+840 verbose headers   'content-encoding': 'gzip',
+840 verbose headers   'cache-control': 'max-age=300',
+840 verbose headers   'content-length': '3922',
+840 verbose headers   'accept-ranges': 'bytes',
+840 verbose headers   date: 'Sat, 21 Jan 2017 07:48:53 GMT',
+840 verbose headers   via: '1.1 varnish',
+840 verbose headers   age: '5',
+840 verbose headers   connection: 'keep-alive',
+840 verbose headers   'x-served-by': 'cache-sjc3137-SJC',
+840 verbose headers   'x-cache': 'HIT',
+840 verbose headers   'x-cache-hits': '1',
+840 verbose headers   'x-timer': 'S1484984933.590433,VS0,VE0',
+840 verbose headers   vary: 'Accept-Encoding' }
+841 silly get cb [ 200,
+841 silly get   { server: 'nginx/1.10.1',
+841 silly get     'content-type': 'application/json',
+841 silly get     'last-modified': 'Tue, 17 Jan 2017 18:03:50 GMT',
+841 silly get     etag: 'W/"587e5c86-50d1"',
+841 silly get     'content-encoding': 'gzip',
+841 silly get     'cache-control': 'max-age=300',
+841 silly get     'content-length': '3922',
+841 silly get     'accept-ranges': 'bytes',
+841 silly get     date: 'Sat, 21 Jan 2017 07:48:53 GMT',
+841 silly get     via: '1.1 varnish',
+841 silly get     age: '5',
+841 silly get     connection: 'keep-alive',
+841 silly get     'x-served-by': 'cache-sjc3137-SJC',
+841 silly get     'x-cache': 'HIT',
+841 silly get     'x-cache-hits': '1',
+841 silly get     'x-timer': 'S1484984933.590433,VS0,VE0',
+841 silly get     vary: 'Accept-Encoding' } ]
+842 verbose get saving mime to /Users/fareise/.npm/registry.npmjs.org/mime/.cache.json
+843 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+844 silly resolveWithNewModule mime@1.3.4 checking installable status
+845 silly cache add args [ 'mime@1.3.4', null ]
+846 verbose cache add spec mime@1.3.4
+847 silly cache add parsed spec Result {
+847 silly cache add   raw: 'mime@1.3.4',
+847 silly cache add   scope: null,
+847 silly cache add   name: 'mime',
+847 silly cache add   rawSpec: '1.3.4',
+847 silly cache add   spec: '1.3.4',
+847 silly cache add   type: 'version' }
+848 silly addNamed mime@1.3.4
+849 verbose addNamed "1.3.4" is a plain semver version for mime
+850 silly mapToRegistry name mime
+851 silly mapToRegistry using default registry
+852 silly mapToRegistry registry https://registry.npmjs.org/
+853 silly mapToRegistry data Result {
+853 silly mapToRegistry   raw: 'mime',
+853 silly mapToRegistry   scope: null,
+853 silly mapToRegistry   name: 'mime',
+853 silly mapToRegistry   rawSpec: '',
+853 silly mapToRegistry   spec: 'latest',
+853 silly mapToRegistry   type: 'tag' }
+854 silly mapToRegistry uri https://registry.npmjs.org/mime
+855 verbose addNameVersion registry:https://registry.npmjs.org/mime not in flight; fetching
+856 verbose get https://registry.npmjs.org/mime not expired, no request
+857 silly cache afterAdd mime@1.3.4
+858 verbose afterAdd /Users/fareise/.npm/mime/1.3.4/package/package.json not in flight; writing
+859 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+860 verbose afterAdd /Users/fareise/.npm/mime/1.3.4/package/package.json written
+861 silly fetchNamedPackageData async
+862 silly mapToRegistry name async
+863 silly mapToRegistry using default registry
+864 silly mapToRegistry registry https://registry.npmjs.org/
+865 silly mapToRegistry data Result {
+865 silly mapToRegistry   raw: 'async',
+865 silly mapToRegistry   scope: null,
+865 silly mapToRegistry   name: 'async',
+865 silly mapToRegistry   rawSpec: '',
+865 silly mapToRegistry   spec: 'latest',
+865 silly mapToRegistry   type: 'tag' }
+866 silly mapToRegistry uri https://registry.npmjs.org/async
+867 silly fetchNamedPackageData ms
+868 silly mapToRegistry name ms
+869 silly mapToRegistry using default registry
+870 silly mapToRegistry registry https://registry.npmjs.org/
+871 silly mapToRegistry data Result {
+871 silly mapToRegistry   raw: 'ms',
+871 silly mapToRegistry   scope: null,
+871 silly mapToRegistry   name: 'ms',
+871 silly mapToRegistry   rawSpec: '',
+871 silly mapToRegistry   spec: 'latest',
+871 silly mapToRegistry   type: 'tag' }
+872 silly mapToRegistry uri https://registry.npmjs.org/ms
+873 verbose request uri https://registry.npmjs.org/async
+874 verbose request no auth needed
+875 info attempt registry request try #1 at 15:49:41
+876 verbose etag W/"587f34bc-1d3ab"
+877 verbose lastModified Wed, 18 Jan 2017 09:26:20 GMT
+878 http request GET https://registry.npmjs.org/async
+879 verbose request uri https://registry.npmjs.org/ms
+880 verbose request no auth needed
+881 info attempt registry request try #1 at 15:49:41
+882 verbose etag W/"5865d365-2c43"
+883 verbose lastModified Fri, 30 Dec 2016 03:24:21 GMT
+884 http request GET https://registry.npmjs.org/ms
+885 http 304 https://registry.npmjs.org/ms
+886 verbose headers { date: 'Sat, 21 Jan 2017 07:49:41 GMT',
+886 verbose headers   via: '1.1 varnish',
+886 verbose headers   'cache-control': 'max-age=300',
+886 verbose headers   etag: 'W/"5865d365-2c43"',
+886 verbose headers   age: '222',
+886 verbose headers   connection: 'keep-alive',
+886 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+886 verbose headers   'x-cache': 'HIT',
+886 verbose headers   'x-cache-hits': '6',
+886 verbose headers   'x-timer': 'S1484984981.481140,VS0,VE0',
+886 verbose headers   vary: 'Accept-Encoding' }
+887 silly get cb [ 304,
+887 silly get   { date: 'Sat, 21 Jan 2017 07:49:41 GMT',
+887 silly get     via: '1.1 varnish',
+887 silly get     'cache-control': 'max-age=300',
+887 silly get     etag: 'W/"5865d365-2c43"',
+887 silly get     age: '222',
+887 silly get     connection: 'keep-alive',
+887 silly get     'x-served-by': 'cache-sjc3131-SJC',
+887 silly get     'x-cache': 'HIT',
+887 silly get     'x-cache-hits': '6',
+887 silly get     'x-timer': 'S1484984981.481140,VS0,VE0',
+887 silly get     vary: 'Accept-Encoding' } ]
+888 verbose etag https://registry.npmjs.org/ms from cache
+889 verbose get saving ms to /Users/fareise/.npm/registry.npmjs.org/ms/.cache.json
+890 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+891 http 304 https://registry.npmjs.org/async
+892 verbose headers { date: 'Sat, 21 Jan 2017 07:49:41 GMT',
+892 verbose headers   via: '1.1 varnish',
+892 verbose headers   'cache-control': 'max-age=300',
+892 verbose headers   etag: 'W/"587f34bc-1d3ab"',
+892 verbose headers   age: '203',
+892 verbose headers   connection: 'keep-alive',
+892 verbose headers   'x-served-by': 'cache-sjc3637-SJC',
+892 verbose headers   'x-cache': 'HIT',
+892 verbose headers   'x-cache-hits': '5',
+892 verbose headers   'x-timer': 'S1484984981.483925,VS0,VE0',
+892 verbose headers   vary: 'Accept-Encoding' }
+893 silly get cb [ 304,
+893 silly get   { date: 'Sat, 21 Jan 2017 07:49:41 GMT',
+893 silly get     via: '1.1 varnish',
+893 silly get     'cache-control': 'max-age=300',
+893 silly get     etag: 'W/"587f34bc-1d3ab"',
+893 silly get     age: '203',
+893 silly get     connection: 'keep-alive',
+893 silly get     'x-served-by': 'cache-sjc3637-SJC',
+893 silly get     'x-cache': 'HIT',
+893 silly get     'x-cache-hits': '5',
+893 silly get     'x-timer': 'S1484984981.483925,VS0,VE0',
+893 silly get     vary: 'Accept-Encoding' } ]
+894 verbose etag https://registry.npmjs.org/async from cache
+895 verbose get saving async to /Users/fareise/.npm/registry.npmjs.org/async/.cache.json
+896 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+897 silly resolveWithNewModule async@2.1.4 checking installable status
+898 silly cache add args [ 'async@2.1.4', null ]
+899 verbose cache add spec async@2.1.4
+900 silly cache add parsed spec Result {
+900 silly cache add   raw: 'async@2.1.4',
+900 silly cache add   scope: null,
+900 silly cache add   name: 'async',
+900 silly cache add   rawSpec: '2.1.4',
+900 silly cache add   spec: '2.1.4',
+900 silly cache add   type: 'version' }
+901 silly addNamed async@2.1.4
+902 verbose addNamed "2.1.4" is a plain semver version for async
+903 silly mapToRegistry name async
+904 silly mapToRegistry using default registry
+905 silly mapToRegistry registry https://registry.npmjs.org/
+906 silly mapToRegistry data Result {
+906 silly mapToRegistry   raw: 'async',
+906 silly mapToRegistry   scope: null,
+906 silly mapToRegistry   name: 'async',
+906 silly mapToRegistry   rawSpec: '',
+906 silly mapToRegistry   spec: 'latest',
+906 silly mapToRegistry   type: 'tag' }
+907 silly mapToRegistry uri https://registry.npmjs.org/async
+908 verbose addNameVersion registry:https://registry.npmjs.org/async not in flight; fetching
+909 silly resolveWithNewModule ms@0.7.2 checking installable status
+910 silly cache add args [ 'ms@0.7.2', null ]
+911 verbose cache add spec ms@0.7.2
+912 silly cache add parsed spec Result {
+912 silly cache add   raw: 'ms@0.7.2',
+912 silly cache add   scope: null,
+912 silly cache add   name: 'ms',
+912 silly cache add   rawSpec: '0.7.2',
+912 silly cache add   spec: '0.7.2',
+912 silly cache add   type: 'version' }
+913 silly addNamed ms@0.7.2
+914 verbose addNamed "0.7.2" is a plain semver version for ms
+915 silly mapToRegistry name ms
+916 silly mapToRegistry using default registry
+917 silly mapToRegistry registry https://registry.npmjs.org/
+918 silly mapToRegistry data Result {
+918 silly mapToRegistry   raw: 'ms',
+918 silly mapToRegistry   scope: null,
+918 silly mapToRegistry   name: 'ms',
+918 silly mapToRegistry   rawSpec: '',
+918 silly mapToRegistry   spec: 'latest',
+918 silly mapToRegistry   type: 'tag' }
+919 silly mapToRegistry uri https://registry.npmjs.org/ms
+920 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+921 verbose get https://registry.npmjs.org/ms not expired, no request
+922 verbose get https://registry.npmjs.org/async not expired, no request
+923 silly cache afterAdd ms@0.7.2
+924 verbose afterAdd /Users/fareise/.npm/ms/0.7.2/package/package.json not in flight; writing
+925 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+926 silly cache afterAdd async@2.1.4
+927 verbose afterAdd /Users/fareise/.npm/async/2.1.4/package/package.json not in flight; writing
+928 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+929 verbose afterAdd /Users/fareise/.npm/async/2.1.4/package/package.json written
+930 verbose afterAdd /Users/fareise/.npm/ms/0.7.2/package/package.json written
+931 silly fetchNamedPackageData debug
+932 silly mapToRegistry name debug
+933 silly mapToRegistry using default registry
+934 silly mapToRegistry registry https://registry.npmjs.org/
+935 silly mapToRegistry data Result {
+935 silly mapToRegistry   raw: 'debug',
+935 silly mapToRegistry   scope: null,
+935 silly mapToRegistry   name: 'debug',
+935 silly mapToRegistry   rawSpec: '',
+935 silly mapToRegistry   spec: 'latest',
+935 silly mapToRegistry   type: 'tag' }
+936 silly mapToRegistry uri https://registry.npmjs.org/debug
+937 verbose request uri https://registry.npmjs.org/debug
+938 verbose request no auth needed
+939 info attempt registry request try #1 at 15:49:41
+940 verbose etag W/"5881a6c2-fd0a"
+941 verbose lastModified Fri, 20 Jan 2017 05:57:22 GMT
+942 http request GET https://registry.npmjs.org/debug
+943 http 304 https://registry.npmjs.org/debug
+944 verbose headers { date: 'Sat, 21 Jan 2017 07:49:41 GMT',
+944 verbose headers   via: '1.1 varnish',
+944 verbose headers   'cache-control': 'max-age=300',
+944 verbose headers   etag: 'W/"5881a6c2-fd0a"',
+944 verbose headers   age: '246',
+944 verbose headers   connection: 'keep-alive',
+944 verbose headers   'x-served-by': 'cache-sjc3637-SJC',
+944 verbose headers   'x-cache': 'HIT',
+944 verbose headers   'x-cache-hits': '8',
+944 verbose headers   'x-timer': 'S1484984981.894387,VS0,VE0',
+944 verbose headers   vary: 'Accept-Encoding' }
+945 silly get cb [ 304,
+945 silly get   { date: 'Sat, 21 Jan 2017 07:49:41 GMT',
+945 silly get     via: '1.1 varnish',
+945 silly get     'cache-control': 'max-age=300',
+945 silly get     etag: 'W/"5881a6c2-fd0a"',
+945 silly get     age: '246',
+945 silly get     connection: 'keep-alive',
+945 silly get     'x-served-by': 'cache-sjc3637-SJC',
+945 silly get     'x-cache': 'HIT',
+945 silly get     'x-cache-hits': '8',
+945 silly get     'x-timer': 'S1484984981.894387,VS0,VE0',
+945 silly get     vary: 'Accept-Encoding' } ]
+946 verbose etag https://registry.npmjs.org/debug from cache
+947 verbose get saving debug to /Users/fareise/.npm/registry.npmjs.org/debug/.cache.json
+948 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+949 silly resolveWithNewModule debug@2.3.3 checking installable status
+950 silly cache add args [ 'debug@2.3.3', null ]
+951 verbose cache add spec debug@2.3.3
+952 silly cache add parsed spec Result {
+952 silly cache add   raw: 'debug@2.3.3',
+952 silly cache add   scope: null,
+952 silly cache add   name: 'debug',
+952 silly cache add   rawSpec: '2.3.3',
+952 silly cache add   spec: '2.3.3',
+952 silly cache add   type: 'version' }
+953 silly addNamed debug@2.3.3
+954 verbose addNamed "2.3.3" is a plain semver version for debug
+955 silly mapToRegistry name debug
+956 silly mapToRegistry using default registry
+957 silly mapToRegistry registry https://registry.npmjs.org/
+958 silly mapToRegistry data Result {
+958 silly mapToRegistry   raw: 'debug',
+958 silly mapToRegistry   scope: null,
+958 silly mapToRegistry   name: 'debug',
+958 silly mapToRegistry   rawSpec: '',
+958 silly mapToRegistry   spec: 'latest',
+958 silly mapToRegistry   type: 'tag' }
+959 silly mapToRegistry uri https://registry.npmjs.org/debug
+960 verbose addNameVersion registry:https://registry.npmjs.org/debug not in flight; fetching
+961 verbose get https://registry.npmjs.org/debug not expired, no request
+962 silly cache afterAdd debug@2.3.3
+963 verbose afterAdd /Users/fareise/.npm/debug/2.3.3/package/package.json not in flight; writing
+964 verbose correctMkdir /Users/fareise/.npm correctMkdir not in flight; initializing
+965 verbose afterAdd /Users/fareise/.npm/debug/2.3.3/package/package.json written
+966 silly fetchNamedPackageData ms
+967 silly mapToRegistry name ms
+968 silly mapToRegistry using default registry
+969 silly mapToRegistry registry https://registry.npmjs.org/
+970 silly mapToRegistry data Result {
+970 silly mapToRegistry   raw: 'ms',
+970 silly mapToRegistry   scope: null,
+970 silly mapToRegistry   name: 'ms',
+970 silly mapToRegistry   rawSpec: '',
+970 silly mapToRegistry   spec: 'latest',
+970 silly mapToRegistry   type: 'tag' }
+971 silly mapToRegistry uri https://registry.npmjs.org/ms
+972 silly loadAllDepsIntoIdealTree Finishing
+973 silly idealTree:prePrune timerv4@1.0.0
+973 silly idealTree:prePrune ├── accepts@1.3.3
+973 silly idealTree:prePrune ├── after@0.8.2
+973 silly idealTree:prePrune ├── align-text@0.1.4
+973 silly idealTree:prePrune ├── amdefine@1.0.1
+973 silly idealTree:prePrune ├── array-flatten@1.1.1
+973 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+973 silly idealTree:prePrune ├── asap@2.0.5
+973 silly idealTree:prePrune ├── async@1.5.2
+973 silly idealTree:prePrune ├── backo2@1.0.2
+973 silly idealTree:prePrune ├── balanced-match@0.4.2
+973 silly idealTree:prePrune ├── base64-arraybuffer@0.1.5
+973 silly idealTree:prePrune ├── base64id@1.0.0
+973 silly idealTree:prePrune ├── basic-auth@1.0.4
+973 silly idealTree:prePrune ├── better-assert@1.0.2
+973 silly idealTree:prePrune ├── blob@0.0.4
+973 silly idealTree:prePrune ├── bluebird@2.10.2
+973 silly idealTree:prePrune ├── body-parser@1.15.2
+973 silly idealTree:prePrune ├── brace-expansion@1.1.6
+973 silly idealTree:prePrune ├── bson@1.0.4
+973 silly idealTree:prePrune ├── buffer-shims@1.0.0
+973 silly idealTree:prePrune ├── bytes@2.4.0
+973 silly idealTree:prePrune ├── callsite@1.0.0
+973 silly idealTree:prePrune ├── camelcase@1.2.1
+973 silly idealTree:prePrune ├── center-align@0.1.3
+973 silly idealTree:prePrune ├─┬ cliui@2.1.0
+973 silly idealTree:prePrune │ └── wordwrap@0.0.2
+973 silly idealTree:prePrune ├── component-bind@1.0.0
+973 silly idealTree:prePrune ├── component-emitter@1.1.2
+973 silly idealTree:prePrune ├── component-inherit@0.0.3
+973 silly idealTree:prePrune ├── concat-map@0.0.1
+973 silly idealTree:prePrune ├── content-disposition@0.5.1
+973 silly idealTree:prePrune ├── content-type@1.0.2
+973 silly idealTree:prePrune ├── cookie-parser@1.4.3
+973 silly idealTree:prePrune ├── cookie-signature@1.0.6
+973 silly idealTree:prePrune ├── cookie@0.3.1
+973 silly idealTree:prePrune ├── core-util-is@1.0.2
+973 silly idealTree:prePrune ├── crypto@0.0.3
+973 silly idealTree:prePrune ├── debug@2.2.0
+973 silly idealTree:prePrune ├── decamelize@1.2.0
+973 silly idealTree:prePrune ├── define-properties@1.1.2
+973 silly idealTree:prePrune ├── depd@1.1.0
+973 silly idealTree:prePrune ├── destroy@1.0.4
+973 silly idealTree:prePrune ├── ee-first@1.1.1
+973 silly idealTree:prePrune ├── encodeurl@1.0.1
+973 silly idealTree:prePrune ├─┬ engine.io-client@1.8.2
+973 silly idealTree:prePrune │ ├── component-emitter@1.2.1
+973 silly idealTree:prePrune │ ├── debug@2.3.3
+973 silly idealTree:prePrune │ └── ms@0.7.2
+973 silly idealTree:prePrune ├── engine.io-parser@1.3.2
+973 silly idealTree:prePrune ├─┬ engine.io@1.8.2
+973 silly idealTree:prePrune │ ├── debug@2.3.3
+973 silly idealTree:prePrune │ └── ms@0.7.2
+973 silly idealTree:prePrune ├── errorhandler@1.5.0
+973 silly idealTree:prePrune ├── es6-promise@3.2.1
+973 silly idealTree:prePrune ├── escape-html@1.0.3
+973 silly idealTree:prePrune ├── etag@1.7.0
+973 silly idealTree:prePrune ├── express-handlebars@3.0.0
+973 silly idealTree:prePrune ├── express@4.14.0
+973 silly idealTree:prePrune ├── finalhandler@0.5.0
+973 silly idealTree:prePrune ├── foreach@2.0.5
+973 silly idealTree:prePrune ├── forwarded@0.1.0
+973 silly idealTree:prePrune ├── fresh@0.3.0
+973 silly idealTree:prePrune ├── function-bind@1.1.0
+973 silly idealTree:prePrune ├── glob@6.0.4
+973 silly idealTree:prePrune ├── graceful-fs@4.1.11
+973 silly idealTree:prePrune ├── handlebars@4.0.6
+973 silly idealTree:prePrune ├─┬ has-binary@0.1.7
+973 silly idealTree:prePrune │ └── isarray@0.0.1
+973 silly idealTree:prePrune ├── has-cors@1.1.0
+973 silly idealTree:prePrune ├── hooks-fixed@1.2.0
+973 silly idealTree:prePrune ├── http-errors@1.5.1
+973 silly idealTree:prePrune ├── iconv-lite@0.4.13
+973 silly idealTree:prePrune ├── indexof@0.0.1
+973 silly idealTree:prePrune ├── inflight@1.0.6
+973 silly idealTree:prePrune ├── inherits@2.0.3
+973 silly idealTree:prePrune ├── ipaddr.js@1.2.0
+973 silly idealTree:prePrune ├── is-buffer@1.1.4
+973 silly idealTree:prePrune ├── isarray@1.0.0
+973 silly idealTree:prePrune ├── json3@3.3.2
+973 silly idealTree:prePrune ├── kareem@1.2.0
+973 silly idealTree:prePrune ├── kind-of@3.1.0
+973 silly idealTree:prePrune ├── lazy-cache@1.0.4
+973 silly idealTree:prePrune ├── lodash@4.17.4
+973 silly idealTree:prePrune ├── longest@1.0.1
+973 silly idealTree:prePrune ├── media-typer@0.3.0
+973 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+973 silly idealTree:prePrune ├─┬ method-override@2.3.7
+973 silly idealTree:prePrune │ ├── debug@2.3.3
+973 silly idealTree:prePrune │ └── ms@0.7.2
+973 silly idealTree:prePrune ├── methods@1.1.2
+973 silly idealTree:prePrune ├── mime-db@1.26.0
+973 silly idealTree:prePrune ├── mime-types@2.1.14
+973 silly idealTree:prePrune ├── mime@1.3.4
+973 silly idealTree:prePrune ├── minimatch@3.0.3
+973 silly idealTree:prePrune ├── minimist@0.0.10
+973 silly idealTree:prePrune ├── mongodb-core@2.1.6
+973 silly idealTree:prePrune ├── mongodb@2.2.21
+973 silly idealTree:prePrune ├─┬ mongoose@4.7.7
+973 silly idealTree:prePrune │ ├── async@2.1.4
+973 silly idealTree:prePrune │ └── ms@0.7.2
+973 silly idealTree:prePrune ├── morgan@1.7.0
+973 silly idealTree:prePrune ├── mpath@0.2.1
+973 silly idealTree:prePrune ├── mpromise@0.5.5
+973 silly idealTree:prePrune ├─┬ mquery@2.0.0
+973 silly idealTree:prePrune │ └── sliced@0.0.5
+973 silly idealTree:prePrune ├── ms@0.7.1
+973 silly idealTree:prePrune ├── muri@1.1.1
+973 silly idealTree:prePrune ├── negotiator@0.6.1
+973 silly idealTree:prePrune ├── object-assign@4.1.0
+973 silly idealTree:prePrune ├── object-component@0.0.3
+973 silly idealTree:prePrune ├── object-keys@1.0.11
+973 silly idealTree:prePrune ├── object.assign@4.0.4
+973 silly idealTree:prePrune ├── on-finished@2.3.0
+973 silly idealTree:prePrune ├── on-headers@1.0.1
+973 silly idealTree:prePrune ├── once@1.4.0
+973 silly idealTree:prePrune ├── optimist@0.6.1
+973 silly idealTree:prePrune ├── options@0.0.6
+973 silly idealTree:prePrune ├── parsejson@0.0.3
+973 silly idealTree:prePrune ├── parseqs@0.0.5
+973 silly idealTree:prePrune ├── parseuri@0.0.5
+973 silly idealTree:prePrune ├── parseurl@1.3.1
+973 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+973 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+973 silly idealTree:prePrune ├── process-nextick-args@1.0.7
+973 silly idealTree:prePrune ├── promise@7.1.1
+973 silly idealTree:prePrune ├── proxy-addr@1.1.3
+973 silly idealTree:prePrune ├── qs@6.2.0
+973 silly idealTree:prePrune ├── range-parser@1.2.0
+973 silly idealTree:prePrune ├── raw-body@2.1.7
+973 silly idealTree:prePrune ├── readable-stream@2.1.5
+973 silly idealTree:prePrune ├── regexp-clone@0.0.1
+973 silly idealTree:prePrune ├── repeat-string@1.6.1
+973 silly idealTree:prePrune ├── require_optional@1.0.0
+973 silly idealTree:prePrune ├── resolve-from@2.0.0
+973 silly idealTree:prePrune ├── right-align@0.1.3
+973 silly idealTree:prePrune ├── semver@5.3.0
+973 silly idealTree:prePrune ├── send@0.14.1
+973 silly idealTree:prePrune ├── serve-static@1.11.1
+973 silly idealTree:prePrune ├── setprototypeof@1.0.2
+973 silly idealTree:prePrune ├── sliced@1.0.1
+973 silly idealTree:prePrune ├─┬ socket.io-adapter@0.5.0
+973 silly idealTree:prePrune │ ├── debug@2.3.3
+973 silly idealTree:prePrune │ └── ms@0.7.2
+973 silly idealTree:prePrune ├─┬ socket.io-client@1.7.2
+973 silly idealTree:prePrune │ ├── component-emitter@1.2.1
+973 silly idealTree:prePrune │ ├── debug@2.3.3
+973 silly idealTree:prePrune │ └── ms@0.7.2
+973 silly idealTree:prePrune ├─┬ socket.io-parser@2.3.1
+973 silly idealTree:prePrune │ └── isarray@0.0.1
+973 silly idealTree:prePrune ├─┬ socket.io@1.7.2
+973 silly idealTree:prePrune │ ├── debug@2.3.3
+973 silly idealTree:prePrune │ └── ms@0.7.2
+973 silly idealTree:prePrune ├── source-map@0.4.4
+973 silly idealTree:prePrune ├── statuses@1.3.1
+973 silly idealTree:prePrune ├── string_decoder@0.10.31
+973 silly idealTree:prePrune ├── to-array@0.1.4
+973 silly idealTree:prePrune ├── type-is@1.6.14
+973 silly idealTree:prePrune ├─┬ uglify-js@2.7.5
+973 silly idealTree:prePrune │ ├── async@0.2.10
+973 silly idealTree:prePrune │ └── source-map@0.5.6
+973 silly idealTree:prePrune ├── uglify-to-browserify@1.0.2
+973 silly idealTree:prePrune ├── ultron@1.0.2
+973 silly idealTree:prePrune ├── unpipe@1.0.0
+973 silly idealTree:prePrune ├── util-deprecate@1.0.2
+973 silly idealTree:prePrune ├── utils-merge@1.0.0
+973 silly idealTree:prePrune ├── vary@1.1.0
+973 silly idealTree:prePrune ├── window-size@0.1.0
+973 silly idealTree:prePrune ├── wordwrap@0.0.3
+973 silly idealTree:prePrune ├── wrappy@1.0.2
+973 silly idealTree:prePrune ├── ws@1.1.1
+973 silly idealTree:prePrune ├── wtf-8@1.0.0
+973 silly idealTree:prePrune ├── xmlhttprequest-ssl@1.5.3
+973 silly idealTree:prePrune ├── yargs@3.10.0
+973 silly idealTree:prePrune └── yeast@0.1.2
+974 silly loadIdealTree Finishing
+975 silly currentTree timerv4@1.0.0
+975 silly currentTree ├── accepts@1.3.3
+975 silly currentTree ├── after@0.8.2
+975 silly currentTree ├── align-text@0.1.4
+975 silly currentTree ├── amdefine@1.0.1
+975 silly currentTree ├── array-flatten@1.1.1
+975 silly currentTree ├── arraybuffer.slice@0.0.6
+975 silly currentTree ├── asap@2.0.5
+975 silly currentTree ├── async@1.5.2
+975 silly currentTree ├── backo2@1.0.2
+975 silly currentTree ├── balanced-match@0.4.2
+975 silly currentTree ├── base64-arraybuffer@0.1.5
+975 silly currentTree ├── base64id@1.0.0
+975 silly currentTree ├── basic-auth@1.0.4
+975 silly currentTree ├── better-assert@1.0.2
+975 silly currentTree ├── blob@0.0.4
+975 silly currentTree ├── bluebird@2.10.2
+975 silly currentTree ├── body-parser@1.15.2
+975 silly currentTree ├── brace-expansion@1.1.6
+975 silly currentTree ├── bson@1.0.4
+975 silly currentTree ├── buffer-shims@1.0.0
+975 silly currentTree ├── bytes@2.4.0
+975 silly currentTree ├── callsite@1.0.0
+975 silly currentTree ├── camelcase@1.2.1
+975 silly currentTree ├── center-align@0.1.3
+975 silly currentTree ├─┬ cliui@2.1.0
+975 silly currentTree │ └── wordwrap@0.0.2
+975 silly currentTree ├── component-bind@1.0.0
+975 silly currentTree ├── component-emitter@1.1.2
+975 silly currentTree ├── component-inherit@0.0.3
+975 silly currentTree ├── concat-map@0.0.1
+975 silly currentTree ├── content-disposition@0.5.1
+975 silly currentTree ├── content-type@1.0.2
+975 silly currentTree ├── cookie-parser@1.4.3
+975 silly currentTree ├── cookie-signature@1.0.6
+975 silly currentTree ├── cookie@0.3.1
+975 silly currentTree ├── core-util-is@1.0.2
+975 silly currentTree ├── crypto@0.0.3
+975 silly currentTree ├── debug@2.2.0
+975 silly currentTree ├── decamelize@1.2.0
+975 silly currentTree ├── define-properties@1.1.2
+975 silly currentTree ├── depd@1.1.0
+975 silly currentTree ├── destroy@1.0.4
+975 silly currentTree ├── ee-first@1.1.1
+975 silly currentTree ├── encodeurl@1.0.1
+975 silly currentTree ├─┬ engine.io-client@1.8.2
+975 silly currentTree │ ├── component-emitter@1.2.1
+975 silly currentTree │ ├── debug@2.3.3
+975 silly currentTree │ └── ms@0.7.2
+975 silly currentTree ├── engine.io-parser@1.3.2
+975 silly currentTree ├─┬ engine.io@1.8.2
+975 silly currentTree │ ├── debug@2.3.3
+975 silly currentTree │ └── ms@0.7.2
+975 silly currentTree ├── errorhandler@1.5.0
+975 silly currentTree ├── es6-promise@3.2.1
+975 silly currentTree ├── escape-html@1.0.3
+975 silly currentTree ├── etag@1.7.0
+975 silly currentTree ├── express-handlebars@3.0.0
+975 silly currentTree ├── express@4.14.0
+975 silly currentTree ├── finalhandler@0.5.0
+975 silly currentTree ├── foreach@2.0.5
+975 silly currentTree ├── forwarded@0.1.0
+975 silly currentTree ├── fresh@0.3.0
+975 silly currentTree ├── function-bind@1.1.0
+975 silly currentTree ├── glob@6.0.4
+975 silly currentTree ├── graceful-fs@4.1.11
+975 silly currentTree ├── handlebars@4.0.6
+975 silly currentTree ├─┬ has-binary@0.1.7
+975 silly currentTree │ └── isarray@0.0.1
+975 silly currentTree ├── has-cors@1.1.0
+975 silly currentTree ├── hooks-fixed@1.2.0
+975 silly currentTree ├── http-errors@1.5.1
+975 silly currentTree ├── iconv-lite@0.4.13
+975 silly currentTree ├── indexof@0.0.1
+975 silly currentTree ├── inflight@1.0.6
+975 silly currentTree ├── inherits@2.0.3
+975 silly currentTree ├── ipaddr.js@1.2.0
+975 silly currentTree ├── is-buffer@1.1.4
+975 silly currentTree ├── isarray@1.0.0
+975 silly currentTree ├── json3@3.3.2
+975 silly currentTree ├── kareem@1.2.0
+975 silly currentTree ├── kind-of@3.1.0
+975 silly currentTree ├── lazy-cache@1.0.4
+975 silly currentTree ├── lodash@4.17.4
+975 silly currentTree ├── longest@1.0.1
+975 silly currentTree ├── media-typer@0.3.0
+975 silly currentTree ├── merge-descriptors@1.0.1
+975 silly currentTree ├─┬ method-override@2.3.7
+975 silly currentTree │ ├── debug@2.3.3
+975 silly currentTree │ └── ms@0.7.2
+975 silly currentTree ├── methods@1.1.2
+975 silly currentTree ├── mime-db@1.26.0
+975 silly currentTree ├── mime-types@2.1.14
+975 silly currentTree ├── mime@1.3.4
+975 silly currentTree ├── minimatch@3.0.3
+975 silly currentTree ├── minimist@0.0.10
+975 silly currentTree ├── mongodb-core@2.1.6
+975 silly currentTree ├── mongodb@2.2.21
+975 silly currentTree ├── morgan@1.7.0
+975 silly currentTree ├── mpath@0.2.1
+975 silly currentTree ├── mpromise@0.5.5
+975 silly currentTree ├─┬ mquery@2.0.0
+975 silly currentTree │ └── sliced@0.0.5
+975 silly currentTree ├── ms@0.7.1
+975 silly currentTree ├── muri@1.1.1
+975 silly currentTree ├── negotiator@0.6.1
+975 silly currentTree ├── object-assign@4.1.0
+975 silly currentTree ├── object-component@0.0.3
+975 silly currentTree ├── object-keys@1.0.11
+975 silly currentTree ├── object.assign@4.0.4
+975 silly currentTree ├── on-finished@2.3.0
+975 silly currentTree ├── on-headers@1.0.1
+975 silly currentTree ├── once@1.4.0
+975 silly currentTree ├── optimist@0.6.1
+975 silly currentTree ├── options@0.0.6
+975 silly currentTree ├── parsejson@0.0.3
+975 silly currentTree ├── parseqs@0.0.5
+975 silly currentTree ├── parseuri@0.0.5
+975 silly currentTree ├── parseurl@1.3.1
+975 silly currentTree ├── path-is-absolute@1.0.1
+975 silly currentTree ├── path-to-regexp@0.1.7
+975 silly currentTree ├── process-nextick-args@1.0.7
+975 silly currentTree ├── promise@7.1.1
+975 silly currentTree ├── proxy-addr@1.1.3
+975 silly currentTree ├── qs@6.2.0
+975 silly currentTree ├── range-parser@1.2.0
+975 silly currentTree ├── raw-body@2.1.7
+975 silly currentTree ├── readable-stream@2.1.5
+975 silly currentTree ├── regexp-clone@0.0.1
+975 silly currentTree ├── repeat-string@1.6.1
+975 silly currentTree ├── require_optional@1.0.0
+975 silly currentTree ├── resolve-from@2.0.0
+975 silly currentTree ├── right-align@0.1.3
+975 silly currentTree ├── semver@5.3.0
+975 silly currentTree ├── send@0.14.1
+975 silly currentTree ├── serve-static@1.11.1
+975 silly currentTree ├── setprototypeof@1.0.2
+975 silly currentTree ├── sliced@1.0.1
+975 silly currentTree ├─┬ socket.io-adapter@0.5.0
+975 silly currentTree │ ├── debug@2.3.3
+975 silly currentTree │ └── ms@0.7.2
+975 silly currentTree ├─┬ socket.io-client@1.7.2
+975 silly currentTree │ ├── component-emitter@1.2.1
+975 silly currentTree │ ├── debug@2.3.3
+975 silly currentTree │ └── ms@0.7.2
+975 silly currentTree ├─┬ socket.io-parser@2.3.1
+975 silly currentTree │ └── isarray@0.0.1
+975 silly currentTree ├── source-map@0.4.4
+975 silly currentTree ├── statuses@1.3.1
+975 silly currentTree ├── string_decoder@0.10.31
+975 silly currentTree ├── to-array@0.1.4
+975 silly currentTree ├── type-is@1.6.14
+975 silly currentTree ├─┬ uglify-js@2.7.5
+975 silly currentTree │ ├── async@0.2.10
+975 silly currentTree │ └── source-map@0.5.6
+975 silly currentTree ├── uglify-to-browserify@1.0.2
+975 silly currentTree ├── ultron@1.0.2
+975 silly currentTree ├── unpipe@1.0.0
+975 silly currentTree ├── util-deprecate@1.0.2
+975 silly currentTree ├── utils-merge@1.0.0
+975 silly currentTree ├── vary@1.1.0
+975 silly currentTree ├── window-size@0.1.0
+975 silly currentTree ├── wordwrap@0.0.3
+975 silly currentTree ├── wrappy@1.0.2
+975 silly currentTree ├── ws@1.1.1
+975 silly currentTree ├── wtf-8@1.0.0
+975 silly currentTree ├── xmlhttprequest-ssl@1.5.3
+975 silly currentTree ├── yargs@3.10.0
+975 silly currentTree └── yeast@0.1.2
+976 silly idealTree timerv4@1.0.0
+976 silly idealTree ├── accepts@1.3.3
+976 silly idealTree ├── after@0.8.2
+976 silly idealTree ├── align-text@0.1.4
+976 silly idealTree ├── amdefine@1.0.1
+976 silly idealTree ├── array-flatten@1.1.1
+976 silly idealTree ├── arraybuffer.slice@0.0.6
+976 silly idealTree ├── asap@2.0.5
+976 silly idealTree ├── async@1.5.2
+976 silly idealTree ├── backo2@1.0.2
+976 silly idealTree ├── balanced-match@0.4.2
+976 silly idealTree ├── base64-arraybuffer@0.1.5
+976 silly idealTree ├── base64id@1.0.0
+976 silly idealTree ├── basic-auth@1.0.4
+976 silly idealTree ├── better-assert@1.0.2
+976 silly idealTree ├── blob@0.0.4
+976 silly idealTree ├── bluebird@2.10.2
+976 silly idealTree ├── body-parser@1.15.2
+976 silly idealTree ├── brace-expansion@1.1.6
+976 silly idealTree ├── bson@1.0.4
+976 silly idealTree ├── buffer-shims@1.0.0
+976 silly idealTree ├── bytes@2.4.0
+976 silly idealTree ├── callsite@1.0.0
+976 silly idealTree ├── camelcase@1.2.1
+976 silly idealTree ├── center-align@0.1.3
+976 silly idealTree ├─┬ cliui@2.1.0
+976 silly idealTree │ └── wordwrap@0.0.2
+976 silly idealTree ├── component-bind@1.0.0
+976 silly idealTree ├── component-emitter@1.1.2
+976 silly idealTree ├── component-inherit@0.0.3
+976 silly idealTree ├── concat-map@0.0.1
+976 silly idealTree ├── content-disposition@0.5.1
+976 silly idealTree ├── content-type@1.0.2
+976 silly idealTree ├── cookie-parser@1.4.3
+976 silly idealTree ├── cookie-signature@1.0.6
+976 silly idealTree ├── cookie@0.3.1
+976 silly idealTree ├── core-util-is@1.0.2
+976 silly idealTree ├── crypto@0.0.3
+976 silly idealTree ├── debug@2.2.0
+976 silly idealTree ├── decamelize@1.2.0
+976 silly idealTree ├── define-properties@1.1.2
+976 silly idealTree ├── depd@1.1.0
+976 silly idealTree ├── destroy@1.0.4
+976 silly idealTree ├── ee-first@1.1.1
+976 silly idealTree ├── encodeurl@1.0.1
+976 silly idealTree ├─┬ engine.io-client@1.8.2
+976 silly idealTree │ ├── component-emitter@1.2.1
+976 silly idealTree │ ├── debug@2.3.3
+976 silly idealTree │ └── ms@0.7.2
+976 silly idealTree ├── engine.io-parser@1.3.2
+976 silly idealTree ├─┬ engine.io@1.8.2
+976 silly idealTree │ ├── debug@2.3.3
+976 silly idealTree │ └── ms@0.7.2
+976 silly idealTree ├── errorhandler@1.5.0
+976 silly idealTree ├── es6-promise@3.2.1
+976 silly idealTree ├── escape-html@1.0.3
+976 silly idealTree ├── etag@1.7.0
+976 silly idealTree ├── express-handlebars@3.0.0
+976 silly idealTree ├── express@4.14.0
+976 silly idealTree ├── finalhandler@0.5.0
+976 silly idealTree ├── foreach@2.0.5
+976 silly idealTree ├── forwarded@0.1.0
+976 silly idealTree ├── fresh@0.3.0
+976 silly idealTree ├── function-bind@1.1.0
+976 silly idealTree ├── glob@6.0.4
+976 silly idealTree ├── graceful-fs@4.1.11
+976 silly idealTree ├── handlebars@4.0.6
+976 silly idealTree ├─┬ has-binary@0.1.7
+976 silly idealTree │ └── isarray@0.0.1
+976 silly idealTree ├── has-cors@1.1.0
+976 silly idealTree ├── hooks-fixed@1.2.0
+976 silly idealTree ├── http-errors@1.5.1
+976 silly idealTree ├── iconv-lite@0.4.13
+976 silly idealTree ├── indexof@0.0.1
+976 silly idealTree ├── inflight@1.0.6
+976 silly idealTree ├── inherits@2.0.3
+976 silly idealTree ├── ipaddr.js@1.2.0
+976 silly idealTree ├── is-buffer@1.1.4
+976 silly idealTree ├── isarray@1.0.0
+976 silly idealTree ├── json3@3.3.2
+976 silly idealTree ├── kareem@1.2.0
+976 silly idealTree ├── kind-of@3.1.0
+976 silly idealTree ├── lazy-cache@1.0.4
+976 silly idealTree ├── lodash@4.17.4
+976 silly idealTree ├── longest@1.0.1
+976 silly idealTree ├── media-typer@0.3.0
+976 silly idealTree ├── merge-descriptors@1.0.1
+976 silly idealTree ├─┬ method-override@2.3.7
+976 silly idealTree │ ├── debug@2.3.3
+976 silly idealTree │ └── ms@0.7.2
+976 silly idealTree ├── methods@1.1.2
+976 silly idealTree ├── mime-db@1.26.0
+976 silly idealTree ├── mime-types@2.1.14
+976 silly idealTree ├── mime@1.3.4
+976 silly idealTree ├── minimatch@3.0.3
+976 silly idealTree ├── minimist@0.0.10
+976 silly idealTree ├── mongodb-core@2.1.6
+976 silly idealTree ├── mongodb@2.2.21
+976 silly idealTree ├─┬ mongoose@4.7.7
+976 silly idealTree │ ├── async@2.1.4
+976 silly idealTree │ └── ms@0.7.2
+976 silly idealTree ├── morgan@1.7.0
+976 silly idealTree ├── mpath@0.2.1
+976 silly idealTree ├── mpromise@0.5.5
+976 silly idealTree ├─┬ mquery@2.0.0
+976 silly idealTree │ └── sliced@0.0.5
+976 silly idealTree ├── ms@0.7.1
+976 silly idealTree ├── muri@1.1.1
+976 silly idealTree ├── negotiator@0.6.1
+976 silly idealTree ├── object-assign@4.1.0
+976 silly idealTree ├── object-component@0.0.3
+976 silly idealTree ├── object-keys@1.0.11
+976 silly idealTree ├── object.assign@4.0.4
+976 silly idealTree ├── on-finished@2.3.0
+976 silly idealTree ├── on-headers@1.0.1
+976 silly idealTree ├── once@1.4.0
+976 silly idealTree ├── optimist@0.6.1
+976 silly idealTree ├── options@0.0.6
+976 silly idealTree ├── parsejson@0.0.3
+976 silly idealTree ├── parseqs@0.0.5
+976 silly idealTree ├── parseuri@0.0.5
+976 silly idealTree ├── parseurl@1.3.1
+976 silly idealTree ├── path-is-absolute@1.0.1
+976 silly idealTree ├── path-to-regexp@0.1.7
+976 silly idealTree ├── process-nextick-args@1.0.7
+976 silly idealTree ├── promise@7.1.1
+976 silly idealTree ├── proxy-addr@1.1.3
+976 silly idealTree ├── qs@6.2.0
+976 silly idealTree ├── range-parser@1.2.0
+976 silly idealTree ├── raw-body@2.1.7
+976 silly idealTree ├── readable-stream@2.1.5
+976 silly idealTree ├── regexp-clone@0.0.1
+976 silly idealTree ├── repeat-string@1.6.1
+976 silly idealTree ├── require_optional@1.0.0
+976 silly idealTree ├── resolve-from@2.0.0
+976 silly idealTree ├── right-align@0.1.3
+976 silly idealTree ├── semver@5.3.0
+976 silly idealTree ├── send@0.14.1
+976 silly idealTree ├── serve-static@1.11.1
+976 silly idealTree ├── setprototypeof@1.0.2
+976 silly idealTree ├── sliced@1.0.1
+976 silly idealTree ├─┬ socket.io-adapter@0.5.0
+976 silly idealTree │ ├── debug@2.3.3
+976 silly idealTree │ └── ms@0.7.2
+976 silly idealTree ├─┬ socket.io-client@1.7.2
+976 silly idealTree │ ├── component-emitter@1.2.1
+976 silly idealTree │ ├── debug@2.3.3
+976 silly idealTree │ └── ms@0.7.2
+976 silly idealTree ├─┬ socket.io-parser@2.3.1
+976 silly idealTree │ └── isarray@0.0.1
+976 silly idealTree ├─┬ socket.io@1.7.2
+976 silly idealTree │ ├── debug@2.3.3
+976 silly idealTree │ └── ms@0.7.2
+976 silly idealTree ├── source-map@0.4.4
+976 silly idealTree ├── statuses@1.3.1
+976 silly idealTree ├── string_decoder@0.10.31
+976 silly idealTree ├── to-array@0.1.4
+976 silly idealTree ├── type-is@1.6.14
+976 silly idealTree ├─┬ uglify-js@2.7.5
+976 silly idealTree │ ├── async@0.2.10
+976 silly idealTree │ └── source-map@0.5.6
+976 silly idealTree ├── uglify-to-browserify@1.0.2
+976 silly idealTree ├── ultron@1.0.2
+976 silly idealTree ├── unpipe@1.0.0
+976 silly idealTree ├── util-deprecate@1.0.2
+976 silly idealTree ├── utils-merge@1.0.0
+976 silly idealTree ├── vary@1.1.0
+976 silly idealTree ├── window-size@0.1.0
+976 silly idealTree ├── wordwrap@0.0.3
+976 silly idealTree ├── wrappy@1.0.2
+976 silly idealTree ├── ws@1.1.1
+976 silly idealTree ├── wtf-8@1.0.0
+976 silly idealTree ├── xmlhttprequest-ssl@1.5.3
+976 silly idealTree ├── yargs@3.10.0
+976 silly idealTree └── yeast@0.1.2
+977 silly generateActionsToTake Starting
+978 silly install generateActionsToTake
+979 silly generateActionsToTake Finishing
+980 silly diffTrees action count 12
+981 silly diffTrees add async@2.1.4
+982 silly diffTrees add ms@0.7.2
+983 silly diffTrees add mongoose@4.7.7
+984 silly diffTrees add ms@0.7.2
+985 silly diffTrees add debug@2.3.3
+986 silly diffTrees add socket.io@1.7.2
+987 silly diffTrees update body-parser@1.15.2
+988 silly diffTrees update cookie-parser@1.4.3
+989 silly diffTrees update errorhandler@1.5.0
+990 silly diffTrees update express-handlebars@3.0.0
+991 silly diffTrees update method-override@2.3.7
+992 silly diffTrees update morgan@1.7.0
+993 silly decomposeActions action count 96
+994 silly decomposeActions fetch async@2.1.4
+995 silly decomposeActions extract async@2.1.4
+996 silly decomposeActions test async@2.1.4
+997 silly decomposeActions preinstall async@2.1.4
+998 silly decomposeActions build async@2.1.4
+999 silly decomposeActions install async@2.1.4
+1000 silly decomposeActions postinstall async@2.1.4
+1001 silly decomposeActions finalize async@2.1.4
+1002 silly decomposeActions fetch ms@0.7.2
+1003 silly decomposeActions extract ms@0.7.2
+1004 silly decomposeActions test ms@0.7.2
+1005 silly decomposeActions preinstall ms@0.7.2
+1006 silly decomposeActions build ms@0.7.2
+1007 silly decomposeActions install ms@0.7.2
+1008 silly decomposeActions postinstall ms@0.7.2
+1009 silly decomposeActions finalize ms@0.7.2
+1010 silly decomposeActions fetch mongoose@4.7.7
+1011 silly decomposeActions extract mongoose@4.7.7
+1012 silly decomposeActions test mongoose@4.7.7
+1013 silly decomposeActions preinstall mongoose@4.7.7
+1014 silly decomposeActions build mongoose@4.7.7
+1015 silly decomposeActions install mongoose@4.7.7
+1016 silly decomposeActions postinstall mongoose@4.7.7
+1017 silly decomposeActions finalize mongoose@4.7.7
+1018 silly decomposeActions fetch ms@0.7.2
+1019 silly decomposeActions extract ms@0.7.2
+1020 silly decomposeActions test ms@0.7.2
+1021 silly decomposeActions preinstall ms@0.7.2
+1022 silly decomposeActions build ms@0.7.2
+1023 silly decomposeActions install ms@0.7.2
+1024 silly decomposeActions postinstall ms@0.7.2
+1025 silly decomposeActions finalize ms@0.7.2
+1026 silly decomposeActions fetch debug@2.3.3
+1027 silly decomposeActions extract debug@2.3.3
+1028 silly decomposeActions test debug@2.3.3
+1029 silly decomposeActions preinstall debug@2.3.3
+1030 silly decomposeActions build debug@2.3.3
+1031 silly decomposeActions install debug@2.3.3
+1032 silly decomposeActions postinstall debug@2.3.3
+1033 silly decomposeActions finalize debug@2.3.3
+1034 silly decomposeActions fetch socket.io@1.7.2
+1035 silly decomposeActions extract socket.io@1.7.2
+1036 silly decomposeActions test socket.io@1.7.2
+1037 silly decomposeActions preinstall socket.io@1.7.2
+1038 silly decomposeActions build socket.io@1.7.2
+1039 silly decomposeActions install socket.io@1.7.2
+1040 silly decomposeActions postinstall socket.io@1.7.2
+1041 silly decomposeActions finalize socket.io@1.7.2
+1042 silly decomposeActions fetch body-parser@1.15.2
+1043 silly decomposeActions extract body-parser@1.15.2
+1044 silly decomposeActions test body-parser@1.15.2
+1045 silly decomposeActions preinstall body-parser@1.15.2
+1046 silly decomposeActions build body-parser@1.15.2
+1047 silly decomposeActions install body-parser@1.15.2
+1048 silly decomposeActions postinstall body-parser@1.15.2
+1049 silly decomposeActions finalize body-parser@1.15.2
+1050 silly decomposeActions fetch cookie-parser@1.4.3
+1051 silly decomposeActions extract cookie-parser@1.4.3
+1052 silly decomposeActions test cookie-parser@1.4.3
+1053 silly decomposeActions preinstall cookie-parser@1.4.3
+1054 silly decomposeActions build cookie-parser@1.4.3
+1055 silly decomposeActions install cookie-parser@1.4.3
+1056 silly decomposeActions postinstall cookie-parser@1.4.3
+1057 silly decomposeActions finalize cookie-parser@1.4.3
+1058 silly decomposeActions fetch errorhandler@1.5.0
+1059 silly decomposeActions extract errorhandler@1.5.0
+1060 silly decomposeActions test errorhandler@1.5.0
+1061 silly decomposeActions preinstall errorhandler@1.5.0
+1062 silly decomposeActions build errorhandler@1.5.0
+1063 silly decomposeActions install errorhandler@1.5.0
+1064 silly decomposeActions postinstall errorhandler@1.5.0
+1065 silly decomposeActions finalize errorhandler@1.5.0
+1066 silly decomposeActions fetch express-handlebars@3.0.0
+1067 silly decomposeActions extract express-handlebars@3.0.0
+1068 silly decomposeActions test express-handlebars@3.0.0
+1069 silly decomposeActions preinstall express-handlebars@3.0.0
+1070 silly decomposeActions build express-handlebars@3.0.0
+1071 silly decomposeActions install express-handlebars@3.0.0
+1072 silly decomposeActions postinstall express-handlebars@3.0.0
+1073 silly decomposeActions finalize express-handlebars@3.0.0
+1074 silly decomposeActions fetch method-override@2.3.7
+1075 silly decomposeActions extract method-override@2.3.7
+1076 silly decomposeActions test method-override@2.3.7
+1077 silly decomposeActions preinstall method-override@2.3.7
+1078 silly decomposeActions build method-override@2.3.7
+1079 silly decomposeActions install method-override@2.3.7
+1080 silly decomposeActions postinstall method-override@2.3.7
+1081 silly decomposeActions finalize method-override@2.3.7
+1082 silly decomposeActions fetch morgan@1.7.0
+1083 silly decomposeActions extract morgan@1.7.0
+1084 silly decomposeActions test morgan@1.7.0
+1085 silly decomposeActions preinstall morgan@1.7.0
+1086 silly decomposeActions build morgan@1.7.0
+1087 silly decomposeActions install morgan@1.7.0
+1088 silly decomposeActions postinstall morgan@1.7.0
+1089 silly decomposeActions finalize morgan@1.7.0
+1090 silly executeActions Starting
+1091 silly install executeActions
+1092 silly doSerial global-install 0
+1093 silly doParallel fetch 12
+1094 verbose correctMkdir /Users/fareise/.npm/_locks correctMkdir not in flight; initializing
+1095 verbose lock using /Users/fareise/.npm/_locks/staging-9903fb4647022919.lock for /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging
+1096 silly doParallel extract 12
+1097 silly extract async@2.1.4
+1098 silly extract ms@0.7.2
+1099 silly extract mongoose@4.7.7
+1100 silly extract ms@0.7.2
+1101 silly extract debug@2.3.3
+1102 silly extract socket.io@1.7.2
+1103 silly extract body-parser@1.15.2
+1104 silly extract cookie-parser@1.4.3
+1105 silly extract errorhandler@1.5.0
+1106 silly extract express-handlebars@3.0.0
+1107 silly extract method-override@2.3.7
+1108 silly extract morgan@1.7.0
+1109 verbose unbuild node_modules/.staging/async-bae5ed20
+1110 verbose unbuild node_modules/.staging/ms-94916e86
+1111 verbose unbuild node_modules/.staging/mongoose-1c8f8e69
+1112 verbose unbuild node_modules/.staging/debug-bc4b0c81
+1113 verbose unbuild node_modules/.staging/ms-038463eb
+1114 verbose unbuild node_modules/.staging/socket.io-84a36d21
+1115 verbose unbuild node_modules/.staging/errorhandler-1b3643b1
+1116 verbose unbuild node_modules/.staging/body-parser-66210bfc
+1117 verbose unbuild node_modules/.staging/cookie-parser-e78718ba
+1118 verbose unbuild node_modules/.staging/express-handlebars-453eacdd
+1119 verbose unbuild node_modules/.staging/method-override-af029e66
+1120 verbose unbuild node_modules/.staging/morgan-52d1bfdb
+1121 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20 is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1122 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20
+1123 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86 is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1124 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86
+1125 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69 is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1126 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69
+1127 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81 is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1128 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81
+1129 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1130 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb
+1131 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21 is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1132 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21
+1133 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1 is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1134 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1
+1135 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1136 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc
+1137 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1138 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba
+1139 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1140 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd
+1141 verbose tar unpack /Users/fareise/.npm/async/2.1.4/package.tgz
+1142 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20
+1143 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20 is being purged
+1144 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20
+1145 verbose tar unpack /Users/fareise/.npm/ms/0.7.2/package.tgz
+1146 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86
+1147 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86 is being purged
+1148 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86
+1149 verbose tar unpack /Users/fareise/.npm/mongoose/4.7.7/package.tgz
+1150 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69
+1151 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69 is being purged
+1152 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69
+1153 verbose tar unpack /Users/fareise/.npm/debug/2.3.3/package.tgz
+1154 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81
+1155 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81 is being purged
+1156 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81
+1157 verbose tar unpack /Users/fareise/.npm/ms/0.7.2/package.tgz
+1158 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb
+1159 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb is being purged
+1160 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb
+1161 verbose tar unpack /Users/fareise/.npm/socket.io/1.7.2/package.tgz
+1162 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21
+1163 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21 is being purged
+1164 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21
+1165 verbose tar unpack /Users/fareise/.npm/errorhandler/1.5.0/package.tgz
+1166 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1
+1167 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1 is being purged
+1168 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1
+1169 verbose tar unpack /Users/fareise/.npm/body-parser/1.15.2/package.tgz
+1170 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc
+1171 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc is being purged
+1172 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc
+1173 verbose tar unpack /Users/fareise/.npm/cookie-parser/1.4.3/package.tgz
+1174 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba
+1175 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba is being purged
+1176 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba
+1177 verbose tar unpack /Users/fareise/.npm/express-handlebars/3.0.0/package.tgz
+1178 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd
+1179 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd is being purged
+1180 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd
+1181 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66 is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1182 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66
+1183 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb is being purged from base /Users/fareise/Desktop/留学生外包/timerV4
+1184 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb
+1185 silly gunzTarPerm modes [ '755', '644' ]
+1186 silly gunzTarPerm modes [ '755', '644' ]
+1187 silly gunzTarPerm modes [ '755', '644' ]
+1188 silly gunzTarPerm modes [ '755', '644' ]
+1189 silly gunzTarPerm modes [ '755', '644' ]
+1190 silly gunzTarPerm modes [ '755', '644' ]
+1191 silly gunzTarPerm modes [ '755', '644' ]
+1192 silly gunzTarPerm modes [ '755', '644' ]
+1193 silly gunzTarPerm modes [ '755', '644' ]
+1194 silly gunzTarPerm modes [ '755', '644' ]
+1195 verbose tar unpack /Users/fareise/.npm/method-override/2.3.7/package.tgz
+1196 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66
+1197 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66 is being purged
+1198 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66
+1199 verbose tar unpack /Users/fareise/.npm/morgan/1.7.0/package.tgz
+1200 verbose tar unpacking to /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb
+1201 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb is being purged
+1202 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb
+1203 silly gunzTarPerm modes [ '755', '644' ]
+1204 silly gunzTarPerm modes [ '755', '644' ]
+1205 silly gunzTarPerm extractEntry package.json
+1206 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1207 silly gunzTarPerm extractEntry package.json
+1208 silly gunzTarPerm extractEntry package.json
+1209 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1210 silly gunzTarPerm extractEntry package.json
+1211 silly gunzTarPerm extractEntry package.json
+1212 silly gunzTarPerm extractEntry package.json
+1213 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1214 silly gunzTarPerm extractEntry package.json
+1215 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+1216 silly gunzTarPerm extractEntry package.json
+1217 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+1218 silly gunzTarPerm extractEntry package.json
+1219 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+1220 silly gunzTarPerm extractEntry package.json
+1221 silly gunzTarPerm extractEntry package.json
+1222 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+1223 silly gunzTarPerm extractEntry package.json
+1224 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+1225 silly gunzTarPerm extractEntry README.md
+1226 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+1227 silly gunzTarPerm extractEntry LICENSE
+1228 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+1229 silly gunzTarPerm extractEntry README.md
+1230 silly gunzTarPerm extractEntry index.js
+1231 silly gunzTarPerm extractEntry .npmignore
+1232 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+1233 silly gunzTarPerm extractEntry README.md
+1234 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+1235 silly gunzTarPerm extractEntry .npmignore
+1236 silly gunzTarPerm extractEntry LICENSE
+1237 silly gunzTarPerm extractEntry README.md
+1238 silly gunzTarPerm extractEntry index.js
+1239 silly gunzTarPerm extractEntry LICENSE
+1240 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+1241 silly gunzTarPerm extractEntry Readme.md
+1242 silly gunzTarPerm modified mode [ 'Readme.md', 436, 420 ]
+1243 silly gunzTarPerm extractEntry README.md
+1244 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+1245 silly gunzTarPerm extractEntry LICENSE
+1246 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+1247 silly gunzTarPerm extractEntry README.md
+1248 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+1249 silly gunzTarPerm extractEntry LICENSE
+1250 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+1251 silly gunzTarPerm extractEntry index.js
+1252 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+1253 silly gunzTarPerm extractEntry HISTORY.md
+1254 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+1255 silly gunzTarPerm extractEntry lib/read.js
+1256 silly gunzTarPerm modified mode [ 'lib/read.js', 438, 420 ]
+1257 silly gunzTarPerm extractEntry lib/types/json.js
+1258 silly gunzTarPerm modified mode [ 'lib/types/json.js', 438, 420 ]
+1259 silly gunzTarPerm extractEntry lib/types/raw.js
+1260 silly gunzTarPerm modified mode [ 'lib/types/raw.js', 438, 420 ]
+1261 silly gunzTarPerm extractEntry lib/types/text.js
+1262 silly gunzTarPerm modified mode [ 'lib/types/text.js', 438, 420 ]
+1263 silly gunzTarPerm extractEntry lib/types/urlencoded.js
+1264 silly gunzTarPerm modified mode [ 'lib/types/urlencoded.js', 438, 420 ]
+1265 silly gunzTarPerm extractEntry README.md
+1266 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+1267 silly gunzTarPerm extractEntry LICENSE
+1268 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+1269 silly gunzTarPerm extractEntry .npmignore
+1270 silly gunzTarPerm extractEntry README.md
+1271 silly gunzTarPerm extractEntry README.md
+1272 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+1273 silly gunzTarPerm extractEntry LICENSE
+1274 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+1275 silly gunzTarPerm extractEntry README.md
+1276 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+1277 silly gunzTarPerm extractEntry LICENSE
+1278 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+1279 silly gunzTarPerm extractEntry LICENSE.md
+1280 silly gunzTarPerm extractEntry eachSeries.js
+1281 silly gunzTarPerm modified mode [ 'eachSeries.js', 436, 420 ]
+1282 silly gunzTarPerm extractEntry filterSeries.js
+1283 silly gunzTarPerm modified mode [ 'filterSeries.js', 436, 420 ]
+1284 silly gunzTarPerm extractEntry website.js
+1285 silly gunzTarPerm modified mode [ 'website.js', 436, 420 ]
+1286 silly gunzTarPerm extractEntry lib/client.js
+1287 silly gunzTarPerm modified mode [ 'lib/client.js', 436, 420 ]
+1288 silly gunzTarPerm extractEntry node.js
+1289 silly gunzTarPerm extractEntry index.js
+1290 silly gunzTarPerm extractEntry LICENSE.md
+1291 silly gunzTarPerm extractEntry index.js
+1292 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+1293 silly gunzTarPerm extractEntry HISTORY.md
+1294 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+1295 silly gunzTarPerm extractEntry index.js
+1296 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+1297 silly gunzTarPerm extractEntry HISTORY.md
+1298 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+1299 silly gunzTarPerm extractEntry index.js
+1300 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+1301 silly gunzTarPerm extractEntry LICENSE
+1302 silly gunzTarPerm extractEntry index.js
+1303 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+1304 silly gunzTarPerm extractEntry HISTORY.md
+1305 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+1306 silly gunzTarPerm extractEntry index.js
+1307 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+1308 silly gunzTarPerm extractEntry HISTORY.md
+1309 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+1310 silly gunzTarPerm extractEntry static.js
+1311 silly gunzTarPerm modified mode [ 'static.js', 436, 420 ]
+1312 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1313 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+1314 silly gunzTarPerm extractEntry debug.js
+1315 silly gunzTarPerm extractEntry browser.js
+1316 silly gunzTarPerm extractEntry bower.json
+1317 silly gunzTarPerm extractEntry .jshintrc
+1318 silly gunzTarPerm extractEntry component.json
+1319 silly gunzTarPerm extractEntry Readme.md
+1320 silly gunzTarPerm extractEntry Makefile
+1321 silly gunzTarPerm extractEntry CHANGELOG.md
+1322 silly gunzTarPerm extractEntry index.js
+1323 silly gunzTarPerm extractEntry HISTORY.md
+1324 silly gunzTarPerm extractEntry .idea/.name
+1325 silly gunzTarPerm extractEntry forever.js
+1326 silly gunzTarPerm modified mode [ 'forever.js', 436, 420 ]
+1327 silly gunzTarPerm extractEntry eachOfSeries.js
+1328 silly gunzTarPerm modified mode [ 'eachOfSeries.js', 436, 420 ]
+1329 silly gunzTarPerm extractEntry public/error.html
+1330 silly gunzTarPerm modified mode [ 'public/error.html', 438, 420 ]
+1331 silly gunzTarPerm extractEntry lib/index.js
+1332 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+1333 silly gunzTarPerm extractEntry lib/namespace.js
+1334 silly gunzTarPerm modified mode [ 'lib/namespace.js', 436, 420 ]
+1335 silly gunzTarPerm extractEntry .idea/encodings.xml
+1336 silly gunzTarPerm extractEntry History.md
+1337 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+1338 silly gunzTarPerm extractEntry .eslintrc.yml
+1339 silly gunzTarPerm modified mode [ '.eslintrc.yml', 436, 420 ]
+1340 silly gunzTarPerm extractEntry lib/socket.js
+1341 silly gunzTarPerm modified mode [ 'lib/socket.js', 436, 420 ]
+1342 silly gunzTarPerm extractEntry History.md
+1343 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+1344 silly gunzTarPerm extractEntry filterLimit.js
+1345 silly gunzTarPerm modified mode [ 'filterLimit.js', 436, 420 ]
+1346 silly gunzTarPerm extractEntry public/style.css
+1347 silly gunzTarPerm modified mode [ 'public/style.css', 438, 420 ]
+1348 silly gunzTarPerm extractEntry map.js
+1349 silly gunzTarPerm modified mode [ 'map.js', 436, 420 ]
+1350 silly gunzTarPerm extractEntry .idea/express-handlebars.iml
+1351 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+1352 silly gunzTarPerm extractEntry .eslintignore
+1353 silly gunzTarPerm modified mode [ '.eslintignore', 436, 420 ]
+1354 silly gunzTarPerm extractEntry examples/README.md
+1355 silly gunzTarPerm modified mode [ 'examples/README.md', 436, 420 ]
+1356 silly gunzTarPerm extractEntry mapLimit.js
+1357 silly gunzTarPerm modified mode [ 'mapLimit.js', 436, 420 ]
+1358 silly gunzTarPerm extractEntry mapSeries.js
+1359 silly gunzTarPerm modified mode [ 'mapSeries.js', 436, 420 ]
+1360 silly gunzTarPerm extractEntry .idea/libraries/express_handlebars_node_modules.xml
+1361 silly gunzTarPerm extractEntry .idea/misc.xml
+1362 silly gunzTarPerm extractEntry examples/doc-methods.js
+1363 silly gunzTarPerm modified mode [ 'examples/doc-methods.js', 436, 420 ]
+1364 silly gunzTarPerm extractEntry examples/statics/person.js
+1365 silly gunzTarPerm modified mode [ 'examples/statics/person.js', 436, 420 ]
+1366 silly gunzTarPerm extractEntry mapValues.js
+1367 silly gunzTarPerm modified mode [ 'mapValues.js', 436, 420 ]
+1368 silly gunzTarPerm extractEntry filter.js
+1369 silly gunzTarPerm modified mode [ 'filter.js', 436, 420 ]
+1370 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86/node_modules is being purged
+1371 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86/node_modules
+1372 silly gunzTarPerm extractEntry .idea/modules.xml
+1373 silly gunzTarPerm extractEntry .idea/vcs.xml
+1374 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb/node_modules is being purged
+1375 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb/node_modules
+1376 silly gunzTarPerm extractEntry examples/statics/statics.js
+1377 silly gunzTarPerm modified mode [ 'examples/statics/statics.js', 436, 420 ]
+1378 silly gunzTarPerm extractEntry examples/express/README.md
+1379 silly gunzTarPerm modified mode [ 'examples/express/README.md', 436, 420 ]
+1380 silly gunzTarPerm extractEntry mapValuesLimit.js
+1381 silly gunzTarPerm modified mode [ 'mapValuesLimit.js', 436, 420 ]
+1382 silly gunzTarPerm extractEntry everySeries.js
+1383 silly gunzTarPerm modified mode [ 'everySeries.js', 436, 420 ]
+1384 silly gunzTarPerm extractEntry .idea/workspace.xml
+1385 silly gunzTarPerm extractEntry lib/express-handlebars.js
+1386 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba/node_modules is being purged
+1387 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba/node_modules
+1388 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb/node_modules is being purged
+1389 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb/node_modules
+1390 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66/node_modules is being purged
+1391 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66/node_modules
+1392 silly gunzTarPerm extractEntry examples/express/connection-sharing/package.json
+1393 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/package.json', 436, 420 ]
+1394 silly gunzTarPerm extractEntry examples/express/connection-sharing/README.md
+1395 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/README.md', 436, 420 ]
+1396 silly gunzTarPerm extractEntry examples/express/connection-sharing/app.js
+1397 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/app.js', 436, 420 ]
+1398 silly gunzTarPerm extractEntry mapValuesSeries.js
+1399 silly gunzTarPerm modified mode [ 'mapValuesSeries.js', 436, 420 ]
+1400 silly gunzTarPerm extractEntry everyLimit.js
+1401 silly gunzTarPerm modified mode [ 'everyLimit.js', 436, 420 ]
+1402 silly gunzTarPerm extractEntry examples/express/connection-sharing/modelA.js
+1403 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/modelA.js', 436, 420 ]
+1404 silly gunzTarPerm extractEntry lib/utils.js
+1405 silly gunzTarPerm extractEntry examples/express/connection-sharing/routes.js
+1406 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/routes.js', 436, 420 ]
+1407 silly gunzTarPerm extractEntry examples/geospatial/package.json
+1408 silly gunzTarPerm modified mode [ 'examples/geospatial/package.json', 436, 420 ]
+1409 silly gunzTarPerm extractEntry examples/geospatial/geoJSONSchema.js
+1410 silly gunzTarPerm modified mode [ 'examples/geospatial/geoJSONSchema.js', 436, 420 ]
+1411 silly gunzTarPerm extractEntry examples/geospatial/geoJSONexample.js
+1412 silly gunzTarPerm modified mode [ 'examples/geospatial/geoJSONexample.js', 436, 420 ]
+1413 silly gunzTarPerm extractEntry memoize.js
+1414 silly gunzTarPerm modified mode [ 'memoize.js', 436, 420 ]
+1415 silly gunzTarPerm extractEntry every.js
+1416 silly gunzTarPerm modified mode [ 'every.js', 436, 420 ]
+1417 silly gunzTarPerm extractEntry examples/geospatial/geospatial.js
+1418 silly gunzTarPerm modified mode [ 'examples/geospatial/geospatial.js', 436, 420 ]
+1419 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1/node_modules is being purged
+1420 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1/node_modules
+1421 silly gunzTarPerm extractEntry examples/geospatial/person.js
+1422 silly gunzTarPerm modified mode [ 'examples/geospatial/person.js', 436, 420 ]
+1423 silly gunzTarPerm extractEntry examples/globalschemas/gs_example.js
+1424 silly gunzTarPerm modified mode [ 'examples/globalschemas/gs_example.js', 436, 420 ]
+1425 silly gunzTarPerm extractEntry nextTick.js
+1426 silly gunzTarPerm modified mode [ 'nextTick.js', 436, 420 ]
+1427 silly gunzTarPerm extractEntry ensureAsync.js
+1428 silly gunzTarPerm modified mode [ 'ensureAsync.js', 436, 420 ]
+1429 silly gunzTarPerm extractEntry examples/globalschemas/person.js
+1430 silly gunzTarPerm modified mode [ 'examples/globalschemas/person.js', 436, 420 ]
+1431 silly gunzTarPerm extractEntry examples/lean/package.json
+1432 silly gunzTarPerm modified mode [ 'examples/lean/package.json', 436, 420 ]
+1433 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21/node_modules is being purged
+1434 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21/node_modules
+1435 silly gunzTarPerm extractEntry eachOfLimit.js
+1436 silly gunzTarPerm modified mode [ 'eachOfLimit.js', 436, 420 ]
+1437 silly gunzTarPerm extractEntry unmemoize.js
+1438 silly gunzTarPerm modified mode [ 'unmemoize.js', 436, 420 ]
+1439 silly gunzTarPerm extractEntry examples/lean/lean.js
+1440 silly gunzTarPerm modified mode [ 'examples/lean/lean.js', 436, 420 ]
+1441 silly gunzTarPerm extractEntry examples/lean/person.js
+1442 silly gunzTarPerm modified mode [ 'examples/lean/person.js', 436, 420 ]
+1443 silly gunzTarPerm extractEntry parallel.js
+1444 silly gunzTarPerm modified mode [ 'parallel.js', 436, 420 ]
+1445 silly gunzTarPerm extractEntry eachOf.js
+1446 silly gunzTarPerm modified mode [ 'eachOf.js', 436, 420 ]
+1447 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc/node_modules is being purged
+1448 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc/node_modules
+1449 silly gunzTarPerm extractEntry examples/aggregate/package.json
+1450 silly gunzTarPerm modified mode [ 'examples/aggregate/package.json', 436, 420 ]
+1451 silly gunzTarPerm extractEntry examples/aggregate/aggregate.js
+1452 silly gunzTarPerm modified mode [ 'examples/aggregate/aggregate.js', 436, 420 ]
+1453 silly gunzTarPerm extractEntry parallelLimit.js
+1454 silly gunzTarPerm modified mode [ 'parallelLimit.js', 436, 420 ]
+1455 silly gunzTarPerm extractEntry eachLimit.js
+1456 silly gunzTarPerm modified mode [ 'eachLimit.js', 436, 420 ]
+1457 silly gunzTarPerm extractEntry examples/aggregate/person.js
+1458 silly gunzTarPerm modified mode [ 'examples/aggregate/person.js', 436, 420 ]
+1459 silly gunzTarPerm extractEntry examples/population/population-across-three-collections.js
+1460 silly gunzTarPerm modified mode [ 'examples/population/population-across-three-collections.js',
+1460 silly gunzTarPerm   436,
+1460 silly gunzTarPerm   420 ]
+1461 silly gunzTarPerm extractEntry priorityQueue.js
+1462 silly gunzTarPerm modified mode [ 'priorityQueue.js', 436, 420 ]
+1463 silly gunzTarPerm extractEntry each.js
+1464 silly gunzTarPerm modified mode [ 'each.js', 436, 420 ]
+1465 silly gunzTarPerm extractEntry examples/population/population-basic.js
+1466 silly gunzTarPerm modified mode [ 'examples/population/population-basic.js', 436, 420 ]
+1467 silly gunzTarPerm extractEntry examples/population/population-of-existing-doc.js
+1468 silly gunzTarPerm modified mode [ 'examples/population/population-of-existing-doc.js', 436, 420 ]
+1469 silly gunzTarPerm extractEntry queue.js
+1470 silly gunzTarPerm modified mode [ 'queue.js', 436, 420 ]
+1471 silly gunzTarPerm extractEntry during.js
+1472 silly gunzTarPerm modified mode [ 'during.js', 436, 420 ]
+1473 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81/node_modules is being purged
+1474 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81/node_modules
+1475 silly gunzTarPerm extractEntry examples/population/population-of-multiple-existing-docs.js
+1476 silly gunzTarPerm modified mode [ 'examples/population/population-of-multiple-existing-docs.js',
+1476 silly gunzTarPerm   436,
+1476 silly gunzTarPerm   420 ]
+1477 silly gunzTarPerm extractEntry examples/population/population-options.js
+1478 silly gunzTarPerm modified mode [ 'examples/population/population-options.js', 436, 420 ]
+1479 silly gunzTarPerm extractEntry race.js
+1480 silly gunzTarPerm modified mode [ 'race.js', 436, 420 ]
+1481 silly gunzTarPerm extractEntry doWhilst.js
+1482 silly gunzTarPerm modified mode [ 'doWhilst.js', 436, 420 ]
+1483 silly gunzTarPerm extractEntry examples/population/population-plain-objects.js
+1484 silly gunzTarPerm modified mode [ 'examples/population/population-plain-objects.js', 436, 420 ]
+1485 silly gunzTarPerm extractEntry examples/promises/package.json
+1486 silly gunzTarPerm modified mode [ 'examples/promises/package.json', 436, 420 ]
+1487 silly gunzTarPerm extractEntry reduce.js
+1488 silly gunzTarPerm modified mode [ 'reduce.js', 436, 420 ]
+1489 silly gunzTarPerm extractEntry doUntil.js
+1490 silly gunzTarPerm modified mode [ 'doUntil.js', 436, 420 ]
+1491 silly gunzTarPerm extractEntry reduceRight.js
+1492 silly gunzTarPerm modified mode [ 'reduceRight.js', 436, 420 ]
+1493 silly gunzTarPerm extractEntry doDuring.js
+1494 silly gunzTarPerm modified mode [ 'doDuring.js', 436, 420 ]
+1495 silly gunzTarPerm extractEntry examples/promises/person.js
+1496 silly gunzTarPerm modified mode [ 'examples/promises/person.js', 436, 420 ]
+1497 silly gunzTarPerm extractEntry examples/promises/promise.js
+1498 silly gunzTarPerm modified mode [ 'examples/promises/promise.js', 436, 420 ]
+1499 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd/node_modules is being purged
+1500 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd/node_modules
+1501 silly gunzTarPerm extractEntry examples/querybuilder/package.json
+1502 silly gunzTarPerm modified mode [ 'examples/querybuilder/package.json', 436, 420 ]
+1503 silly gunzTarPerm extractEntry examples/querybuilder/person.js
+1504 silly gunzTarPerm modified mode [ 'examples/querybuilder/person.js', 436, 420 ]
+1505 silly gunzTarPerm extractEntry reflect.js
+1506 silly gunzTarPerm modified mode [ 'reflect.js', 436, 420 ]
+1507 silly gunzTarPerm extractEntry until.js
+1508 silly gunzTarPerm modified mode [ 'until.js', 436, 420 ]
+1509 silly gunzTarPerm extractEntry examples/querybuilder/querybuilder.js
+1510 silly gunzTarPerm modified mode [ 'examples/querybuilder/querybuilder.js', 436, 420 ]
+1511 silly gunzTarPerm extractEntry examples/replicasets/package.json
+1512 silly gunzTarPerm modified mode [ 'examples/replicasets/package.json', 436, 420 ]
+1513 silly gunzTarPerm extractEntry reflectAll.js
+1514 silly gunzTarPerm modified mode [ 'reflectAll.js', 436, 420 ]
+1515 silly gunzTarPerm extractEntry dir.js
+1516 silly gunzTarPerm modified mode [ 'dir.js', 436, 420 ]
+1517 silly gunzTarPerm extractEntry examples/replicasets/person.js
+1518 silly gunzTarPerm modified mode [ 'examples/replicasets/person.js', 436, 420 ]
+1519 silly gunzTarPerm extractEntry examples/replicasets/replica-sets.js
+1520 silly gunzTarPerm modified mode [ 'examples/replicasets/replica-sets.js', 436, 420 ]
+1521 silly gunzTarPerm extractEntry reject.js
+1522 silly gunzTarPerm modified mode [ 'reject.js', 436, 420 ]
+1523 silly gunzTarPerm extractEntry detectSeries.js
+1524 silly gunzTarPerm modified mode [ 'detectSeries.js', 436, 420 ]
+1525 silly gunzTarPerm extractEntry examples/schema/schema.js
+1526 silly gunzTarPerm modified mode [ 'examples/schema/schema.js', 436, 420 ]
+1527 silly gunzTarPerm extractEntry examples/schema/storing-schemas-as-json/index.js
+1528 silly gunzTarPerm modified mode [ 'examples/schema/storing-schemas-as-json/index.js', 436, 420 ]
+1529 silly gunzTarPerm extractEntry rejectLimit.js
+1530 silly gunzTarPerm modified mode [ 'rejectLimit.js', 436, 420 ]
+1531 silly gunzTarPerm extractEntry detectLimit.js
+1532 silly gunzTarPerm modified mode [ 'detectLimit.js', 436, 420 ]
+1533 silly gunzTarPerm extractEntry examples/schema/storing-schemas-as-json/schema.json
+1534 silly gunzTarPerm modified mode [ 'examples/schema/storing-schemas-as-json/schema.json',
+1534 silly gunzTarPerm   436,
+1534 silly gunzTarPerm   420 ]
+1535 silly gunzTarPerm extractEntry examples/mapreduce/package.json
+1536 silly gunzTarPerm modified mode [ 'examples/mapreduce/package.json', 436, 420 ]
+1537 silly gunzTarPerm extractEntry rejectSeries.js
+1538 silly gunzTarPerm modified mode [ 'rejectSeries.js', 436, 420 ]
+1539 silly gunzTarPerm extractEntry detect.js
+1540 silly gunzTarPerm modified mode [ 'detect.js', 436, 420 ]
+1541 silly gunzTarPerm extractEntry examples/mapreduce/mapreduce.js
+1542 silly gunzTarPerm modified mode [ 'examples/mapreduce/mapreduce.js', 436, 420 ]
+1543 silly gunzTarPerm extractEntry examples/mapreduce/person.js
+1544 silly gunzTarPerm modified mode [ 'examples/mapreduce/person.js', 436, 420 ]
+1545 silly gunzTarPerm extractEntry retry.js
+1546 silly gunzTarPerm modified mode [ 'retry.js', 436, 420 ]
+1547 silly gunzTarPerm extractEntry constant.js
+1548 silly gunzTarPerm modified mode [ 'constant.js', 436, 420 ]
+1549 silly gunzTarPerm extractEntry .github/ISSUE_TEMPLATE.md
+1550 silly gunzTarPerm modified mode [ '.github/ISSUE_TEMPLATE.md', 436, 420 ]
+1551 silly gunzTarPerm extractEntry .github/PULL_REQUEST_TEMPLATE.md
+1552 silly gunzTarPerm modified mode [ '.github/PULL_REQUEST_TEMPLATE.md', 436, 420 ]
+1553 silly gunzTarPerm extractEntry retryable.js
+1554 silly gunzTarPerm modified mode [ 'retryable.js', 436, 420 ]
+1555 silly gunzTarPerm extractEntry concatSeries.js
+1556 silly gunzTarPerm modified mode [ 'concatSeries.js', 436, 420 ]
+1557 silly gunzTarPerm extractEntry lib/ES6Promise.js
+1558 silly gunzTarPerm modified mode [ 'lib/ES6Promise.js', 436, 420 ]
+1559 silly gunzTarPerm extractEntry lib/document_provider.js
+1560 silly gunzTarPerm modified mode [ 'lib/document_provider.js', 436, 420 ]
+1561 silly gunzTarPerm extractEntry seq.js
+1562 silly gunzTarPerm modified mode [ 'seq.js', 436, 420 ]
+1563 silly gunzTarPerm extractEntry concat.js
+1564 silly gunzTarPerm modified mode [ 'concat.js', 436, 420 ]
+1565 silly gunzTarPerm extractEntry series.js
+1566 silly gunzTarPerm modified mode [ 'series.js', 436, 420 ]
+1567 silly gunzTarPerm extractEntry compose.js
+1568 silly gunzTarPerm modified mode [ 'compose.js', 436, 420 ]
+1569 silly gunzTarPerm extractEntry lib/document_provider.web.js
+1570 silly gunzTarPerm modified mode [ 'lib/document_provider.web.js', 436, 420 ]
+1571 silly gunzTarPerm extractEntry lib/utils.js
+1572 silly gunzTarPerm modified mode [ 'lib/utils.js', 436, 420 ]
+1573 silly gunzTarPerm extractEntry setImmediate.js
+1574 silly gunzTarPerm modified mode [ 'setImmediate.js', 436, 420 ]
+1575 silly gunzTarPerm extractEntry cargo.js
+1576 silly gunzTarPerm modified mode [ 'cargo.js', 436, 420 ]
+1577 silly gunzTarPerm extractEntry lib/statemachine.js
+1578 silly gunzTarPerm modified mode [ 'lib/statemachine.js', 436, 420 ]
+1579 silly gunzTarPerm extractEntry lib/document.js
+1580 silly gunzTarPerm modified mode [ 'lib/document.js', 436, 420 ]
+1581 silly gunzTarPerm extractEntry some.js
+1582 silly gunzTarPerm modified mode [ 'some.js', 436, 420 ]
+1583 silly gunzTarPerm extractEntry waterfall.js
+1584 silly gunzTarPerm modified mode [ 'waterfall.js', 436, 420 ]
+1585 silly gunzTarPerm extractEntry lib/index.js
+1586 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+1587 silly gunzTarPerm extractEntry lib/aggregate.js
+1588 silly gunzTarPerm modified mode [ 'lib/aggregate.js', 436, 420 ]
+1589 silly gunzTarPerm extractEntry someLimit.js
+1590 silly gunzTarPerm modified mode [ 'someLimit.js', 436, 420 ]
+1591 silly gunzTarPerm extractEntry autoInject.js
+1592 silly gunzTarPerm modified mode [ 'autoInject.js', 436, 420 ]
+1593 silly gunzTarPerm extractEntry lib/model.js
+1594 silly gunzTarPerm modified mode [ 'lib/model.js', 436, 420 ]
+1595 silly gunzTarPerm extractEntry lib/promise.js
+1596 silly gunzTarPerm modified mode [ 'lib/promise.js', 436, 420 ]
+1597 silly gunzTarPerm extractEntry someSeries.js
+1598 silly gunzTarPerm modified mode [ 'someSeries.js', 436, 420 ]
+1599 silly gunzTarPerm extractEntry auto.js
+1600 silly gunzTarPerm modified mode [ 'auto.js', 436, 420 ]
+1601 silly gunzTarPerm extractEntry lib/promise_provider.js
+1602 silly gunzTarPerm modified mode [ 'lib/promise_provider.js', 436, 420 ]
+1603 silly gunzTarPerm extractEntry lib/connectionstate.js
+1604 silly gunzTarPerm modified mode [ 'lib/connectionstate.js', 436, 420 ]
+1605 silly gunzTarPerm extractEntry sortBy.js
+1606 silly gunzTarPerm modified mode [ 'sortBy.js', 436, 420 ]
+1607 silly gunzTarPerm extractEntry asyncify.js
+1608 silly gunzTarPerm modified mode [ 'asyncify.js', 436, 420 ]
+1609 silly gunzTarPerm extractEntry lib/query.js
+1610 silly gunzTarPerm modified mode [ 'lib/query.js', 436, 420 ]
+1611 silly gunzTarPerm extractEntry lib/connection.js
+1612 silly gunzTarPerm modified mode [ 'lib/connection.js', 436, 420 ]
+1613 silly gunzTarPerm extractEntry timeout.js
+1614 silly gunzTarPerm modified mode [ 'timeout.js', 436, 420 ]
+1615 silly gunzTarPerm extractEntry applyEachSeries.js
+1616 silly gunzTarPerm modified mode [ 'applyEachSeries.js', 436, 420 ]
+1617 silly gunzTarPerm extractEntry lib/querycursor.js
+1618 silly gunzTarPerm modified mode [ 'lib/querycursor.js', 436, 420 ]
+1619 silly gunzTarPerm extractEntry times.js
+1620 silly gunzTarPerm modified mode [ 'times.js', 436, 420 ]
+1621 silly gunzTarPerm extractEntry applyEach.js
+1622 silly gunzTarPerm modified mode [ 'applyEach.js', 436, 420 ]
+1623 silly gunzTarPerm extractEntry lib/collection.js
+1624 silly gunzTarPerm modified mode [ 'lib/collection.js', 436, 420 ]
+1625 silly gunzTarPerm extractEntry lib/queryhelpers.js
+1626 silly gunzTarPerm modified mode [ 'lib/queryhelpers.js', 436, 420 ]
+1627 silly gunzTarPerm extractEntry timesLimit.js
+1628 silly gunzTarPerm modified mode [ 'timesLimit.js', 436, 420 ]
+1629 silly gunzTarPerm extractEntry apply.js
+1630 silly gunzTarPerm modified mode [ 'apply.js', 436, 420 ]
+1631 silly gunzTarPerm extractEntry lib/cast.js
+1632 silly gunzTarPerm modified mode [ 'lib/cast.js', 436, 420 ]
+1633 silly gunzTarPerm extractEntry lib/querystream.js
+1634 silly gunzTarPerm modified mode [ 'lib/querystream.js', 436, 420 ]
+1635 silly gunzTarPerm extractEntry whilst.js
+1636 silly gunzTarPerm modified mode [ 'whilst.js', 436, 420 ]
+1637 silly gunzTarPerm extractEntry timesSeries.js
+1638 silly gunzTarPerm modified mode [ 'timesSeries.js', 436, 420 ]
+1639 silly gunzTarPerm extractEntry lib/browserDocument.js
+1640 silly gunzTarPerm modified mode [ 'lib/browserDocument.js', 436, 420 ]
+1641 silly gunzTarPerm extractEntry lib/schematype.js
+1642 silly gunzTarPerm modified mode [ 'lib/schematype.js', 436, 420 ]
+1643 silly gunzTarPerm extractEntry transform.js
+1644 silly gunzTarPerm modified mode [ 'transform.js', 436, 420 ]
+1645 silly gunzTarPerm extractEntry index.js
+1646 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+1647 silly gunzTarPerm extractEntry lib/browser.js
+1648 silly gunzTarPerm modified mode [ 'lib/browser.js', 436, 420 ]
+1649 silly gunzTarPerm extractEntry lib/schema.js
+1650 silly gunzTarPerm modified mode [ 'lib/schema.js', 436, 420 ]
+1651 silly gunzTarPerm extractEntry log.js
+1652 silly gunzTarPerm modified mode [ 'log.js', 436, 420 ]
+1653 silly gunzTarPerm extractEntry internal/DoublyLinkedList.js
+1654 silly gunzTarPerm modified mode [ 'internal/DoublyLinkedList.js', 436, 420 ]
+1655 silly gunzTarPerm extractEntry lib/error.js
+1656 silly gunzTarPerm modified mode [ 'lib/error.js', 436, 420 ]
+1657 silly gunzTarPerm extractEntry lib/virtualtype.js
+1658 silly gunzTarPerm modified mode [ 'lib/virtualtype.js', 436, 420 ]
+1659 silly gunzTarPerm extractEntry internal/doSeries.js
+1660 silly gunzTarPerm modified mode [ 'internal/doSeries.js', 436, 420 ]
+1661 silly gunzTarPerm extractEntry internal/eachOfLimit.js
+1662 silly gunzTarPerm modified mode [ 'internal/eachOfLimit.js', 436, 420 ]
+1663 silly gunzTarPerm extractEntry lib/internal.js
+1664 silly gunzTarPerm modified mode [ 'lib/internal.js', 436, 420 ]
+1665 silly gunzTarPerm extractEntry lib/schema/array.js
+1666 silly gunzTarPerm modified mode [ 'lib/schema/array.js', 436, 420 ]
+1667 silly gunzTarPerm extractEntry internal/filter.js
+1668 silly gunzTarPerm modified mode [ 'internal/filter.js', 436, 420 ]
+1669 silly gunzTarPerm extractEntry internal/findGetResult.js
+1670 silly gunzTarPerm modified mode [ 'internal/findGetResult.js', 436, 420 ]
+1671 silly gunzTarPerm extractEntry lib/schema/buffer.js
+1672 silly gunzTarPerm modified mode [ 'lib/schema/buffer.js', 436, 420 ]
+1673 silly gunzTarPerm extractEntry lib/schema/date.js
+1674 silly gunzTarPerm modified mode [ 'lib/schema/date.js', 436, 420 ]
+1675 silly gunzTarPerm extractEntry internal/doParallelLimit.js
+1676 silly gunzTarPerm modified mode [ 'internal/doParallelLimit.js', 436, 420 ]
+1677 silly gunzTarPerm extractEntry internal/initialParams.js
+1678 silly gunzTarPerm modified mode [ 'internal/initialParams.js', 436, 420 ]
+1679 silly gunzTarPerm extractEntry lib/schema/documentarray.js
+1680 silly gunzTarPerm modified mode [ 'lib/schema/documentarray.js', 436, 420 ]
+1681 silly gunzTarPerm extractEntry lib/schema/embedded.js
+1682 silly gunzTarPerm modified mode [ 'lib/schema/embedded.js', 436, 420 ]
+1683 silly gunzTarPerm extractEntry internal/iterator.js
+1684 silly gunzTarPerm modified mode [ 'internal/iterator.js', 436, 420 ]
+1685 silly gunzTarPerm extractEntry internal/map.js
+1686 silly gunzTarPerm modified mode [ 'internal/map.js', 436, 420 ]
+1687 silly gunzTarPerm extractEntry internal/notId.js
+1688 silly gunzTarPerm modified mode [ 'internal/notId.js', 436, 420 ]
+1689 silly gunzTarPerm extractEntry internal/once.js
+1690 silly gunzTarPerm modified mode [ 'internal/once.js', 436, 420 ]
+1691 silly gunzTarPerm extractEntry lib/schema/boolean.js
+1692 silly gunzTarPerm modified mode [ 'lib/schema/boolean.js', 436, 420 ]
+1693 silly gunzTarPerm extractEntry lib/schema/mixed.js
+1694 silly gunzTarPerm modified mode [ 'lib/schema/mixed.js', 436, 420 ]
+1695 silly gunzTarPerm extractEntry internal/doParallel.js
+1696 silly gunzTarPerm modified mode [ 'internal/doParallel.js', 436, 420 ]
+1697 silly gunzTarPerm extractEntry internal/onlyOnce.js
+1698 silly gunzTarPerm modified mode [ 'internal/onlyOnce.js', 436, 420 ]
+1699 silly gunzTarPerm extractEntry lib/schema/number.js
+1700 silly gunzTarPerm modified mode [ 'lib/schema/number.js', 436, 420 ]
+1701 silly gunzTarPerm extractEntry lib/schema/objectid.js
+1702 silly gunzTarPerm modified mode [ 'lib/schema/objectid.js', 436, 420 ]
+1703 silly gunzTarPerm extractEntry lib/schema/string.js
+1704 silly gunzTarPerm modified mode [ 'lib/schema/string.js', 436, 420 ]
+1705 silly gunzTarPerm extractEntry lib/schema/index.js
+1706 silly gunzTarPerm modified mode [ 'lib/schema/index.js', 436, 420 ]
+1707 silly gunzTarPerm extractEntry internal/doLimit.js
+1708 silly gunzTarPerm modified mode [ 'internal/doLimit.js', 436, 420 ]
+1709 silly gunzTarPerm extractEntry internal/parallel.js
+1710 silly gunzTarPerm modified mode [ 'internal/parallel.js', 436, 420 ]
+1711 silly gunzTarPerm extractEntry lib/schema/operators/bitwise.js
+1712 silly gunzTarPerm modified mode [ 'lib/schema/operators/bitwise.js', 436, 420 ]
+1713 silly gunzTarPerm extractEntry lib/schema/operators/geospatial.js
+1714 silly gunzTarPerm modified mode [ 'lib/schema/operators/geospatial.js', 436, 420 ]
+1715 silly gunzTarPerm extractEntry internal/createTester.js
+1716 silly gunzTarPerm modified mode [ 'internal/createTester.js', 436, 420 ]
+1717 silly gunzTarPerm extractEntry internal/queue.js
+1718 silly gunzTarPerm modified mode [ 'internal/queue.js', 436, 420 ]
+1719 silly gunzTarPerm extractEntry internal/consoleFunc.js
+1720 silly gunzTarPerm modified mode [ 'internal/consoleFunc.js', 436, 420 ]
+1721 silly gunzTarPerm extractEntry internal/reject.js
+1722 silly gunzTarPerm modified mode [ 'internal/reject.js', 436, 420 ]
+1723 silly gunzTarPerm extractEntry lib/schema/operators/helpers.js
+1724 silly gunzTarPerm modified mode [ 'lib/schema/operators/helpers.js', 436, 420 ]
+1725 silly gunzTarPerm extractEntry lib/services/common.js
+1726 silly gunzTarPerm modified mode [ 'lib/services/common.js', 436, 420 ]
+1727 silly gunzTarPerm extractEntry internal/concat.js
+1728 silly gunzTarPerm modified mode [ 'internal/concat.js', 436, 420 ]
+1729 silly gunzTarPerm extractEntry internal/rest.js
+1730 silly gunzTarPerm modified mode [ 'internal/rest.js', 436, 420 ]
+1731 silly gunzTarPerm extractEntry lib/services/setDefaultsOnInsert.js
+1732 silly gunzTarPerm modified mode [ 'lib/services/setDefaultsOnInsert.js', 436, 420 ]
+1733 silly gunzTarPerm extractEntry lib/services/updateValidators.js
+1734 silly gunzTarPerm modified mode [ 'lib/services/updateValidators.js', 436, 420 ]
+1735 silly gunzTarPerm extractEntry internal/breakLoop.js
+1736 silly gunzTarPerm modified mode [ 'internal/breakLoop.js', 436, 420 ]
+1737 silly gunzTarPerm extractEntry internal/setImmediate.js
+1738 silly gunzTarPerm modified mode [ 'internal/setImmediate.js', 436, 420 ]
+1739 silly gunzTarPerm extractEntry lib/error/browserMissingSchema.js
+1740 silly gunzTarPerm modified mode [ 'lib/error/browserMissingSchema.js', 436, 420 ]
+1741 silly gunzTarPerm extractEntry lib/error/disconnected.js
+1742 silly gunzTarPerm modified mode [ 'lib/error/disconnected.js', 436, 420 ]
+1743 silly gunzTarPerm extractEntry internal/applyEach.js
+1744 silly gunzTarPerm modified mode [ 'internal/applyEach.js', 436, 420 ]
+1745 silly gunzTarPerm extractEntry internal/withoutIndex.js
+1746 silly gunzTarPerm modified mode [ 'internal/withoutIndex.js', 436, 420 ]
+1747 silly gunzTarPerm extractEntry lib/error/divergentArray.js
+1748 silly gunzTarPerm modified mode [ 'lib/error/divergentArray.js', 436, 420 ]
+1749 silly gunzTarPerm extractEntry lib/error/messages.js
+1750 silly gunzTarPerm modified mode [ 'lib/error/messages.js', 436, 420 ]
+1751 silly gunzTarPerm extractEntry lib/error/missingSchema.js
+1752 silly gunzTarPerm modified mode [ 'lib/error/missingSchema.js', 436, 420 ]
+1753 silly gunzTarPerm extractEntry lib/error/cast.js
+1754 silly gunzTarPerm modified mode [ 'lib/error/cast.js', 436, 420 ]
+1755 silly gunzTarPerm extractEntry internal/getIterator.js
+1756 silly gunzTarPerm modified mode [ 'internal/getIterator.js', 436, 420 ]
+1757 silly gunzTarPerm extractEntry dist/async.js
+1758 silly gunzTarPerm modified mode [ 'dist/async.js', 436, 420 ]
+1759 silly gunzTarPerm extractEntry dist/async.min.js
+1760 silly gunzTarPerm modified mode [ 'dist/async.min.js', 436, 420 ]
+1761 silly gunzTarPerm extractEntry lib/error/overwriteModel.js
+1762 silly gunzTarPerm modified mode [ 'lib/error/overwriteModel.js', 436, 420 ]
+1763 silly gunzTarPerm extractEntry lib/error/strict.js
+1764 silly gunzTarPerm modified mode [ 'lib/error/strict.js', 436, 420 ]
+1765 silly gunzTarPerm extractEntry bower.json
+1766 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+1767 silly gunzTarPerm extractEntry CHANGELOG.md
+1768 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+1769 silly gunzTarPerm extractEntry lib/error/validation.js
+1770 silly gunzTarPerm modified mode [ 'lib/error/validation.js', 436, 420 ]
+1771 silly gunzTarPerm extractEntry lib/error/validator.js
+1772 silly gunzTarPerm modified mode [ 'lib/error/validator.js', 436, 420 ]
+1773 silly gunzTarPerm extractEntry lib/error/version.js
+1774 silly gunzTarPerm modified mode [ 'lib/error/version.js', 436, 420 ]
+1775 silly gunzTarPerm extractEntry lib/error/objectExpected.js
+1776 silly gunzTarPerm modified mode [ 'lib/error/objectExpected.js', 436, 420 ]
+1777 silly gunzTarPerm extractEntry lib/types/array.js
+1778 silly gunzTarPerm modified mode [ 'lib/types/array.js', 436, 420 ]
+1779 silly gunzTarPerm extractEntry lib/types/buffer.js
+1780 silly gunzTarPerm modified mode [ 'lib/types/buffer.js', 436, 420 ]
+1781 silly gunzTarPerm extractEntry lib/types/documentarray.js
+1782 silly gunzTarPerm modified mode [ 'lib/types/documentarray.js', 436, 420 ]
+1783 silly gunzTarPerm extractEntry lib/types/embedded.js
+1784 silly gunzTarPerm modified mode [ 'lib/types/embedded.js', 436, 420 ]
+1785 silly gunzTarPerm extractEntry lib/types/index.js
+1786 silly gunzTarPerm modified mode [ 'lib/types/index.js', 436, 420 ]
+1787 silly gunzTarPerm extractEntry lib/types/objectid.js
+1788 silly gunzTarPerm modified mode [ 'lib/types/objectid.js', 436, 420 ]
+1789 silly gunzTarPerm extractEntry lib/types/subdocument.js
+1790 silly gunzTarPerm modified mode [ 'lib/types/subdocument.js', 436, 420 ]
+1791 silly gunzTarPerm extractEntry lib/drivers/index.js
+1792 silly gunzTarPerm modified mode [ 'lib/drivers/index.js', 436, 420 ]
+1793 silly gunzTarPerm extractEntry lib/drivers/index.web.js
+1794 silly gunzTarPerm modified mode [ 'lib/drivers/index.web.js', 436, 420 ]
+1795 silly gunzTarPerm extractEntry lib/drivers/SPEC.md
+1796 silly gunzTarPerm modified mode [ 'lib/drivers/SPEC.md', 436, 420 ]
+1797 silly gunzTarPerm extractEntry lib/drivers/browser/ReadPreference.js
+1798 silly gunzTarPerm modified mode [ 'lib/drivers/browser/ReadPreference.js', 436, 420 ]
+1799 silly gunzTarPerm extractEntry lib/drivers/browser/binary.js
+1800 silly gunzTarPerm modified mode [ 'lib/drivers/browser/binary.js', 436, 420 ]
+1801 silly gunzTarPerm extractEntry lib/drivers/browser/index.js
+1802 silly gunzTarPerm modified mode [ 'lib/drivers/browser/index.js', 436, 420 ]
+1803 silly gunzTarPerm extractEntry lib/drivers/browser/objectid.js
+1804 silly gunzTarPerm modified mode [ 'lib/drivers/browser/objectid.js', 436, 420 ]
+1805 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/ReadPreference.js
+1806 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/ReadPreference.js', 436, 420 ]
+1807 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/binary.js
+1808 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/binary.js', 436, 420 ]
+1809 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/collection.js
+1810 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/collection.js', 436, 420 ]
+1811 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/connection.js
+1812 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/connection.js', 436, 420 ]
+1813 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/index.js
+1814 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/index.js', 436, 420 ]
+1815 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/objectid.js
+1816 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/objectid.js', 436, 420 ]
+1817 silly gunzTarPerm extractEntry .travis.yml
+1818 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+1819 silly gunzTarPerm extractEntry release-items.md
+1820 silly gunzTarPerm modified mode [ 'release-items.md', 436, 420 ]
+1821 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20/node_modules is being purged
+1822 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20/node_modules
+1823 silly gentlyRm /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69/node_modules is being purged
+1824 verbose gentlyRm don't care about contents; nuking /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69/node_modules
+1825 silly doParallel preinstall 12
+1826 silly preinstall async@2.1.4 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/async-bae5ed20
+1827 info lifecycle async@2.1.4~preinstall: async@2.1.4
+1828 silly preinstall ms@0.7.2 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-94916e86
+1829 info lifecycle ms@0.7.2~preinstall: ms@0.7.2
+1830 silly preinstall mongoose@4.7.7 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/mongoose-1c8f8e69
+1831 info lifecycle mongoose@4.7.7~preinstall: mongoose@4.7.7
+1832 silly preinstall ms@0.7.2 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/ms-038463eb
+1833 info lifecycle ms@0.7.2~preinstall: ms@0.7.2
+1834 silly preinstall debug@2.3.3 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/debug-bc4b0c81
+1835 info lifecycle debug@2.3.3~preinstall: debug@2.3.3
+1836 silly preinstall socket.io@1.7.2 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/socket.io-84a36d21
+1837 info lifecycle socket.io@1.7.2~preinstall: socket.io@1.7.2
+1838 silly preinstall body-parser@1.15.2 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/body-parser-66210bfc
+1839 info lifecycle body-parser@1.15.2~preinstall: body-parser@1.15.2
+1840 silly preinstall cookie-parser@1.4.3 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/cookie-parser-e78718ba
+1841 info lifecycle cookie-parser@1.4.3~preinstall: cookie-parser@1.4.3
+1842 silly preinstall errorhandler@1.5.0 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/errorhandler-1b3643b1
+1843 info lifecycle errorhandler@1.5.0~preinstall: errorhandler@1.5.0
+1844 silly preinstall express-handlebars@3.0.0 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/express-handlebars-453eacdd
+1845 info lifecycle express-handlebars@3.0.0~preinstall: express-handlebars@3.0.0
+1846 silly preinstall method-override@2.3.7 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/method-override-af029e66
+1847 info lifecycle method-override@2.3.7~preinstall: method-override@2.3.7
+1848 silly preinstall morgan@1.7.0 /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging/morgan-52d1bfdb
+1849 info lifecycle morgan@1.7.0~preinstall: morgan@1.7.0
+1850 silly lifecycle async@2.1.4~preinstall: no script for preinstall, continuing
+1851 silly lifecycle ms@0.7.2~preinstall: no script for preinstall, continuing
+1852 silly lifecycle mongoose@4.7.7~preinstall: no script for preinstall, continuing
+1853 silly lifecycle ms@0.7.2~preinstall: no script for preinstall, continuing
+1854 silly lifecycle debug@2.3.3~preinstall: no script for preinstall, continuing
+1855 silly lifecycle socket.io@1.7.2~preinstall: no script for preinstall, continuing
+1856 silly lifecycle body-parser@1.15.2~preinstall: no script for preinstall, continuing
+1857 silly lifecycle cookie-parser@1.4.3~preinstall: no script for preinstall, continuing
+1858 silly lifecycle errorhandler@1.5.0~preinstall: no script for preinstall, continuing
+1859 silly lifecycle express-handlebars@3.0.0~preinstall: no script for preinstall, continuing
+1860 silly lifecycle method-override@2.3.7~preinstall: no script for preinstall, continuing
+1861 silly lifecycle morgan@1.7.0~preinstall: no script for preinstall, continuing
+1862 silly doReverseSerial remove 0
+1863 silly doSerial move 0
+1864 silly doSerial finalize 12
+1865 silly finalize /Users/fareise/Desktop/留学生外包/timerV4/node_modules/mongoose/node_modules/async
+1866 silly finalize /Users/fareise/Desktop/留学生外包/timerV4/node_modules/mongoose/node_modules/ms
+1867 silly finalize /Users/fareise/Desktop/留学生外包/timerV4/node_modules/mongoose
+1868 verbose unlock done using /Users/fareise/.npm/_locks/staging-9903fb4647022919.lock for /Users/fareise/Desktop/留学生外包/timerV4/node_modules/.staging
+1869 silly rollbackFailedOptional Starting
+1870 silly rollbackFailedOptional Finishing
+1871 silly runTopLevelLifecycles Starting
+1872 silly runTopLevelLifecycles Finishing
+1873 silly install printInstalled
+1874 warn timerv4@1.0.0 No description
+1875 warn timerv4@1.0.0 No repository field.
+1876 verbose stack Error: ENOTEMPTY: directory not empty, rename '/Users/fareise/Desktop/留学生外包/timerV4/node_modules/mongoose' -> '/Users/fareise/Desktop/留学生外包/timerV4/node_modules/.mongoose.DELETE'
+1876 verbose stack     at moveAway (/usr/local/lib/node_modules/npm/lib/install/action/finalize.js:38:5)
+1876 verbose stack     at destStatted (/usr/local/lib/node_modules/npm/lib/install/action/finalize.js:27:7)
+1876 verbose stack     at FSReqWrap.oncomplete (fs.js:117:15)
+1876 verbose stack
+1876 verbose stack Error: ENOTEMPTY: directory not empty, rename '/Users/fareise/Desktop/留学生外包/timerV4/node_modules/mongoose' -> '/Users/fareise/Desktop/留学生外包/timerV4/node_modules/.mongoose.DELETE'
+1876 verbose stack     at Error (native)
+1877 verbose cwd /Users/fareise/Desktop/留学生外包/timerV4
+1878 error Darwin 15.6.0
+1879 error argv "/usr/local/Cellar/node/6.2.2/bin/node" "/usr/local/bin/npm" "install" "express" "mongoose" "crypto" "socket.io" "--save-dev"
+1880 error node v6.2.2
+1881 error npm  v3.9.5
+1882 error path /Users/fareise/Desktop/留学生外包/timerV4/node_modules/mongoose
+1883 error code ENOTEMPTY
+1884 error errno -66
+1885 error syscall rename
+1886 error ENOTEMPTY: directory not empty, rename '/Users/fareise/Desktop/留学生外包/timerV4/node_modules/mongoose' -> '/Users/fareise/Desktop/留学生外包/timerV4/node_modules/.mongoose.DELETE'
+1887 error If you need help, you may report this error at:
+1887 error     <https://github.com/npm/npm/issues>
+1888 verbose exit [ -66, true ]

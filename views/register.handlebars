@@ -1,0 +1,77 @@
+<div>
+<div class="alert alert-danger" id="invalid">Invalid username,email or password</div>
+	<form role="form" name="infoform" id="infoform" method="post" action="/registerUser">
+							<div class="form-group">
+								<label for="Username">Username:</label>
+								<input type="text" class="form-control" id="username"  name="username">
+								
+							</div>
+							
+							
+								
+							<div class="form-group">
+								<label for="password">password</label>
+								<input type="password" class="form-control" id="password"  name="password">
+							
+							</div>
+							<div class="form-group">
+								<label for="password2">password confirm</label>
+								<input type="password" class="form-control" id="password2"  name="password">
+							
+							</div>
+							<div class="form-group">
+								<label for="email">email</label>
+								<input type="email" class="form-control" id="email"  name="email">
+							
+							</div>
+							<input type="button" id="sub"  class="btn btn-default" value="Register">
+													</form>
+</div>
+
+<script >
+$(document).ready(function(){
+	$('#invalid').hide();
+	$('#sub').click(function(){
+		var username=$('#username').val();
+		var password=$('#password').val();
+		var password2=$('#password2').val();
+		var email=$('#email').val();
+		if(password == "" || username == "" || email == ""){
+			$('#invalid').show();
+			$("#invalid").html("The password/ username/ email are required");
+		}else if(password != password2){
+			$('#invalid').show();
+			$("#invalid").html("The confirmed password is not the same as the password you first input");
+		}else if(chkEmail(email) == false){
+			$('#invalid').show();
+			$("#invalid").html("You did not give a right email address");			
+		}else{
+			data = {username: username, password: password, password: password};
+			$.ajax({
+				url: "/registerUser",
+				type: "post",
+				data: data,
+				dataType: "json",
+				success: function(data){
+					if(data.code == 2){
+						$('#invalid').show();
+						$("#invalid").html("This username is already exist");
+					}else if(data.code == 1){
+						$('#invalid').hide();
+						window.location.href = "/loginform";
+					}
+				},
+				error: function(data, msg){
+					$('#invalid').show();
+					$("#invalid").html("Unknown error occured");
+				}
+			})
+		}
+	});
+});
+function chkEmail(strEmail) { 
+	if (!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(strEmail)) { 
+		return false; 
+	}
+};
+</script>
